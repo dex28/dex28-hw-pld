@@ -1,0 +1,23 @@
+Release 6.1.03i - ngdbuild G.26
+Copyright (c) 1995-2003 Xilinx, Inc.  All rights reserved.
+
+Command Line: ngdbuild -dd _ngo -uc dasl2p.ucf -p xc9500xl dasl2p.ngc dasl2p.ngd
+
+Reading NGO file "//nibbles/dsp-sw/CPLD-DASL2P/dasl2p.ngc" ...
+Reading component libraries for design expansion...
+
+Annotating constraints to design from file "dasl2p.ucf" ...
+
+Checking timing specifications ...
+Checking expanded design ...
+WARNING:NgdBuild:454 - logical net 'U25/U43/XLXI_45/CEO' has no load
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   1
+
+Total memory usage is 37876 kilobytes
+
+Writing NGD file "dasl2p.ngd" ...
+
+Writing NGDBUILD log file "dasl2p.bld"...

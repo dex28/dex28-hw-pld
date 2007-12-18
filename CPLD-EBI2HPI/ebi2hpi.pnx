@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!DOCTYPE ibis [
+<!ELEMENT ibis (part, pin+)>
+<!ELEMENT part EMPTY>
+<!ELEMENT pin EMPTY>
+<!ATTLIST part
+  arch   CDATA #REQUIRED
+  device CDATA #REQUIRED
+  spg    CDATA #REQUIRED
+  pkg    CDATA #REQUIRED>
+<!ATTLIST pin
+  nm     CDATA #REQUIRED
+  no     CDATA #REQUIRED
+  iostd  (TTL|LVTTL|LVCMOS2|NA) "NA"
+  sr     (SLOW|FAST|slow|fast) "SLOW"
+  dir    (BIDIR|bidir|INPUT|input|OUTPUT|output) "BIDIR">
+]>
+<ibis><part pkg="VQ64" spg="-10" arch="xc9500xl" device="XC9572XL"/><pin nm="WRn" no="11" dir="input"/><pin nm="RDn" no="1" dir="input"/><pin nm="CSn" no="12" dir="input"/><pin nm="A&lt;3&gt;" no="8" dir="input"/><pin nm="RESET" no="64" dir="input"/><pin nm="A&lt;4&gt;" no="7" dir="input"/><pin nm="A&lt;5&gt;" no="6" dir="input"/><pin nm="HINTn&lt;3&gt;" no="40" dir="input"/><pin nm="HINTn&lt;2&gt;" no="39" dir="input"/><pin nm="HINTn&lt;1&gt;" no="38" dir="input"/><pin nm="HINTn&lt;0&gt;" no="23" dir="input"/><pin nm="A&lt;0&gt;" no="10" dir="input"/><pin nm="A&lt;1&gt;" no="2" dir="input"/><pin nm="A&lt;2&gt;" no="9" dir="input"/><pin nm="HRSTn&lt;0&gt;" no="16" sr="fast" dir="output"/><pin nm="HRSTn&lt;1&gt;" no="17" sr="fast" dir="output"/><pin nm="HRSTn&lt;2&gt;" no="18" sr="fast" dir="output"/><pin nm="HRSTn&lt;3&gt;" no="19" sr="fast" dir="output"/><pin nm="INTn" no="15" sr="fast" dir="output"/><pin nm="HBIL" no="25" sr="fast" dir="output"/><pin nm="HCNTL0" no="31" sr="fast" dir="output"/><pin nm="HCNTL1" no="32" sr="fast" dir="output"/><pin nm="HCSn&lt;0&gt;" no="44" sr="fast" dir="output"/><pin nm="HCSn&lt;1&gt;" no="43" sr="fast" dir="output"/><pin nm="HCSn&lt;2&gt;" no="45" sr="fast" dir="output"/><pin nm="HCSn&lt;3&gt;" no="46" sr="fast" dir="output"/><pin nm="HDSn" no="51" sr="fast" dir="output"/><pin nm="HR_Wn" no="57" sr="fast" dir="output"/><pin nm="WAITn" no="13" sr="fast" dir="output"/><pin nm="CLKMD&lt;2&gt;" no="35" sr="fast" dir="output"/><pin nm="CLKMD&lt;1&gt;" no="34" sr="fast" dir="output"/><pin nm="CLKMD&lt;3&gt;" no="36" sr="fast" dir="output"/><pin nm="HD&lt;0&gt;" no="27" sr="fast" dir="bidir"/><pin nm="HD&lt;1&gt;" no="33" sr="fast" dir="bidir"/><pin nm="HD&lt;2&gt;" no="24" sr="fast" dir="bidir"/><pin nm="HD&lt;3&gt;" no="47" sr="fast" dir="bidir"/><pin nm="HD&lt;4&gt;" no="50" sr="fast" dir="bidir"/><pin nm="HD&lt;5&gt;" no="49" sr="fast" dir="bidir"/><pin nm="HD&lt;6&gt;" no="52" sr="fast" dir="bidir"/><pin nm="HD&lt;7&gt;" no="48" sr="fast" dir="bidir"/><pin nm="D&lt;0&gt;" no="4" sr="fast" dir="bidir"/><pin nm="D&lt;1&gt;" no="5" sr="fast" dir="bidir"/><pin nm="D&lt;2&gt;" no="63" sr="fast" dir="bidir"/><pin nm="D&lt;3&gt;" no="62" sr="fast" dir="bidir"/><pin nm="D&lt;4&gt;" no="61" sr="fast" dir="bidir"/><pin nm="D&lt;5&gt;" no="60" sr="fast" dir="bidir"/><pin nm="D&lt;6&gt;" no="59" sr="fast" dir="bidir"/><pin nm="D&lt;7&gt;" no="58" sr="fast" dir="bidir"/></ibis>

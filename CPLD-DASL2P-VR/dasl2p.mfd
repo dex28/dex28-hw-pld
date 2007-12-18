@@ -1,0 +1,667 @@
+MDF Database:  version 1.0
+MDF_INFO | dasl2p | XC9572XL-10-VQ64
+MACROCELL | 3 | 4 | CNT<9>
+ATTRIBUTES | 4622082 | 0
+OUTPUTMC | 7 | 3 | 13 | 3 | 9 | 1 | 1 | 2 | 16 | 3 | 12 | 2 | 7 | 2 | 4
+INPUTS | 10 | MCLK<0>  | CNT<0>  | CNT<1>  | CNT<3>  | CNT<4>  | CNT<5>  | CNT<6>  | CNT<7>  | CNT<8>  | M_Sn<0>
+INPUTMC | 10 | 3 | 2 | 1 | 13 | 1 | 12 | 1 | 10 | 3 | 8 | 3 | 6 | 3 | 3 | 3 | 1 | 3 | 0 | 3 | 17
+EQ | 4 | 
+   DCLK<0>.T = MCLK<0> & CNT<0> & CNT<1> & CNT<3> & CNT<4> & 
+	CNT<5> & CNT<6> & CNT<7> & CNT<8>;
+   DCLK<0>.CLK = CLK_16M;	// GCK
+   DCLK<0>.OE = M_Sn<0>;
+GLOBALS | 1 | 2 | CLK_16M
+
+MACROCELL | 2 | 11 | i_LEDG<0>
+ATTRIBUTES | 4597538 | 0
+OUTPUTMC | 1 | 2 | 11
+INPUTS | 8 | LEDG<0>  | DSP_A<2>  | DSP_A<1>  | DSP_A<0>  | DSP_D<0>.PIN  | R_Wn  | IOSTRn  | RESETn
+INPUTMC | 1 | 2 | 11
+INPUTP | 7 | 16 | 17 | 21 | 25 | 50 | 49 | 92
+EQ | 7 | 
+   LEDG<0>.T = LEDG<0> & DSP_A<2> & !DSP_A<1> & !DSP_A<0> & 
+	!DSP_D<0>.PIN
+	# !LEDG<0> & DSP_A<2> & !DSP_A<1> & !DSP_A<0> & 
+	DSP_D<0>.PIN;
+   !LEDG<0>.CLK = !R_Wn & !IOSTRn;
+   !LEDG<0>.AR = RESETn;	// GSR
+   LEDG<0>.OE = RESETn;
+GLOBALS | 1 | 4 | RESETn
+
+MACROCELL | 3 | 16 | i_LEDG<1>
+ATTRIBUTES | 4597538 | 0
+OUTPUTMC | 1 | 3 | 16
+INPUTS | 8 | LEDG<1>  | DSP_A<2>  | DSP_A<1>  | DSP_A<0>  | DSP_D<0>.PIN  | R_Wn  | IOSTRn  | RESETn
+INPUTMC | 1 | 3 | 16
+INPUTP | 7 | 16 | 17 | 21 | 25 | 50 | 49 | 92
+EQ | 7 | 
+   LEDG<1>.T = LEDG<1> & DSP_A<2> & DSP_A<1> & DSP_A<0> & 
+	!DSP_D<0>.PIN
+	# !LEDG<1> & DSP_A<2> & DSP_A<1> & DSP_A<0> & 
+	DSP_D<0>.PIN;
+   !LEDG<1>.CLK = !R_Wn & !IOSTRn;
+   !LEDG<1>.AR = RESETn;	// GSR
+   LEDG<1>.OE = RESETn;
+GLOBALS | 1 | 4 | RESETn
+
+MACROCELL | 0 | 1 | FSb_1_OBUFE
+ATTRIBUTES | 265986 | 0
+INPUTS | 4 | M_Sn<0>  | TST_FS  | M_Sn<1>  | FSc<0>.PIN
+INPUTMC | 3 | 3 | 17 | 2 | 16 | 3 | 15
+INPUTP | 1 | 75
+EQ | 4 | 
+   FSb<1> = M_Sn<0> & TST_FS
+	# !M_Sn<1> & TST_FS
+	# !M_Sn<0> & M_Sn<1> & FSc<0>.PIN;
+   FSb<1>.OE = M_Sn<1>;
+
+MACROCELL | 1 | 4 | CCLK_OBUF
+ATTRIBUTES | 4596514 | 0
+OUTPUTMC | 1 | 1 | 4
+INPUTS | 7 | CCLK  | DSP_A<2>  | DSP_A<1>  | DSP_A<0>  | DSP_D<1>.PIN  | R_Wn  | IOSTRn
+INPUTMC | 1 | 1 | 4
+INPUTP | 6 | 16 | 17 | 21 | 24 | 50 | 49
+EQ | 6 | 
+   CCLK.T = CCLK & !DSP_A<2> & !DSP_A<1> & DSP_A<0> & 
+	!DSP_D<1>.PIN
+	# !CCLK & !DSP_A<2> & !DSP_A<1> & DSP_A<0> & 
+	DSP_D<1>.PIN;
+   !CCLK.CLK = !R_Wn & !IOSTRn;
+   !CCLK.AR = RESETn;	// GSR
+GLOBALS | 1 | 4 | RESETn
+
+MACROCELL | 3 | 7 | CCSn_0
+ATTRIBUTES | 4592422 | 0
+OUTPUTMC | 1 | 3 | 7
+INPUTS | 8 | CCSn<0>  | DSP_A<2>  | DSP_A<1>  | DSP_A<0>  | DSP_D<0>.PIN  | DSP_D<1>.PIN  | R_Wn  | IOSTRn
+INPUTMC | 1 | 3 | 7
+INPUTP | 7 | 16 | 17 | 21 | 25 | 24 | 50 | 49
+EQ | 8 | 
+   CCSn<0>.T = !CCSn<0> & !DSP_A<2> & !DSP_A<1> & !DSP_A<0> & 
+	DSP_D<0>.PIN
+	# !CCSn<0> & !DSP_A<2> & !DSP_A<1> & !DSP_A<0> & 
+	!DSP_D<1>.PIN
+	# CCSn<0> & !DSP_A<2> & !DSP_A<1> & !DSP_A<0> & 
+	!DSP_D<0>.PIN & DSP_D<1>.PIN;
+   !CCSn<0>.CLK = !R_Wn & !IOSTRn;
+   !CCSn<0>.AP = RESETn;	// GSR
+GLOBALS | 1 | 1 | RESETn
+
+MACROCELL | 1 | 5 | CCSn_1
+ATTRIBUTES | 4592422 | 0
+OUTPUTMC | 1 | 1 | 5
+INPUTS | 8 | CCSn<1>  | DSP_A<2>  | DSP_A<1>  | DSP_A<0>  | DSP_D<0>.PIN  | DSP_D<1>.PIN  | R_Wn  | IOSTRn
+INPUTMC | 1 | 1 | 5
+INPUTP | 7 | 16 | 17 | 21 | 25 | 24 | 50 | 49
+EQ | 8 | 
+   CCSn<1>.T = !CCSn<1> & !DSP_A<2> & !DSP_A<1> & !DSP_A<0> & 
+	!DSP_D<0>.PIN
+	# !CCSn<1> & !DSP_A<2> & !DSP_A<1> & !DSP_A<0> & 
+	!DSP_D<1>.PIN
+	# CCSn<1> & !DSP_A<2> & !DSP_A<1> & !DSP_A<0> & 
+	DSP_D<0>.PIN & DSP_D<1>.PIN;
+   !CCSn<1>.CLK = !R_Wn & !IOSTRn;
+   !CCSn<1>.AP = RESETn;	// GSR
+GLOBALS | 1 | 1 | RESETn
+
+MACROCELL | 1 | 9 | CIN_OBUF
+ATTRIBUTES | 4596514 | 0
+OUTPUTMC | 1 | 1 | 9
+INPUTS | 7 | CIN  | DSP_A<2>  | DSP_A<1>  | DSP_A<0>  | DSP_D<0>.PIN  | R_Wn  | IOSTRn
+INPUTMC | 1 | 1 | 9
+INPUTP | 6 | 16 | 17 | 21 | 25 | 50 | 49
+EQ | 6 | 
+   CIN.T = CIN & !DSP_A<2> & !DSP_A<1> & DSP_A<0> & 
+	!DSP_D<0>.PIN
+	# !CIN & !DSP_A<2> & !DSP_A<1> & DSP_A<0> & 
+	DSP_D<0>.PIN;
+   !CIN.CLK = !R_Wn & !IOSTRn;
+   !CIN.AR = RESETn;	// GSR
+GLOBALS | 1 | 4 | RESETn
+
+MACROCELL | 2 | 15 | DX_0
+ATTRIBUTES | 4596514 | 0
+OUTPUTMC | 1 | 2 | 15
+INPUTS | 7 | DX<0>  | DSP_A<2>  | DSP_A<1>  | DSP_A<0>  | DSP_D<0>.PIN  | R_Wn  | IOSTRn
+INPUTMC | 1 | 2 | 15
+INPUTP | 6 | 16 | 17 | 21 | 25 | 50 | 49
+EQ | 6 | 
+   DX<0>.T = DX<0> & !DSP_A<2> & DSP_A<1> & DSP_A<0> & 
+	!DSP_D<0>.PIN
+	# !DX<0> & !DSP_A<2> & DSP_A<1> & DSP_A<0> & 
+	DSP_D<0>.PIN;
+   !DX<0>.CLK = !R_Wn & !IOSTRn;
+   !DX<0>.AR = RESETn;	// GSR
+GLOBALS | 1 | 4 | RESETn
+
+MACROCELL | 1 | 2 | DX_1
+ATTRIBUTES | 4596514 | 0
+OUTPUTMC | 1 | 1 | 2
+INPUTS | 7 | DX<1>  | DSP_A<2>  | DSP_A<1>  | DSP_A<0>  | DSP_D<0>.PIN  | R_Wn  | IOSTRn
+INPUTMC | 1 | 1 | 2
+INPUTP | 6 | 16 | 17 | 21 | 25 | 50 | 49
+EQ | 6 | 
+   DX<1>.T = DX<1> & DSP_A<2> & DSP_A<1> & !DSP_A<0> & 
+	!DSP_D<0>.PIN
+	# !DX<1> & DSP_A<2> & DSP_A<1> & !DSP_A<0> & 
+	DSP_D<0>.PIN;
+   !DX<1>.CLK = !R_Wn & !IOSTRn;
+   !DX<1>.AR = RESETn;	// GSR
+GLOBALS | 1 | 4 | RESETn
+
+MACROCELL | 2 | 9 | LEDY_0
+ATTRIBUTES | 4596514 | 0
+OUTPUTMC | 1 | 2 | 9
+INPUTS | 7 | LEDY<0>  | DSP_A<2>  | DSP_A<1>  | DSP_A<0>  | DSP_D<1>.PIN  | R_Wn  | IOSTRn
+INPUTMC | 1 | 2 | 9
+INPUTP | 6 | 16 | 17 | 21 | 24 | 50 | 49
+EQ | 6 | 
+   LEDY<0>.T = LEDY<0> & DSP_A<2> & !DSP_A<1> & !DSP_A<0> & 
+	!DSP_D<1>.PIN
+	# !LEDY<0> & DSP_A<2> & !DSP_A<1> & !DSP_A<0> & 
+	DSP_D<1>.PIN;
+   !LEDY<0>.CLK = !R_Wn & !IOSTRn;
+   !LEDY<0>.AR = RESETn;	// GSR
+GLOBALS | 1 | 4 | RESETn
+
+MACROCELL | 3 | 14 | LEDY_1
+ATTRIBUTES | 4596514 | 0
+OUTPUTMC | 1 | 3 | 14
+INPUTS | 7 | LEDY<1>  | DSP_A<2>  | DSP_A<1>  | DSP_A<0>  | DSP_D<1>.PIN  | R_Wn  | IOSTRn
+INPUTMC | 1 | 3 | 14
+INPUTP | 6 | 16 | 17 | 21 | 24 | 50 | 49
+EQ | 6 | 
+   LEDY<1>.T = LEDY<1> & DSP_A<2> & DSP_A<1> & DSP_A<0> & 
+	!DSP_D<1>.PIN
+	# !LEDY<1> & DSP_A<2> & DSP_A<1> & DSP_A<0> & 
+	DSP_D<1>.PIN;
+   !LEDY<1>.CLK = !R_Wn & !IOSTRn;
+   !LEDY<1>.AR = RESETn;	// GSR
+GLOBALS | 1 | 4 | RESETn
+
+MACROCELL | 3 | 5 | CNT<2>$BUF0
+ATTRIBUTES | 8685314 | 0
+INPUTS | 4 | CNT<0>  | CNT<1>  | MCLK<0>  | M_Sn<0>
+INPUTMC | 4 | 1 | 13 | 1 | 12 | 3 | 2 | 3 | 17
+EQ | 4 | 
+   BCLK<0>.D = CNT<0> & CNT<1>
+	$ MCLK<0>;
+   BCLK<0>.CLK = CLK_16M;	// GCK
+   BCLK<0>.OE = M_Sn<0>;
+GLOBALS | 1 | 2 | CLK_16M
+
+MACROCELL | 3 | 13 | FS$BUF0
+ATTRIBUTES | 8685314 | 0
+INPUTS | 12 | DCLK<0>  | MCLK<0>  | CNT<3>  | CNT<4>  | CNT<5>  | CNT<6>  | CNT<7>  | CNT<8>  | CNT<10>  | CNT<0>  | CNT<1>  | M_Sn<0>
+INPUTMC | 12 | 3 | 4 | 3 | 2 | 1 | 10 | 3 | 8 | 3 | 6 | 3 | 3 | 3 | 1 | 3 | 0 | 3 | 12 | 1 | 13 | 1 | 12 | 3 | 17
+EQ | 10 | 
+   FSb<0>.D = DCLK<0> & MCLK<0> & !CNT<3> & !CNT<4> & !CNT<5> & 
+	CNT<6> & CNT<7> & CNT<8> & CNT<10>
+	# DCLK<0> & !MCLK<0> & !CNT<0> & CNT<3> & !CNT<4> & 
+	!CNT<5> & CNT<6> & CNT<7> & CNT<8> & CNT<10>
+	# DCLK<0> & !MCLK<0> & !CNT<1> & CNT<3> & !CNT<4> & 
+	!CNT<5> & CNT<6> & CNT<7> & CNT<8> & CNT<10>
+	# DCLK<0> & CNT<0> & CNT<1> & !CNT<3> & !CNT<4> & 
+	!CNT<5> & CNT<6> & CNT<7> & CNT<8> & CNT<10>;
+   FSb<0>.CLK = CLK_16M;	// GCK
+   FSb<0>.OE = M_Sn<0>;
+GLOBALS | 1 | 2 | CLK_16M
+
+MACROCELL | 3 | 9 | FS$BUF1
+ATTRIBUTES | 8685314 | 0
+INPUTS | 12 | DCLK<0>  | MCLK<0>  | CNT<3>  | CNT<4>  | CNT<5>  | CNT<6>  | CNT<7>  | CNT<8>  | CNT<10>  | CNT<0>  | CNT<1>  | M_Sn<0>
+INPUTMC | 12 | 3 | 4 | 3 | 2 | 1 | 10 | 3 | 8 | 3 | 6 | 3 | 3 | 3 | 1 | 3 | 0 | 3 | 12 | 1 | 13 | 1 | 12 | 3 | 17
+EQ | 10 | 
+   FSa<0>.D = DCLK<0> & MCLK<0> & !CNT<3> & !CNT<4> & !CNT<5> & 
+	CNT<6> & CNT<7> & CNT<8> & CNT<10>
+	# DCLK<0> & !MCLK<0> & !CNT<0> & CNT<3> & !CNT<4> & 
+	!CNT<5> & CNT<6> & CNT<7> & CNT<8> & CNT<10>
+	# DCLK<0> & !MCLK<0> & !CNT<1> & CNT<3> & !CNT<4> & 
+	!CNT<5> & CNT<6> & CNT<7> & CNT<8> & CNT<10>
+	# DCLK<0> & CNT<0> & CNT<1> & !CNT<3> & !CNT<4> & 
+	!CNT<5> & CNT<6> & CNT<7> & CNT<8> & CNT<10>;
+   FSa<0>.CLK = CLK_16M;	// GCK
+   FSa<0>.OE = M_Sn<0>;
+GLOBALS | 1 | 2 | CLK_16M
+
+MACROCELL | 1 | 1 | DCLK_1_IOBUFE
+ATTRIBUTES | 265986 | 0
+INPUTS | 4 | DCLK<0>  | M_Sn<0>  | M_Sn<1>  | DCLK<0>.PIN
+INPUTMC | 3 | 3 | 4 | 3 | 17 | 3 | 15
+INPUTP | 1 | 63
+EQ | 4 | 
+   DCLK<1> = DCLK<0> & M_Sn<0>
+	# DCLK<0> & !M_Sn<1>
+	# !M_Sn<0> & M_Sn<1> & DCLK<0>.PIN;
+   DCLK<1>.OE = M_Sn<1>;
+
+MACROCELL | 1 | 16 | MCLK_1_OBUF$BUF0
+ATTRIBUTES | 265986 | 0
+INPUTS | 4 | M_Sn<0>  | MCLK<0>  | M_Sn<1>  | BCLK<0>.PIN
+INPUTMC | 3 | 3 | 17 | 3 | 2 | 3 | 15
+INPUTP | 1 | 70
+EQ | 4 | 
+   BCLK<1> = M_Sn<0> & MCLK<0>
+	# !M_Sn<1> & MCLK<0>
+	# !M_Sn<0> & M_Sn<1> & BCLK<0>.PIN;
+   BCLK<1>.OE = M_Sn<1>;
+
+MACROCELL | 3 | 17 | M_Sn<0>
+ATTRIBUTES | 4334368 | 0
+OUTPUTMC | 21 | 3 | 4 | 0 | 1 | 3 | 5 | 3 | 13 | 3 | 9 | 1 | 1 | 1 | 16 | 3 | 17 | 0 | 7 | 0 | 9 | 0 | 4 | 3 | 10 | 1 | 14 | 2 | 3 | 2 | 1 | 2 | 2 | 0 | 16 | 2 | 7 | 2 | 4 | 1 | 11 | 3 | 11
+INPUTS | 7 | M_Sn<0>  | DSP_A<2>  | DSP_A<1>  | DSP_A<0>  | DSP_D<0>.PIN  | R_Wn  | IOSTRn
+INPUTMC | 1 | 3 | 17
+INPUTP | 6 | 16 | 17 | 21 | 25 | 50 | 49
+EQ | 6 | 
+   M_Sn<0>.T = M_Sn<0> & !DSP_A<2> & DSP_A<1> & !DSP_A<0> & 
+	!DSP_D<0>.PIN
+	# !M_Sn<0> & !DSP_A<2> & DSP_A<1> & !DSP_A<0> & 
+	DSP_D<0>.PIN;
+   !M_Sn<0>.CLK = !R_Wn & !IOSTRn;
+   !M_Sn<0>.AR = RESETn;	// GSR
+GLOBALS | 1 | 4 | RESETn
+
+MACROCELL | 3 | 15 | M_Sn<1>
+ATTRIBUTES | 4334368 | 0
+OUTPUTMC | 14 | 0 | 1 | 1 | 1 | 1 | 16 | 3 | 15 | 0 | 7 | 0 | 5 | 0 | 4 | 3 | 10 | 1 | 14 | 2 | 1 | 0 | 16 | 2 | 4 | 1 | 11 | 0 | 10
+INPUTS | 7 | M_Sn<1>  | DSP_A<2>  | DSP_A<1>  | DSP_A<0>  | DSP_D<0>.PIN  | R_Wn  | IOSTRn
+INPUTMC | 1 | 3 | 15
+INPUTP | 6 | 16 | 17 | 21 | 25 | 50 | 49
+EQ | 6 | 
+   M_Sn<1>.T = M_Sn<1> & DSP_A<2> & !DSP_A<1> & DSP_A<0> & 
+	!DSP_D<0>.PIN
+	# !M_Sn<1> & DSP_A<2> & !DSP_A<1> & DSP_A<0> & 
+	DSP_D<0>.PIN;
+   !M_Sn<1>.CLK = !R_Wn & !IOSTRn;
+   !M_Sn<1>.AR = RESETn;	// GSR
+GLOBALS | 1 | 4 | RESETn
+
+MACROCELL | 1 | 17 | i_DR<0>
+ATTRIBUTES | 8528672 | 0
+OUTPUTMC | 1 | 0 | 9
+INPUTS | 2 | DR<0>  | DCLK<0>.PIN
+INPUTP | 2 | 62 | 63
+EQ | 3 | 
+   i_DR<0>.D = DR<0>;
+   i_DR<0>.CLK = !DCLK<0>.PIN;
+   !i_DR<0>.AR = RESETn;	// GSR
+GLOBALS | 1 | 4 | RESETn
+
+MACROCELL | 1 | 15 | i_DR<1>
+ATTRIBUTES | 8528672 | 0
+OUTPUTMC | 1 | 0 | 8
+INPUTS | 2 | DR<1>  | DCLK<1>.PIN
+INPUTP | 2 | 86 | 87
+EQ | 3 | 
+   i_DR<1>.D = DR<1>;
+   i_DR<1>.CLK = !DCLK<1>.PIN;
+   !i_DR<1>.AR = RESETn;	// GSR
+GLOBALS | 1 | 4 | RESETn
+
+MACROCELL | 0 | 7 | TST_M_Sn_OBUF
+ATTRIBUTES | 264962 | 0
+INPUTS | 2 | M_Sn<0>  | M_Sn<1>
+INPUTMC | 2 | 3 | 17 | 3 | 15
+EQ | 1 | 
+   TST_M_Sn = !M_Sn<0> & M_Sn<1>;
+
+MACROCELL | 3 | 2 | CNT<2>
+ATTRIBUTES | 4621058 | 0
+OUTPUTMC | 16 | 3 | 4 | 3 | 5 | 3 | 13 | 3 | 9 | 1 | 16 | 2 | 16 | 1 | 10 | 3 | 8 | 3 | 6 | 3 | 3 | 3 | 1 | 3 | 0 | 3 | 12 | 2 | 3 | 2 | 1 | 1 | 11
+INPUTS | 2 | CNT<0>  | CNT<1>
+INPUTMC | 2 | 1 | 13 | 1 | 12
+EQ | 2 | 
+   MCLK<0>.T = CNT<0> & CNT<1>;
+   MCLK<0>.CLK = CLK_16M;	// GCK
+GLOBALS | 1 | 2 | CLK_16M
+
+MACROCELL | 2 | 16 | FS
+ATTRIBUTES | 8815362 | 0
+OUTPUTMC | 4 | 0 | 1 | 0 | 4 | 2 | 2 | 0 | 16
+INPUTS | 11 | DCLK<0>  | MCLK<0>  | CNT<3>  | CNT<4>  | CNT<5>  | CNT<6>  | CNT<7>  | CNT<8>  | CNT<10>  | CNT<0>  | CNT<1>
+INPUTMC | 11 | 3 | 4 | 3 | 2 | 1 | 10 | 3 | 8 | 3 | 6 | 3 | 3 | 3 | 1 | 3 | 0 | 3 | 12 | 1 | 13 | 1 | 12
+EQ | 9 | 
+   TST_FS.D = DCLK<0> & MCLK<0> & !CNT<3> & !CNT<4> & !CNT<5> & 
+	CNT<6> & CNT<7> & CNT<8> & CNT<10>
+	# DCLK<0> & !MCLK<0> & !CNT<0> & CNT<3> & !CNT<4> & 
+	!CNT<5> & CNT<6> & CNT<7> & CNT<8> & CNT<10>
+	# DCLK<0> & !MCLK<0> & !CNT<1> & CNT<3> & !CNT<4> & 
+	!CNT<5> & CNT<6> & CNT<7> & CNT<8> & CNT<10>
+	# DCLK<0> & CNT<0> & CNT<1> & !CNT<3> & !CNT<4> & 
+	!CNT<5> & CNT<6> & CNT<7> & CNT<8> & CNT<10>;
+   TST_FS.CLK = CLK_16M;	// GCK
+GLOBALS | 1 | 2 | CLK_16M
+
+MACROCELL | 0 | 9 | DSP_D_0_IOBUFE
+ATTRIBUTES | 265986 | 0
+INPUTS | 11 | DSP_A<2>  | DSP_A<1>  | DSP_A<0>  | R_Wn  | IOSTRn  | CINTn  | M_Sn<0>  | COUT  | i_DR<0>  | EXP6_.EXP  | EXP7_.EXP
+INPUTMC | 4 | 3 | 17 | 1 | 17 | 0 | 8 | 0 | 10
+INPUTP | 7 | 16 | 17 | 21 | 50 | 49 | 3 | 90
+IMPORTS | 2 | 0 | 8 | 0 | 10
+EQ | 15 | 
+   DSP_D<0> = M_Sn<0> & !DSP_A<2> & DSP_A<1> & !DSP_A<0> & 
+	R_Wn & !IOSTRn
+	# !DSP_A<2> & DSP_A<1> & DSP_A<0> & i_DR<0> & 
+	R_Wn & !IOSTRn
+	# !DSP_A<2> & !DSP_A<1> & DSP_A<0> & R_Wn & !IOSTRn & 
+	COUT
+	# !DSP_A<2> & !DSP_A<1> & !DSP_A<0> & R_Wn & !IOSTRn & 
+	CINTn
+;Imported pterms FB1_9
+	# DSP_A<2> & DSP_A<1> & !DSP_A<0> & i_DR<1> & 
+	R_Wn & !IOSTRn
+;Imported pterms FB1_11
+	# M_Sn<1> & DSP_A<2> & !DSP_A<1> & DSP_A<0> & 
+	R_Wn & !IOSTRn;
+   DSP_D<0>.OE = R_Wn & !IOSTRn;
+
+MACROCELL | 0 | 4 | FSb_1_OBUFE$BUF0
+ATTRIBUTES | 265986 | 0
+INPUTS | 4 | M_Sn<0>  | TST_FS  | M_Sn<1>  | FSc<0>.PIN
+INPUTMC | 3 | 3 | 17 | 2 | 16 | 3 | 15
+INPUTP | 1 | 75
+EQ | 4 | 
+   FSa<1> = M_Sn<0> & TST_FS
+	# !M_Sn<1> & TST_FS
+	# !M_Sn<0> & M_Sn<1> & FSc<0>.PIN;
+   FSa<1>.OE = M_Sn<1>;
+
+MACROCELL | 1 | 13 | CNT<0>
+ATTRIBUTES | 4358912 | 0
+OUTPUTMC | 14 | 3 | 4 | 3 | 5 | 3 | 13 | 3 | 9 | 3 | 2 | 2 | 16 | 1 | 12 | 1 | 10 | 3 | 8 | 3 | 6 | 3 | 3 | 3 | 1 | 3 | 0 | 3 | 12
+INPUTS | 0
+EQ | 2 | 
+   CNT<0>.T = Vcc;
+   CNT<0>.CLK = CLK_16M;	// GCK
+GLOBALS | 1 | 2 | CLK_16M
+
+MACROCELL | 1 | 12 | CNT<1>
+ATTRIBUTES | 4358912 | 0
+OUTPUTMC | 13 | 3 | 4 | 3 | 5 | 3 | 13 | 3 | 9 | 3 | 2 | 2 | 16 | 1 | 10 | 3 | 8 | 3 | 6 | 3 | 3 | 3 | 1 | 3 | 0 | 3 | 12
+INPUTS | 1 | CNT<0>
+INPUTMC | 1 | 1 | 13
+EQ | 2 | 
+   CNT<1>.T = CNT<0>;
+   CNT<1>.CLK = CLK_16M;	// GCK
+GLOBALS | 1 | 2 | CLK_16M
+
+MACROCELL | 1 | 10 | CNT<3>
+ATTRIBUTES | 4358912 | 0
+OUTPUTMC | 10 | 3 | 4 | 3 | 13 | 3 | 9 | 2 | 16 | 3 | 8 | 3 | 6 | 3 | 3 | 3 | 1 | 3 | 0 | 3 | 12
+INPUTS | 3 | MCLK<0>  | CNT<0>  | CNT<1>
+INPUTMC | 3 | 3 | 2 | 1 | 13 | 1 | 12
+EQ | 2 | 
+   CNT<3>.T = MCLK<0> & CNT<0> & CNT<1>;
+   CNT<3>.CLK = CLK_16M;	// GCK
+GLOBALS | 1 | 2 | CLK_16M
+
+MACROCELL | 3 | 8 | CNT<4>
+ATTRIBUTES | 4358912 | 0
+OUTPUTMC | 9 | 3 | 4 | 3 | 13 | 3 | 9 | 2 | 16 | 3 | 6 | 3 | 3 | 3 | 1 | 3 | 0 | 3 | 12
+INPUTS | 4 | MCLK<0>  | CNT<0>  | CNT<1>  | CNT<3>
+INPUTMC | 4 | 3 | 2 | 1 | 13 | 1 | 12 | 1 | 10
+EQ | 2 | 
+   CNT<4>.T = MCLK<0> & CNT<0> & CNT<1> & CNT<3>;
+   CNT<4>.CLK = CLK_16M;	// GCK
+GLOBALS | 1 | 2 | CLK_16M
+
+MACROCELL | 3 | 6 | CNT<5>
+ATTRIBUTES | 4358912 | 0
+OUTPUTMC | 8 | 3 | 4 | 3 | 13 | 3 | 9 | 2 | 16 | 3 | 3 | 3 | 1 | 3 | 0 | 3 | 12
+INPUTS | 5 | MCLK<0>  | CNT<0>  | CNT<1>  | CNT<3>  | CNT<4>
+INPUTMC | 5 | 3 | 2 | 1 | 13 | 1 | 12 | 1 | 10 | 3 | 8
+EQ | 2 | 
+   CNT<5>.T = MCLK<0> & CNT<0> & CNT<1> & CNT<3> & CNT<4>;
+   CNT<5>.CLK = CLK_16M;	// GCK
+GLOBALS | 1 | 2 | CLK_16M
+
+MACROCELL | 3 | 3 | CNT<6>
+ATTRIBUTES | 4358912 | 0
+OUTPUTMC | 7 | 3 | 4 | 3 | 13 | 3 | 9 | 2 | 16 | 3 | 1 | 3 | 0 | 3 | 12
+INPUTS | 6 | MCLK<0>  | CNT<0>  | CNT<1>  | CNT<3>  | CNT<4>  | CNT<5>
+INPUTMC | 6 | 3 | 2 | 1 | 13 | 1 | 12 | 1 | 10 | 3 | 8 | 3 | 6
+EQ | 3 | 
+   CNT<6>.T = MCLK<0> & CNT<0> & CNT<1> & CNT<3> & CNT<4> & 
+	CNT<5>;
+   CNT<6>.CLK = CLK_16M;	// GCK
+GLOBALS | 1 | 2 | CLK_16M
+
+MACROCELL | 3 | 1 | CNT<7>
+ATTRIBUTES | 4358912 | 0
+OUTPUTMC | 6 | 3 | 4 | 3 | 13 | 3 | 9 | 2 | 16 | 3 | 0 | 3 | 12
+INPUTS | 7 | MCLK<0>  | CNT<0>  | CNT<1>  | CNT<3>  | CNT<4>  | CNT<5>  | CNT<6>
+INPUTMC | 7 | 3 | 2 | 1 | 13 | 1 | 12 | 1 | 10 | 3 | 8 | 3 | 6 | 3 | 3
+EQ | 3 | 
+   CNT<7>.T = MCLK<0> & CNT<0> & CNT<1> & CNT<3> & CNT<4> & 
+	CNT<5> & CNT<6>;
+   CNT<7>.CLK = CLK_16M;	// GCK
+GLOBALS | 1 | 2 | CLK_16M
+
+MACROCELL | 3 | 0 | CNT<8>
+ATTRIBUTES | 4358912 | 0
+OUTPUTMC | 5 | 3 | 4 | 3 | 13 | 3 | 9 | 2 | 16 | 3 | 12
+INPUTS | 8 | MCLK<0>  | CNT<0>  | CNT<1>  | CNT<3>  | CNT<4>  | CNT<5>  | CNT<6>  | CNT<7>
+INPUTMC | 8 | 3 | 2 | 1 | 13 | 1 | 12 | 1 | 10 | 3 | 8 | 3 | 6 | 3 | 3 | 3 | 1
+EQ | 3 | 
+   CNT<8>.T = MCLK<0> & CNT<0> & CNT<1> & CNT<3> & CNT<4> & 
+	CNT<5> & CNT<6> & CNT<7>;
+   CNT<8>.CLK = CLK_16M;	// GCK
+GLOBALS | 1 | 2 | CLK_16M
+
+MACROCELL | 3 | 12 | CNT<10>
+ATTRIBUTES | 4358912 | 0
+OUTPUTMC | 3 | 3 | 13 | 3 | 9 | 2 | 16
+INPUTS | 10 | DCLK<0>  | MCLK<0>  | CNT<0>  | CNT<1>  | CNT<3>  | CNT<4>  | CNT<5>  | CNT<6>  | CNT<7>  | CNT<8>
+INPUTMC | 10 | 3 | 4 | 3 | 2 | 1 | 13 | 1 | 12 | 1 | 10 | 3 | 8 | 3 | 6 | 3 | 3 | 3 | 1 | 3 | 0
+EQ | 3 | 
+   CNT<10>.T = DCLK<0> & MCLK<0> & CNT<0> & CNT<1> & CNT<3> & 
+	CNT<4> & CNT<5> & CNT<6> & CNT<7> & CNT<8>;
+   CNT<10>.CLK = CLK_16M;	// GCK
+GLOBALS | 1 | 2 | CLK_16M
+
+MACROCELL | 3 | 10 | BX_0_OBUF
+ATTRIBUTES | 264962 | 0
+INPUTS | 4 | M_Sn<0>  | DSP_BX<0>  | M_Sn<1>  | BR<1>
+INPUTMC | 2 | 3 | 17 | 3 | 15
+INPUTP | 2 | 38 | 7
+EQ | 3 | 
+   BX<0> = M_Sn<0> & DSP_BX<0>
+	# !M_Sn<1> & DSP_BX<0>
+	# !M_Sn<0> & M_Sn<1> & BR<1>;
+
+MACROCELL | 1 | 14 | BX_1_OBUF
+ATTRIBUTES | 264962 | 0
+INPUTS | 4 | M_Sn<0>  | DSP_BX<1>  | M_Sn<1>  | BR<0>
+INPUTMC | 2 | 3 | 17 | 3 | 15
+INPUTP | 2 | 26 | 67
+EQ | 3 | 
+   BX<1> = M_Sn<0> & DSP_BX<1>
+	# !M_Sn<1> & DSP_BX<1>
+	# !M_Sn<0> & M_Sn<1> & BR<0>;
+
+MACROCELL | 2 | 3 | DSP_BCLK_0_OBUF
+ATTRIBUTES | 264962 | 0
+INPUTS | 3 | M_Sn<0>  | MCLK<0>  | BCLK<0>.PIN
+INPUTMC | 2 | 3 | 17 | 3 | 2
+INPUTP | 1 | 70
+EQ | 2 | 
+   DSP_BCLK<0> = M_Sn<0> & MCLK<0>
+	# !M_Sn<0> & BCLK<0>.PIN;
+
+MACROCELL | 2 | 1 | DSP_BCLK_1_OBUF
+ATTRIBUTES | 264962 | 0
+INPUTS | 5 | M_Sn<1>  | BCLK<1>.PIN  | M_Sn<0>  | MCLK<0>  | BCLK<0>.PIN
+INPUTMC | 3 | 3 | 15 | 3 | 17 | 3 | 2
+INPUTP | 2 | 10 | 70
+EQ | 3 | 
+   DSP_BCLK<1> = !M_Sn<1> & BCLK<1>.PIN
+	# M_Sn<0> & M_Sn<1> & MCLK<0>
+	# !M_Sn<0> & M_Sn<1> & BCLK<0>.PIN;
+
+MACROCELL | 2 | 2 | DSP_BFS_0_OBUF
+ATTRIBUTES | 264962 | 0
+INPUTS | 3 | M_Sn<0>  | TST_FS  | FSc<0>.PIN
+INPUTMC | 2 | 3 | 17 | 2 | 16
+INPUTP | 1 | 75
+EQ | 2 | 
+   DSP_BFS<0> = M_Sn<0> & TST_FS
+	# !M_Sn<0> & FSc<0>.PIN;
+
+MACROCELL | 0 | 16 | DSP_BFS_1_OBUF
+ATTRIBUTES | 264962 | 0
+INPUTS | 5 | M_Sn<1>  | FSc<1>.PIN  | M_Sn<0>  | TST_FS  | FSc<0>.PIN
+INPUTMC | 3 | 3 | 15 | 3 | 17 | 2 | 16
+INPUTP | 2 | 13 | 75
+EQ | 3 | 
+   DSP_BFS<1> = !M_Sn<1> & FSc<1>.PIN
+	# M_Sn<0> & M_Sn<1> & TST_FS
+	# !M_Sn<0> & M_Sn<1> & FSc<0>.PIN;
+
+MACROCELL | 2 | 7 | DSP_INTn_0_OBUF
+ATTRIBUTES | 264962 | 0
+INPUTS | 3 | DCLK<0>  | M_Sn<0>  | DCLK<0>.PIN
+INPUTMC | 2 | 3 | 4 | 3 | 17
+INPUTP | 1 | 63
+EQ | 2 | 
+   DSP_INTn<0> = !DCLK<0> & M_Sn<0>
+	# !M_Sn<0> & !DCLK<0>.PIN;
+
+MACROCELL | 2 | 4 | DSP_INTn_1_OBUF
+ATTRIBUTES | 264962 | 0
+INPUTS | 5 | M_Sn<1>  | DCLK<1>.PIN  | DCLK<0>  | M_Sn<0>  | DCLK<0>.PIN
+INPUTMC | 3 | 3 | 15 | 3 | 4 | 3 | 17
+INPUTP | 2 | 87 | 63
+EQ | 3 | 
+   DSP_INTn<1> = !M_Sn<1> & !DCLK<1>.PIN
+	# !DCLK<0> & M_Sn<0> & M_Sn<1>
+	# !M_Sn<0> & M_Sn<1> & !DCLK<0>.PIN;
+
+MACROCELL | 1 | 11 | MCLK_1_OBUF
+ATTRIBUTES | 264962 | 0
+INPUTS | 4 | M_Sn<0>  | MCLK<0>  | M_Sn<1>  | BCLK<0>.PIN
+INPUTMC | 3 | 3 | 17 | 3 | 2 | 3 | 15
+INPUTP | 1 | 70
+EQ | 3 | 
+   MCLK<1> = M_Sn<0> & MCLK<0>
+	# !M_Sn<1> & MCLK<0>
+	# !M_Sn<0> & M_Sn<1> & BCLK<0>.PIN;
+
+MACROCELL | 0 | 13 | DSP_D_1_IOBUFE
+ATTRIBUTES | 265986 | 0
+INPUTS | 2 | R_Wn  | IOSTRn
+INPUTP | 2 | 50 | 49
+EQ | 2 | 
+   DSP_D<1> = Gnd;
+   DSP_D<1>.OE = R_Wn & !IOSTRn;
+
+MACROCELL | 0 | 5 | FSc_1_IOBUFE
+ATTRIBUTES | 265986 | 0
+INPUTS | 1 | M_Sn<1>
+INPUTMC | 1 | 3 | 15
+EQ | 2 | 
+   FSc<1> = Vcc;
+   FSc<1>.OE = M_Sn<1>;
+
+MACROCELL | 3 | 11 | FSc_1_IOBUFE$BUF0
+ATTRIBUTES | 265986 | 0
+INPUTS | 1 | M_Sn<0>
+INPUTMC | 1 | 3 | 17
+EQ | 2 | 
+   FSc<0> = Vcc;
+   FSc<0>.OE = M_Sn<0>;
+
+MACROCELL | 2 | 10 | BR_0_IBUF$BUF0
+ATTRIBUTES | 264962 | 0
+INPUTS | 1 | BR<0>
+INPUTP | 1 | 67
+EQ | 1 | 
+   DSP_BR<0> = BR<0>;
+
+MACROCELL | 2 | 5 | BR_1_IBUF$BUF0
+ATTRIBUTES | 264962 | 0
+INPUTS | 1 | BR<1>
+INPUTP | 1 | 7
+EQ | 1 | 
+   DSP_BR<1> = BR<1>;
+
+MACROCELL | 0 | 11 | DSP_INTn3_OBUF$BUF0
+ATTRIBUTES | 264962 | 0
+INPUTS | 1 | CINTn
+INPUTP | 1 | 3
+EQ | 1 | 
+   DSP_INTn3 = CINTn;
+
+MACROCELL | 0 | 8 | EXP6_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 0 | 9
+INPUTS | 6 | DSP_A<2>  | DSP_A<1>  | DSP_A<0>  | i_DR<1>  | R_Wn  | IOSTRn
+INPUTMC | 1 | 1 | 15
+INPUTP | 5 | 16 | 17 | 21 | 50 | 49
+EXPORTS | 1 | 0 | 9
+EQ | 2 | 
+       EXP6_.EXP  =  DSP_A<2> & DSP_A<1> & !DSP_A<0> & i_DR<1> & 
+	R_Wn & !IOSTRn
+
+MACROCELL | 0 | 10 | EXP7_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 0 | 9
+INPUTS | 6 | M_Sn<1>  | DSP_A<2>  | DSP_A<1>  | DSP_A<0>  | R_Wn  | IOSTRn
+INPUTMC | 1 | 3 | 15
+INPUTP | 5 | 16 | 17 | 21 | 50 | 49
+EXPORTS | 1 | 0 | 9
+EQ | 2 | 
+       EXP7_.EXP  =  M_Sn<1> & DSP_A<2> & !DSP_A<1> & DSP_A<0> & 
+	R_Wn & !IOSTRn
+
+PIN | CLK_16M | 4096 | 0 | N/A | 20 | 15 | 3 | 4 | 3 | 5 | 3 | 13 | 3 | 9 | 3 | 2 | 2 | 16 | 1 | 13 | 1 | 12 | 1 | 10 | 3 | 8 | 3 | 6 | 3 | 3 | 3 | 1 | 3 | 0 | 3 | 12
+PIN | RESETn | 65600 | 0 | N/A | 92 | 14 | 2 | 11 | 3 | 16 | 1 | 4 | 3 | 7 | 1 | 5 | 1 | 9 | 2 | 15 | 1 | 2 | 2 | 9 | 3 | 14 | 3 | 17 | 3 | 15 | 1 | 17 | 1 | 15
+PIN | IOSTRn | 64 | 0 | N/A | 49 | 16 | 2 | 11 | 3 | 16 | 1 | 4 | 3 | 7 | 1 | 5 | 1 | 9 | 2 | 15 | 1 | 2 | 2 | 9 | 3 | 14 | 3 | 17 | 3 | 15 | 0 | 9 | 0 | 13 | 0 | 8 | 0 | 10
+PIN | R_Wn | 64 | 0 | N/A | 50 | 16 | 2 | 11 | 3 | 16 | 1 | 4 | 3 | 7 | 1 | 5 | 1 | 9 | 2 | 15 | 1 | 2 | 2 | 9 | 3 | 14 | 3 | 17 | 3 | 15 | 0 | 9 | 0 | 13 | 0 | 8 | 0 | 10
+PIN | DSP_A<1> | 64 | 0 | N/A | 17 | 15 | 2 | 11 | 3 | 16 | 1 | 4 | 3 | 7 | 1 | 5 | 1 | 9 | 2 | 15 | 1 | 2 | 2 | 9 | 3 | 14 | 3 | 17 | 3 | 15 | 0 | 9 | 0 | 8 | 0 | 10
+PIN | DSP_A<0> | 64 | 0 | N/A | 21 | 15 | 2 | 11 | 3 | 16 | 1 | 4 | 3 | 7 | 1 | 5 | 1 | 9 | 2 | 15 | 1 | 2 | 2 | 9 | 3 | 14 | 3 | 17 | 3 | 15 | 0 | 9 | 0 | 8 | 0 | 10
+PIN | DSP_A<2> | 64 | 0 | N/A | 16 | 15 | 2 | 11 | 3 | 16 | 1 | 4 | 3 | 7 | 1 | 5 | 1 | 9 | 2 | 15 | 1 | 2 | 2 | 9 | 3 | 14 | 3 | 17 | 3 | 15 | 0 | 9 | 0 | 8 | 0 | 10
+PIN | DR<0> | 64 | 0 | N/A | 62 | 1 | 1 | 17
+PIN | DR<1> | 64 | 0 | N/A | 86 | 1 | 1 | 15
+PIN | CINTn | 64 | 0 | N/A | 3 | 2 | 0 | 9 | 0 | 11
+PIN | COUT | 64 | 0 | N/A | 90 | 1 | 0 | 9
+PIN | BR<1> | 64 | 0 | N/A | 7 | 2 | 3 | 10 | 2 | 5
+PIN | DSP_BX<0> | 64 | 0 | N/A | 38 | 1 | 3 | 10
+PIN | BR<0> | 64 | 0 | N/A | 67 | 2 | 1 | 14 | 2 | 10
+PIN | DSP_BX<1> | 64 | 0 | N/A | 26 | 1 | 1 | 14
+PIN | LEDG<0> | 536871040 | 0 | N/A | 55
+PIN | LEDG<1> | 536871040 | 0 | N/A | 83
+PIN | FSb<1> | 536871040 | 0 | N/A | 11
+PIN | CCLK | 536871040 | 0 | N/A | 88
+PIN | CCSn<0> | 536871040 | 0 | N/A | 65
+PIN | CCSn<1> | 536871040 | 0 | N/A | 89
+PIN | CIN | 536871040 | 0 | N/A | 1
+PIN | DX<0> | 536871040 | 0 | N/A | 59
+PIN | DX<1> | 536871040 | 0 | N/A | 84
+PIN | LEDY<0> | 536871040 | 0 | N/A | 54
+PIN | LEDY<1> | 536871040 | 0 | N/A | 82
+PIN | FSb<0> | 536871040 | 0 | N/A | 72
+PIN | FSa<0> | 536871040 | 0 | N/A | 74
+PIN | TST_M_Sn | 536871040 | 0 | N/A | 15
+PIN | MCLK<0> | 536871040 | 0 | N/A | 66
+PIN | TST_FS | 536871040 | 0 | N/A | 52
+PIN | FSa<1> | 536871040 | 0 | N/A | 12
+PIN | BX<0> | 536871040 | 0 | N/A | 68
+PIN | BX<1> | 536871040 | 0 | N/A | 9
+PIN | DSP_BCLK<0> | 536871040 | 0 | N/A | 44
+PIN | DSP_BCLK<1> | 536871040 | 0 | N/A | 29
+PIN | DSP_BFS<0> | 536871040 | 0 | N/A | 43
+PIN | DSP_BFS<1> | 536871040 | 0 | N/A | 27
+PIN | DSP_INTn<0> | 536871040 | 0 | N/A | 33
+PIN | DSP_INTn<1> | 536871040 | 0 | N/A | 31
+PIN | MCLK<1> | 536871040 | 0 | N/A | 5
+PIN | DSP_BR<0> | 536871040 | 0 | N/A | 46
+PIN | DSP_BR<1> | 536871040 | 0 | N/A | 47
+PIN | DSP_INTn3 | 536871040 | 0 | N/A | 30
+PIN | DCLK<0> | 536870976 | 0 | N/A | 63 | 4 | 1 | 1 | 1 | 17 | 2 | 7 | 2 | 4
+PIN | BCLK<0> | 536870976 | 0 | N/A | 70 | 4 | 1 | 16 | 2 | 3 | 2 | 1 | 1 | 11
+PIN | DCLK<1> | 536870976 | 0 | N/A | 87 | 2 | 1 | 15 | 2 | 4
+PIN | BCLK<1> | 536870976 | 0 | N/A | 10 | 1 | 2 | 1
+PIN | DSP_D<0> | 536870976 | 0 | N/A | 25 | 9 | 2 | 11 | 3 | 16 | 3 | 7 | 1 | 5 | 1 | 9 | 2 | 15 | 1 | 2 | 3 | 17 | 3 | 15
+PIN | DSP_D<1> | 536870976 | 0 | N/A | 24 | 5 | 1 | 4 | 3 | 7 | 1 | 5 | 2 | 9 | 3 | 14
+PIN | FSc<1> | 536870976 | 0 | N/A | 13 | 1 | 0 | 16
+PIN | FSc<0> | 536870976 | 0 | N/A | 75 | 4 | 0 | 1 | 0 | 4 | 2 | 2 | 0 | 16

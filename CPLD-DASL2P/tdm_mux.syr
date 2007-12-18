@@ -1,0 +1,265 @@
+Release 6.1.03i - xst G.26
+Copyright (c) 1995-2003 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to __projnav
+CPU : 0.00 / 2.42 s | Elapsed : 0.00 / 2.00 s
+ 
+--> Parameter xsthdpdir set to ./xst
+CPU : 0.00 / 2.42 s | Elapsed : 0.00 / 2.00 s
+ 
+--> Reading design: tdm_mux.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) HDL Analysis
+  4) HDL Synthesis
+     4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+  6) Low Level Synthesis
+  7) Final Report
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : tdm_mux.prj
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+Verilog Include Directory          : 
+
+---- Target Parameters
+Output File Name                   : tdm_mux
+Output Format                      : NGC
+Target Device                      : xc9500xl
+
+---- Source Options
+Top Module Name                    : tdm_mux
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+
+---- Target Options
+Add IO Buffers                     : YES
+Equivalent register Removal        : YES
+MACRO Preserve                     : YES
+XOR Preserve                       : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 2
+Keep Hierarchy                     : YES
+RTL Output                         : Yes
+Hierarchy Separator                : _
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+
+---- Other Options
+lso                                : tdm_mux.lso
+verilog2001                        : YES
+Clock Enable                       : YES
+wysiwyg                            : NO
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file D:/WORK/CPLD-DASL2P/FS_Gen.vhf in Library work.
+Architecture behavioral of Entity and8_mxilinx_fs_gen is up to date.
+Architecture behavioral of Entity fd_mxilinx_fs_gen is up to date.
+Architecture behavioral of Entity fdre_mxilinx_fs_gen is up to date.
+Architecture behavioral of Entity ftrse_mxilinx_fs_gen is up to date.
+Architecture behavioral of Entity cb4re_mxilinx_fs_gen is up to date.
+Architecture behavioral of Entity fs_gen is up to date.
+Compiling vhdl file D:/WORK/CPLD-DASL2P/TDM_Mux.vhf in Library work.
+Architecture behavioral of Entity m2_1_mxilinx_tdm_mux is up to date.
+Architecture behavioral of Entity obufe_mxilinx_tdm_mux is up to date.
+Architecture behavioral of Entity tdm_mux is up to date.
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <tdm_mux> (Architecture <behavioral>).
+    Set user-defined property "HU_SET =  XLXI_3_5" for instance <XLXI_3> in unit <tdm_mux>.
+    Set user-defined property "HU_SET =  XLXI_25_4" for instance <XLXI_25> in unit <tdm_mux>.
+    Set user-defined property "HU_SET =  XLXI_34_6" for instance <XLXI_34> in unit <tdm_mux>.
+    Set user-defined property "HU_SET =  XLXI_35_7" for instance <XLXI_35> in unit <tdm_mux>.
+    Set user-defined property "HU_SET =  XLXI_48_0" for instance <XLXI_48> in unit <tdm_mux>.
+    Set user-defined property "HU_SET =  XLXI_50_1" for instance <XLXI_50> in unit <tdm_mux>.
+    Set user-defined property "HU_SET =  XLXI_51_2" for instance <XLXI_51> in unit <tdm_mux>.
+    Set user-defined property "HU_SET =  XLXI_57_3" for instance <XLXI_57> in unit <tdm_mux>.
+Entity <tdm_mux> analyzed. Unit <tdm_mux> generated.
+
+Analyzing Entity <fs_gen> (Architecture <behavioral>).
+WARNING:Xst:753 - D:/WORK/CPLD-DASL2P/FS_Gen.vhf line 485: Unconnected output port 'TC' of component 'CB4RE_MXILINX_fs_gen'.
+    Set user-defined property "HU_SET =  XLXI_43_6" for instance <XLXI_43> in unit <fs_gen>.
+WARNING:Xst:753 - D:/WORK/CPLD-DASL2P/FS_Gen.vhf line 489: Unconnected output port 'TC' of component 'CB4RE_MXILINX_fs_gen'.
+    Set user-defined property "HU_SET =  XLXI_44_7" for instance <XLXI_44> in unit <fs_gen>.
+WARNING:Xst:753 - D:/WORK/CPLD-DASL2P/FS_Gen.vhf line 493: Unconnected output port 'CEO' of component 'CB4RE_MXILINX_fs_gen'.
+WARNING:Xst:753 - D:/WORK/CPLD-DASL2P/FS_Gen.vhf line 493: Unconnected output port 'TC' of component 'CB4RE_MXILINX_fs_gen'.
+    Set user-defined property "HU_SET =  XLXI_45_8" for instance <XLXI_45> in unit <fs_gen>.
+    Set user-defined property "HU_SET =  XLXI_46_9" for instance <XLXI_46> in unit <fs_gen>.
+    Set user-defined property "HU_SET =  XLXI_80_10" for instance <XLXI_80> in unit <fs_gen>.
+Entity <fs_gen> analyzed. Unit <fs_gen> generated.
+
+Analyzing Entity <CB4RE_MXILINX_fs_gen> (Architecture <behavioral>).
+    Set user-defined property "HU_SET =  U0_2" for instance <U0> in unit <CB4RE_MXILINX_fs_gen>.
+    Set user-defined property "HU_SET =  U1_3" for instance <U1> in unit <CB4RE_MXILINX_fs_gen>.
+    Set user-defined property "HU_SET =  U2_4" for instance <U2> in unit <CB4RE_MXILINX_fs_gen>.
+    Set user-defined property "HU_SET =  U3_5" for instance <U3> in unit <CB4RE_MXILINX_fs_gen>.
+Entity <CB4RE_MXILINX_fs_gen> analyzed. Unit <CB4RE_MXILINX_fs_gen> generated.
+
+Analyzing Entity <FTRSE_MXILINX_fs_gen> (Architecture <behavioral>).
+    Set user-defined property "HU_SET =  I_36_35_1" for instance <I_36_35> in unit <FTRSE_MXILINX_fs_gen>.
+Entity <FTRSE_MXILINX_fs_gen> analyzed. Unit <FTRSE_MXILINX_fs_gen> generated.
+
+Analyzing Entity <FDRE_MXILINX_fs_gen> (Architecture <behavioral>).
+    Set user-defined property "HU_SET =  I_36_42_0" for instance <I_36_42> in unit <FDRE_MXILINX_fs_gen>.
+    Set user-defined property "RLOC =  R0C0" for instance <I_36_42> in unit <FDRE_MXILINX_fs_gen>.
+Entity <FDRE_MXILINX_fs_gen> analyzed. Unit <FDRE_MXILINX_fs_gen> generated.
+
+Analyzing Entity <FD_MXILINX_fs_gen> (Architecture <behavioral>).
+Entity <FD_MXILINX_fs_gen> analyzed. Unit <FD_MXILINX_fs_gen> generated.
+
+Analyzing Entity <AND8_MXILINX_fs_gen> (Architecture <behavioral>).
+Entity <AND8_MXILINX_fs_gen> analyzed. Unit <AND8_MXILINX_fs_gen> generated.
+
+Analyzing Entity <OBUFE_MXILINX_tdm_mux> (Architecture <behavioral>).
+Entity <OBUFE_MXILINX_tdm_mux> analyzed. Unit <OBUFE_MXILINX_tdm_mux> generated.
+
+Analyzing Entity <M2_1_MXILINX_tdm_mux> (Architecture <behavioral>).
+Entity <M2_1_MXILINX_tdm_mux> analyzed. Unit <M2_1_MXILINX_tdm_mux> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <FD_MXILINX_fs_gen>.
+    Related source file is D:/WORK/CPLD-DASL2P/FS_Gen.vhf.
+Unit <FD_MXILINX_fs_gen> synthesized.
+
+
+Synthesizing Unit <FTRSE_MXILINX_fs_gen>.
+    Related source file is D:/WORK/CPLD-DASL2P/FS_Gen.vhf.
+Unit <FTRSE_MXILINX_fs_gen> synthesized.
+
+
+Synthesizing Unit <AND8_MXILINX_fs_gen>.
+    Related source file is D:/WORK/CPLD-DASL2P/FS_Gen.vhf.
+Unit <AND8_MXILINX_fs_gen> synthesized.
+
+
+Synthesizing Unit <FDRE_MXILINX_fs_gen>.
+    Related source file is D:/WORK/CPLD-DASL2P/FS_Gen.vhf.
+Unit <FDRE_MXILINX_fs_gen> synthesized.
+
+
+Synthesizing Unit <CB4RE_MXILINX_fs_gen>.
+    Related source file is D:/WORK/CPLD-DASL2P/FS_Gen.vhf.
+Unit <CB4RE_MXILINX_fs_gen> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_tdm_mux>.
+    Related source file is D:/WORK/CPLD-DASL2P/TDM_Mux.vhf.
+Unit <M2_1_MXILINX_tdm_mux> synthesized.
+
+
+Synthesizing Unit <OBUFE_MXILINX_tdm_mux>.
+    Related source file is D:/WORK/CPLD-DASL2P/TDM_Mux.vhf.
+Unit <OBUFE_MXILINX_tdm_mux> synthesized.
+
+
+Synthesizing Unit <fs_gen>.
+    Related source file is D:/WORK/CPLD-DASL2P/FS_Gen.vhf.
+Unit <fs_gen> synthesized.
+
+
+Synthesizing Unit <tdm_mux>.
+    Related source file is D:/WORK/CPLD-DASL2P/TDM_Mux.vhf.
+WARNING:Xst:647 - Input <MS_Loop> is never used.
+Unit <tdm_mux> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <tdm_mux> ...
+
+Optimizing unit <OBUFE_MXILINX_tdm_mux> ...
+
+Optimizing unit <M2_1_MXILINX_tdm_mux> ...
+
+Optimizing unit <AND8_MXILINX_fs_gen> ...
+
+Optimizing unit <FD_MXILINX_fs_gen> ...
+
+Optimizing unit <FDRE_MXILINX_fs_gen> ...
+
+Optimizing unit <FTRSE_MXILINX_fs_gen> ...
+
+Optimizing unit <CB4RE_MXILINX_fs_gen> ...
+
+Optimizing unit <fs_gen> ...
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : tdm_mux.ngr
+Top Level Output File Name         : tdm_mux
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : YES
+Target Technology                  : xc9500xl
+Macro Preserve                     : YES
+XOR Preserve                       : YES
+Clock Enable                       : YES
+wysiwyg                            : NO
+
+Design Statistics
+# IOs                              : 22
+
+Cell Usage :
+# BELS                             : 108
+#      AND2                        : 11
+#      AND3                        : 4
+#      AND4                        : 5
+#      GND                         : 18
+#      INV                         : 11
+#      OR2                         : 41
+#      VCC                         : 5
+#      XOR2                        : 13
+# FlipFlops/Latches                : 13
+#      FDCP                        : 13
+# IO Buffers                       : 21
+#      IBUF                        : 3
+#      IOBUFE                      : 6
+#      OBUF                        : 8
+#      OBUFT                       : 4
+# Others                           : 30
+#      AND2B1                      : 4
+#      AND3B1                      : 13
+#      AND3B2                      : 13
+=========================================================================
+CPU : 1.92 / 4.51 s | Elapsed : 2.00 / 4.00 s
+ 
+--> 
+
+Total memory usage is 50020 kilobytes
+
+

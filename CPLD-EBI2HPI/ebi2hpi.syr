@@ -1,0 +1,173 @@
+Release 6.1.03i - xst G.26
+Copyright (c) 1995-2003 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to __projnav
+CPU : 0.00 / 0.76 s | Elapsed : 0.00 / 1.00 s
+ 
+--> Parameter xsthdpdir set to ./xst
+CPU : 0.00 / 0.76 s | Elapsed : 0.00 / 1.00 s
+ 
+--> Reading design: ebi2hpi.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) HDL Analysis
+  4) HDL Synthesis
+     4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+  6) Low Level Synthesis
+  7) Final Report
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : ebi2hpi.prj
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+Verilog Include Directory          : 
+
+---- Target Parameters
+Output File Name                   : ebi2hpi
+Output Format                      : NGC
+Target Device                      : xc9500xl
+
+---- Source Options
+Top Module Name                    : ebi2hpi
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+
+---- Target Options
+Add IO Buffers                     : YES
+Equivalent register Removal        : YES
+MACRO Preserve                     : YES
+XOR Preserve                       : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : YES
+RTL Output                         : Yes
+Hierarchy Separator                : _
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+
+---- Other Options
+lso                                : ebi2hpi.lso
+verilog2001                        : YES
+Clock Enable                       : YES
+wysiwyg                            : NO
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file D:/WORK/CPLD-EBI2HPI/ebi2hpi.vhd in Library work.
+Entity <ebi2hpi> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <ebi2hpi> (Architecture <behavioral>).
+Entity <ebi2hpi> analyzed. Unit <ebi2hpi> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <ebi2hpi>.
+    Related source file is D:/WORK/CPLD-EBI2HPI/ebi2hpi.vhd.
+    Found 8-bit tristate buffer for signal <D>.
+    Found 1-bit tristate buffer for signal <WAITn>.
+    Found 4-bit register for signal <HRSTn>.
+    Found 8-bit tristate buffer for signal <HD>.
+    Found 1-bit register for signal <D2HD_en>.
+    Summary:
+	inferred   5 D-type flip-flop(s).
+	inferred  25 Tristate(s).
+Unit <ebi2hpi> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                        : 5
+  1-bit register                   : 5
+# Tristates                        : 4
+  1-bit tristate buffer            : 1
+  8-bit tristate buffer            : 3
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <ebi2hpi> ...
+  implementation constraint: INIT=r	 : HRSTn_3
+  implementation constraint: INIT=r	 : HRSTn_2
+  implementation constraint: INIT=r	 : HRSTn_1
+  implementation constraint: INIT=r	 : HRSTn_0
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : ebi2hpi.ngr
+Top Level Output File Name         : ebi2hpi
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : YES
+Target Technology                  : xc9500xl
+Macro Preserve                     : YES
+XOR Preserve                       : YES
+Clock Enable                       : YES
+wysiwyg                            : NO
+
+Design Statistics
+# IOs                              : 48
+
+Macro Statistics :
+# Registers                        : 5
+#      1-bit register              : 5
+# Tristates                        : 4
+#      1-bit tristate buffer       : 1
+#      8-bit tristate buffer       : 3
+
+Cell Usage :
+# BELS                             : 64
+#      AND2                        : 12
+#      AND3                        : 7
+#      AND4                        : 2
+#      GND                         : 1
+#      INV                         : 41
+#      VCC                         : 1
+# FlipFlops/Latches                : 5
+#      FDC                         : 1
+#      FDCE                        : 4
+# Tri-States                       : 16
+#      BUFE                        : 16
+# IO Buffers                       : 48
+#      IBUF                        : 14
+#      IOBUFE                      : 16
+#      OBUF                        : 17
+#      OBUFE                       : 1
+=========================================================================
+CPU : 0.83 / 1.70 s | Elapsed : 1.00 / 2.00 s
+ 
+--> 
+
+Total memory usage is 48996 kilobytes
+
+

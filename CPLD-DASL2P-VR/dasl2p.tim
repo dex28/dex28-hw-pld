@@ -1,0 +1,408 @@
+                           Performance Summary Report
+                           --------------------------
+
+Design:     dasl2p
+Device:     XC9572XL-10-VQ64
+Speed File: Version 3.0
+Program:    Timing Report Generator:  version G.26
+Date:       Tue Feb 21 00:48:18 2006
+
+Performance Summary:
+
+Pad to Pad (tPD)                          :         11.0ns (1 macrocell levels)
+Pad 'IOSTRn' to Pad 'DSP_D<0>'                                    
+
+Clock net 'DCLK<1>' path delays:
+
+Clock Pad to Output Pad (tCO)             :         18.9ns (2 macrocell levels)
+Clock Pad 'DCLK<1>' to Output Pad 'DSP_D<0>'                      (Pterm Clock)
+
+Setup to Clock at the Pad (tSU)           :          2.1ns (0 macrocell levels)
+Data signal 'DR<1>' to DFF D input Pin at 'i_DR<1>.D'
+Clock pad 'DCLK<1>'                                               (Pterm Clock)
+
+                          Minimum Clock Period: 14.0ns
+                     Maximum Internal Clock Speed: 71.4Mhz
+                         (Limited by Clock Pulse Width)
+
+Clock net 'DCLK<0>' path delays:
+
+Clock Pad to Output Pad (tCO)             :         17.9ns (2 macrocell levels)
+Clock Pad 'DCLK<0>' to Output Pad 'DSP_D<0>'                      (Pterm Clock)
+
+Setup to Clock at the Pad (tSU)           :          2.1ns (0 macrocell levels)
+Data signal 'DR<0>' to DFF D input Pin at 'i_DR<0>.D'
+Clock pad 'DCLK<0>'                                               (Pterm Clock)
+
+                          Minimum Clock Period: 14.0ns
+                     Maximum Internal Clock Speed: 71.4Mhz
+                         (Limited by Clock Pulse Width)
+
+Clock net 'R_Wn' path delays:
+
+Clock Pad to Output Pad (tCO)             :         18.9ns (2 macrocell levels)
+Clock Pad 'R_Wn' to Output Pad 'DSP_D<0>'                         (Pterm Clock)
+
+Clock to Setup (tCYC)                     :         10.0ns (1 macrocell levels)
+Clock to Q, net 'LEDG<0>.Q' to TFF Setup(D) at 'LEDG<0>.D'        (Pterm Clock)
+Target FF drives output net 'LEDG<0>'
+
+Setup to Clock at the Pad (tSU)           :          2.1ns (0 macrocell levels)
+Data signal 'DSP_D<0>' to TFF D input Pin at 'LEDG<0>.D'
+Clock pad 'R_Wn'                                                  (Pterm Clock)
+
+                          Minimum Clock Period: 14.0ns
+                     Maximum Internal Clock Speed: 71.4Mhz
+                         (Limited by Clock Pulse Width)
+
+Clock net 'IOSTRn' path delays:
+
+Clock Pad to Output Pad (tCO)             :         18.9ns (2 macrocell levels)
+Clock Pad 'IOSTRn' to Output Pad 'DSP_D<0>'                       (Pterm Clock)
+
+Clock to Setup (tCYC)                     :         10.0ns (1 macrocell levels)
+Clock to Q, net 'LEDG<0>.Q' to TFF Setup(D) at 'LEDG<0>.D'        (Pterm Clock)
+Target FF drives output net 'LEDG<0>'
+
+Setup to Clock at the Pad (tSU)           :          2.1ns (0 macrocell levels)
+Data signal 'DSP_D<0>' to TFF D input Pin at 'LEDG<0>.D'
+Clock pad 'IOSTRn'                                                (Pterm Clock)
+
+                          Minimum Clock Period: 14.0ns
+                     Maximum Internal Clock Speed: 71.4Mhz
+                         (Limited by Clock Pulse Width)
+
+Clock net 'CLK_16M' path delays:
+
+Clock Pad to Output Pad (tCO)             :         13.5ns (2 macrocell levels)
+Clock Pad 'CLK_16M' to Output Pad 'DCLK<1>'                               (GCK)
+
+Clock to Setup (tCYC)                     :         10.0ns (1 macrocell levels)
+Clock to Q, net 'MCLK<0>.Q' to TFF Setup(D) at 'DCLK<0>.D'                (GCK)
+Target FF drives output net 'DCLK<0>'
+
+                          Minimum Clock Period: 10.0ns
+                     Maximum Internal Clock Speed: 100.0Mhz
+                            (Limited by Cycle Time)
+
+--------------------------------------------------------------------------------
+                            Pad to Pad (tPD) (nsec)
+
+\ From          B     B     B     B     C     C     D     D     D     D     D
+ \              C     C     R     R     I     O     C     C     S     S     S
+  \             L     L     <     <     N     U     L     L     P     P     P
+   \            K     K     0     1     T     T     K     K     _     _     _
+    \           <     <     >     >     n           <     <     A     A     A
+     \          0     1                             0     1     <     <     <
+      \         >     >                             >     >     0     1     2
+       \                                                        >     >     >
+        \                                                                    
+         \                                                                   
+          \                                                                  
+  To       \------------------------------------------------------------------
+
+BCLK<1>      10.0                                                            
+BX<0>                          10.0                                          
+BX<1>                    10.0                                                
+DCLK<1>                                          10.0                        
+DSP_BCLK<0>  10.0                                                            
+DSP_BCLK<1>  10.0  10.0                                                      
+DSP_BFS<0>                                                                   
+DSP_BFS<1>                                                                   
+DSP_BR<0>                10.0                                                
+DSP_BR<1>                      10.0                                          
+DSP_D<0>                             10.0  10.0              11.0  11.0  11.0
+DSP_D<1>                                                                     
+DSP_INTn3                            10.0                                    
+DSP_INTn<0>                                      10.0                        
+DSP_INTn<1>                                      10.0  10.0                  
+FSa<1>                                                                       
+FSb<1>                                                                       
+LEDG<0>                                                                      
+LEDG<1>                                                                      
+MCLK<1>      10.0                                                            
+
+--------------------------------------------------------------------------------
+                            Pad to Pad (tPD) (nsec)
+
+\ From          D     D     F     F     I     R     R
+ \              S     S     S     S     O     E     _
+  \             P     P     c     c     S     S     W
+   \            _     _     <     <     T     E     n
+    \           B     B     0     1     R     T      
+     \          X     X     >     >     n     n      
+      \         <     <                              
+       \        0     1                              
+        \       >     >                              
+         \                                           
+          \                                          
+  To       \------------------------------------------
+
+BCLK<1>                                              
+BX<0>        10.0                                    
+BX<1>              10.0                              
+DCLK<1>                                              
+DSP_BCLK<0>                                          
+DSP_BCLK<1>                                          
+DSP_BFS<0>               10.0                        
+DSP_BFS<1>               10.0  10.0                  
+DSP_BR<0>                                            
+DSP_BR<1>                                            
+DSP_D<0>                             11.0        11.0
+DSP_D<1>                             11.0        11.0
+DSP_INTn3                                            
+DSP_INTn<0>                                          
+DSP_INTn<1>                                          
+FSa<1>                   10.0                        
+FSb<1>                   10.0                        
+LEDG<0>                                    11.0      
+LEDG<1>                                    11.0      
+MCLK<1>                                              
+
+--------------------------------------------------------------------------------
+                      Clock Pad to Output Pad (tCO) (nsec)
+
+\ From          C     D     D     I     R
+ \              L     C     C     O     _
+  \             K     L     L     S     W
+   \            _     K     K     T     n
+    \           1     <     <     R      
+     \          6     0     1     n      
+      \         M     >     >            
+       \                                 
+        \                                
+         \                               
+          \                              
+  To       \------------------------------
+
+BCLK<0>       5.8              18.9  18.9
+BCLK<1>      13.5              18.9  18.9
+BX<0>                          17.9  17.9
+BX<1>                          17.9  17.9
+CCLK                           10.2  10.2
+CCSn<0>                        10.2  10.2
+CCSn<1>                        10.2  10.2
+CIN                            10.2  10.2
+DCLK<0>       5.8              18.9  18.9
+DCLK<1>      13.5              18.9  18.9
+DSP_BCLK<0>  13.5              17.9  17.9
+DSP_BCLK<1>  13.5              17.9  17.9
+DSP_BFS<0>   13.5              17.9  17.9
+DSP_BFS<1>   13.5              17.9  17.9
+DSP_D<0>           17.9  18.9  18.9  18.9
+DSP_INTn<0>  13.5              17.9  17.9
+DSP_INTn<1>  13.5              17.9  17.9
+DX<0>                          10.2  10.2
+DX<1>                          10.2  10.2
+FSa<0>        5.8              18.9  18.9
+FSa<1>       13.5              18.9  18.9
+FSb<0>        5.8              18.9  18.9
+FSb<1>       13.5              18.9  18.9
+FSc<0>                         18.9  18.9
+FSc<1>                         18.9  18.9
+LEDG<0>                        10.2  10.2
+LEDG<1>                        10.2  10.2
+LEDY<0>                        10.2  10.2
+LEDY<1>                        10.2  10.2
+MCLK<0>       5.8                        
+MCLK<1>      13.5              17.9  17.9
+TST_FS        5.8                        
+TST_M_Sn                       17.9  17.9
+
+--------------------------------------------------------------------------------
+                   Setup to Clock at Pad (tSU or tSUF) (nsec)
+
+\ From       D     D     I     R
+ \           C     C     O     _
+  \          L     L     S     W
+   \         K     K     T     n
+    \        <     <     R      
+     \       0     1     n      
+      \      >     >            
+       \                        
+  To    \------------------------
+
+DR<0>      2.1                  
+DR<1>            2.1            
+DSP_A<0>               2.1   2.1
+DSP_A<1>               2.1   2.1
+DSP_A<2>               2.1   2.1
+DSP_D<0>               2.1   2.1
+DSP_D<1>               2.1   2.1
+
+--------------------------------------------------------------------------------
+                          Clock to Setup (tCYC) (nsec)
+                                 (Clock: R_Wn)
+
+\ From        C     C     C     C     D     D     L     L     L     L     M
+ \            C     C     C     I     X     X     E     E     E     E     _
+  \           L     S     S     N     <     <     D     D     D     D     S
+   \          K     n     n     .     0     1     G     G     Y     Y     n
+    \         .     <     <     Q     >     >     <     <     <     <     <
+     \        Q     0     1           .     .     0     1     0     1     0
+      \             >     >           Q     Q     >     >     >     >     >
+       \            .     .                       .     .     .     .     .
+        \           Q     Q                       Q     Q     Q     Q     Q
+  To     \------------------------------------------------------------------
+
+CCLK.D     10.0                                                            
+CCSn<0>.D        10.0                                                      
+CCSn<1>.D              10.0                                                
+CIN.D                        10.0                                          
+DX<0>.D                            10.0                                    
+DX<1>.D                                  10.0                              
+LEDG<0>.D                                      10.0                        
+LEDG<1>.D                                            10.0                  
+LEDY<0>.D                                                  10.0            
+LEDY<1>.D                                                        10.0      
+M_Sn<0>.D                                                              10.0
+M_Sn<1>.D                                                                  
+
+--------------------------------------------------------------------------------
+                          Clock to Setup (tCYC) (nsec)
+                                 (Clock: R_Wn)
+
+\ From        M
+ \            _
+  \           S
+   \          n
+    \         <
+     \        1
+      \       >
+       \      .
+        \     Q
+  To     \------
+
+CCLK.D         
+CCSn<0>.D      
+CCSn<1>.D      
+CIN.D          
+DX<0>.D        
+DX<1>.D        
+LEDG<0>.D      
+LEDG<1>.D      
+LEDY<0>.D      
+LEDY<1>.D      
+M_Sn<0>.D      
+M_Sn<1>.D  10.0
+
+--------------------------------------------------------------------------------
+                          Clock to Setup (tCYC) (nsec)
+                                (Clock: IOSTRn)
+
+\ From        C     C     C     C     D     D     L     L     L     L     M
+ \            C     C     C     I     X     X     E     E     E     E     _
+  \           L     S     S     N     <     <     D     D     D     D     S
+   \          K     n     n     .     0     1     G     G     Y     Y     n
+    \         .     <     <     Q     >     >     <     <     <     <     <
+     \        Q     0     1           .     .     0     1     0     1     0
+      \             >     >           Q     Q     >     >     >     >     >
+       \            .     .                       .     .     .     .     .
+        \           Q     Q                       Q     Q     Q     Q     Q
+  To     \------------------------------------------------------------------
+
+CCLK.D     10.0                                                            
+CCSn<0>.D        10.0                                                      
+CCSn<1>.D              10.0                                                
+CIN.D                        10.0                                          
+DX<0>.D                            10.0                                    
+DX<1>.D                                  10.0                              
+LEDG<0>.D                                      10.0                        
+LEDG<1>.D                                            10.0                  
+LEDY<0>.D                                                  10.0            
+LEDY<1>.D                                                        10.0      
+M_Sn<0>.D                                                              10.0
+M_Sn<1>.D                                                                  
+
+--------------------------------------------------------------------------------
+                          Clock to Setup (tCYC) (nsec)
+                                (Clock: IOSTRn)
+
+\ From        M
+ \            _
+  \           S
+   \          n
+    \         <
+     \        1
+      \       >
+       \      .
+        \     Q
+  To     \------
+
+CCLK.D         
+CCSn<0>.D      
+CCSn<1>.D      
+CIN.D          
+DX<0>.D        
+DX<1>.D        
+LEDG<0>.D      
+LEDG<1>.D      
+LEDY<0>.D      
+LEDY<1>.D      
+M_Sn<0>.D      
+M_Sn<1>.D  10.0
+
+--------------------------------------------------------------------------------
+                          Clock to Setup (tCYC) (nsec)
+                                (Clock: CLK_16M)
+
+\ From        C     C     C     C     C     C     C     C     C     D     M
+ \            N     N     N     N     N     N     N     N     N     C     C
+  \           T     T     T     T     T     T     T     T     T     L     L
+   \          <     <     <     <     <     <     <     <     <     K     K
+    \         0     1     1     3     4     5     6     7     8     <     <
+     \        >     0     >     >     >     >     >     >     >     0     0
+      \       .     >     .     .     .     .     .     .     .     >     >
+       \      Q     .     Q     Q     Q     Q     Q     Q     Q     .     .
+        \           Q                                               Q     Q
+  To     \------------------------------------------------------------------
+
+BCLK<0>.D  10.0        10.0                                            10.0
+CNT<10>.D  10.0        10.0  10.0  10.0  10.0  10.0  10.0  10.0  10.0  10.0
+CNT<1>.D   10.0                                                            
+CNT<3>.D   10.0        10.0                                            10.0
+CNT<4>.D   10.0        10.0  10.0                                      10.0
+CNT<5>.D   10.0        10.0  10.0  10.0                                10.0
+CNT<6>.D   10.0        10.0  10.0  10.0  10.0                          10.0
+CNT<7>.D   10.0        10.0  10.0  10.0  10.0  10.0                    10.0
+CNT<8>.D   10.0        10.0  10.0  10.0  10.0  10.0  10.0              10.0
+DCLK<0>.D  10.0        10.0  10.0  10.0  10.0  10.0  10.0  10.0        10.0
+FSa<0>.D   10.0  10.0  10.0  10.0  10.0  10.0  10.0  10.0  10.0  10.0  10.0
+FSb<0>.D   10.0  10.0  10.0  10.0  10.0  10.0  10.0  10.0  10.0  10.0  10.0
+MCLK<0>.D  10.0        10.0                                                
+TST_FS.D   10.0  10.0  10.0  10.0  10.0  10.0  10.0  10.0  10.0  10.0  10.0
+
+Path Type Definition: 
+
+Pad to Pad (tPD) -                        Reports pad to pad paths that start 
+                                          at input pads and end at output pads. 
+                                          Paths are not traced through 
+                                          registers. 
+
+Clock Pad to Output Pad (tCO) -           Reports paths that start at input 
+                                          pads trace through clock inputs of 
+                                          registers and end at output pads. 
+                                          Paths are not traced through PRE/CLR 
+                                          inputs of registers. 
+
+Setup to Clock at Pad (tSU or tSUF) -     Reports external setup time of data 
+                                          to clock at pad. Data path starts at 
+                                          an input pad and ends at register 
+                                          (Fast Input Register for tSUF) D/T 
+                                          input. Clock path starts at input pad 
+                                          and ends at the register clock input. 
+                                          Paths are not traced through 
+                                          registers. Pin-to-pin setup 
+                                          requirement is not reported or 
+                                          guaranteed for product-term clocks 
+                                          derived from macrocell feedback 
+                                          signals. 
+
+Clock to Setup (tCYC) -                   Register to register cycle time. 
+                                          Include source register tCO and 
+                                          destination register tSU. Note that 
+                                          when the computed Maximum Clock Speed 
+                                          is limited by tCYC it is computed 
+                                          assuming that all registers are 
+                                          rising-edge sensitive. 
+

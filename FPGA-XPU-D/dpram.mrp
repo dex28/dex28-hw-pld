@@ -1,0 +1,133 @@
+Release 6.1.03i Map G.26
+Xilinx Mapping Report File for Design 'dpram'
+
+Design Information
+------------------
+Command Line   : C:/Xilinx/bin/nt/map.exe -intstyle ise -p xc2s100-tq144-5 -cm
+area -pr b -k 4 -c 100 -tx off -o dpram_map.ncd dpram.ngd dpram.pcf 
+Target Device  : x2s100
+Target Package : tq144
+Target Speed   : -5
+Mapper Version : spartan2 -- $Revision: 1.16 $
+Mapped Date    : Sun Nov 19 00:35:25 2006
+
+Design Summary
+--------------
+Number of errors   :   1
+Number of warnings :   0
+
+Section 1 - Errors
+------------------
+ERROR:Pack:198 - NCD was not produced. All logic was removed from design.  This
+   is usually due to having no input or output PAD connections in the design and
+   no nets or symbols marked as 'SAVE'.  You can either add PADs or 'SAVE'
+   attributes to the design, or run 'map -u' to disable logic trimming in the
+   mapper.
+
+Section 2 - Warnings
+--------------------
+
+Section 3 - Informational
+-------------------------
+INFO:MapLib:562 - No environment variables are currently set.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+  45 block(s) removed
+  37 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+Loadless block "U_RAM16X1D0" () removed.
+ The signal "CLK_BUFGP" is loadless and has been removed.
+  Loadless block "CLK_BUFGP/BUFG" (CKBUF) removed.
+   The signal "CLK_BUFGP/IBUFG" is loadless and has been removed.
+    Loadless block "CLK_BUFGP/IBUFG" (CKBUF) removed.
+     The signal "CLK" is loadless and has been removed.
+      Loadless block "CLK" (PAD) removed.
+ The signal "ADDRESS_0_IBUF" is loadless and has been removed.
+  Loadless block "ADDRESS_0_IBUF" (BUF) removed.
+   The signal "ADDRESS<0>" is loadless and has been removed.
+    Loadless block "ADDRESS<0>" (PAD) removed.
+ The signal "ADDRESS_1_IBUF" is loadless and has been removed.
+  Loadless block "ADDRESS_1_IBUF" (BUF) removed.
+   The signal "ADDRESS<1>" is loadless and has been removed.
+    Loadless block "ADDRESS<1>" (PAD) removed.
+ The signal "ADDRESS_2_IBUF" is loadless and has been removed.
+  Loadless block "ADDRESS_2_IBUF" (BUF) removed.
+   The signal "ADDRESS<2>" is loadless and has been removed.
+    Loadless block "ADDRESS<2>" (PAD) removed.
+ The signal "ADDRESS_3_IBUF" is loadless and has been removed.
+  Loadless block "ADDRESS_3_IBUF" (BUF) removed.
+   The signal "ADDRESS<3>" is loadless and has been removed.
+    Loadless block "ADDRESS<3>" (PAD) removed.
+ The signal "ADDRESS_DP_0_IBUF" is loadless and has been removed.
+  Loadless block "ADDRESS_DP_0_IBUF" (BUF) removed.
+   The signal "ADDRESS_DP<0>" is loadless and has been removed.
+    Loadless block "ADDRESS_DP<0>" (PAD) removed.
+ The signal "ADDRESS_DP_1_IBUF" is loadless and has been removed.
+  Loadless block "ADDRESS_DP_1_IBUF" (BUF) removed.
+   The signal "ADDRESS_DP<1>" is loadless and has been removed.
+    Loadless block "ADDRESS_DP<1>" (PAD) removed.
+ The signal "ADDRESS_DP_2_IBUF" is loadless and has been removed.
+  Loadless block "ADDRESS_DP_2_IBUF" (BUF) removed.
+   The signal "ADDRESS_DP<2>" is loadless and has been removed.
+    Loadless block "ADDRESS_DP<2>" (PAD) removed.
+ The signal "ADDRESS_DP_3_IBUF" is loadless and has been removed.
+  Loadless block "ADDRESS_DP_3_IBUF" (BUF) removed.
+   The signal "ADDRESS_DP<3>" is loadless and has been removed.
+    Loadless block "ADDRESS_DP<3>" (PAD) removed.
+ The signal "DATA_IN_0_IBUF" is loadless and has been removed.
+  Loadless block "DATA_IN_0_IBUF" (BUF) removed.
+   The signal "DATA_IN<0>" is loadless and has been removed.
+    Loadless block "DATA_IN<0>" (PAD) removed.
+ The signal "WRITE_EN_IBUF" is loadless and has been removed.
+  Loadless block "WRITE_EN_IBUF" (BUF) removed.
+   The signal "WRITE_EN" is loadless and has been removed.
+    Loadless block "WRITE_EN" (PAD) removed.
+Loadless block "U_RAM16X1D1" () removed.
+ The signal "DATA_IN_1_IBUF" is loadless and has been removed.
+  Loadless block "DATA_IN_1_IBUF" (BUF) removed.
+   The signal "DATA_IN<1>" is loadless and has been removed.
+    Loadless block "DATA_IN<1>" (PAD) removed.
+Loadless block "U_RAM16X1D2" () removed.
+ The signal "DATA_IN_2_IBUF" is loadless and has been removed.
+  Loadless block "DATA_IN_2_IBUF" (BUF) removed.
+   The signal "DATA_IN<2>" is loadless and has been removed.
+    Loadless block "DATA_IN<2>" (PAD) removed.
+Loadless block "U_RAM16X1D3" () removed.
+ The signal "DATA_IN_3_IBUF" is loadless and has been removed.
+  Loadless block "DATA_IN_3_IBUF" (BUF) removed.
+   The signal "DATA_IN<3>" is loadless and has been removed.
+    Loadless block "DATA_IN<3>" (PAD) removed.
+Loadless block "U_RAM16X1D4" () removed.
+ The signal "DATA_IN_4_IBUF" is loadless and has been removed.
+  Loadless block "DATA_IN_4_IBUF" (BUF) removed.
+   The signal "DATA_IN<4>" is loadless and has been removed.
+    Loadless block "DATA_IN<4>" (PAD) removed.
+Loadless block "U_RAM16X1D5" () removed.
+ The signal "DATA_IN_5_IBUF" is loadless and has been removed.
+  Loadless block "DATA_IN_5_IBUF" (BUF) removed.
+   The signal "DATA_IN<5>" is loadless and has been removed.
+    Loadless block "DATA_IN<5>" (PAD) removed.
+Loadless block "U_RAM16X1D6" () removed.
+ The signal "DATA_IN_6_IBUF" is loadless and has been removed.
+  Loadless block "DATA_IN_6_IBUF" (BUF) removed.
+   The signal "DATA_IN<6>" is loadless and has been removed.
+    Loadless block "DATA_IN<6>" (PAD) removed.
+Loadless block "U_RAM16X1D7" () removed.
+ The signal "DATA_IN_7_IBUF" is loadless and has been removed.
+  Loadless block "DATA_IN_7_IBUF" (BUF) removed.
+   The signal "DATA_IN<7>" is loadless and has been removed.
+    Loadless block "DATA_IN<7>" (PAD) removed.

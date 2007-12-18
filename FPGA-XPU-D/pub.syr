@@ -1,0 +1,973 @@
+Release 6.1.03i - xst G.26
+Copyright (c) 1995-2003 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to __projnav
+CPU : 0.00 / 0.20 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Parameter xsthdpdir set to ./xst
+CPU : 0.00 / 0.20 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Reading design: pub.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) HDL Analysis
+  4) HDL Synthesis
+     4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+  6) Low Level Synthesis
+  7) Final Report
+     7.1) Device utilization summary
+     7.2) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : pub.prj
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+Verilog Include Directory          : 
+
+---- Target Parameters
+Output File Name                   : pub
+Output Format                      : NGC
+Target Device                      : xc2s100-5-tq144
+
+---- Source Options
+Top Module Name                    : pub
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+FSM Style                          : lut
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+ROM Style                          : Auto
+Mux Extraction                     : YES
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+Resource Sharing                   : YES
+Multiplier Style                   : lut
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100
+Add Generic Clock Buffer(BUFG)     : 4
+Register Duplication               : YES
+Equivalent register Removal        : YES
+Slice Packing                      : YES
+Pack IO Registers into IOBs        : auto
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : NO
+Global Optimization                : AllClockNets
+RTL Output                         : Yes
+Write Timing Constraints           : NO
+Hierarchy Separator                : _
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+Slice Utilization Ratio            : 100
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+lso                                : pub.lso
+Read Cores                         : YES
+cross_clock_analysis               : NO
+verilog2001                        : YES
+Optimize Instantiated Primitives   : NO
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file D:/work/FPGA-XPU-D/PUB.vhd in Library work.
+Entity <pub> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <pub> (Architecture <behavioral>).
+    Set property "buffer_type = IBUF" for signal <WRn> in unit <pub>.
+    Set property "buffer_type = IBUF" for signal <RDn> in unit <pub>.
+WARNING:Xst:753 - D:/work/FPGA-XPU-D/PUB.vhd line 324: Unconnected output port 'DOA' of component 'RAMB4_S8_S8'.
+WARNING:Xst:766 - D:/work/FPGA-XPU-D/PUB.vhd line 324: Generating a Black Box for component <RAMB4_S8_S8>.
+WARNING:Xst:753 - D:/work/FPGA-XPU-D/PUB.vhd line 339: Unconnected output port 'DOA' of component 'RAMB4_S8_S8'.
+WARNING:Xst:766 - D:/work/FPGA-XPU-D/PUB.vhd line 339: Generating a Black Box for component <RAMB4_S8_S8>.
+WARNING:Xst:753 - D:/work/FPGA-XPU-D/PUB.vhd line 354: Unconnected output port 'DOA' of component 'RAMB4_S8_S8'.
+WARNING:Xst:766 - D:/work/FPGA-XPU-D/PUB.vhd line 354: Generating a Black Box for component <RAMB4_S8_S8>.
+WARNING:Xst:753 - D:/work/FPGA-XPU-D/PUB.vhd line 369: Unconnected output port 'DOA' of component 'RAMB4_S8_S8'.
+WARNING:Xst:766 - D:/work/FPGA-XPU-D/PUB.vhd line 369: Generating a Black Box for component <RAMB4_S8_S8>.
+Entity <pub> analyzed. Unit <pub> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <pub>.
+    Related source file is D:/work/FPGA-XPU-D/PUB.vhd.
+    Found 16x8-bit dual-port distributed RAM for signal <CTX_FIFO>.
+    -----------------------------------------------------------------------
+    | aspect ratio       | 16-word x 8-bit                     |          |
+    | clock              | connected to signal <CLK8M>         | rise     |
+    | write enable       | connected to internal node          | high     |
+    | address            | connected to signal <CTX_WP>        |          |
+    | dual address       | connected to signal <CTX_RP>        |          |
+    | data in            | connected to signal <CTXI>          |          |
+    | data out           | not connected                       |          |
+    | dual data out      | connected to signal <CTXO>          |          |
+    | ram_style          | Auto                                |          |
+    -----------------------------------------------------------------------
+INFO:Xst:1442 - HDL ADVISOR - The RAM contents appears to be read asynchronousely. A synchronous read would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    Found 16x8-bit dual-port distributed RAM for signal <CRX_FIFO>.
+    -----------------------------------------------------------------------
+    | aspect ratio       | 16-word x 8-bit                     |          |
+    | clock              | connected to signal <CLK8M>         | rise     |
+    | write enable       | connected to internal node          | high     |
+    | address            | connected to signal <CRX_WP>        |          |
+    | dual address       | connected to signal <CRX_RP>        |          |
+    | data in            | connected to signal <CRXI>          |          |
+    | data out           | not connected                       |          |
+    | dual data out      | connected to signal <CRXO>          |          |
+    | ram_style          | Auto                                |          |
+    -----------------------------------------------------------------------
+INFO:Xst:1442 - HDL ADVISOR - The RAM contents appears to be read asynchronousely. A synchronous read would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    Found 16x1-bit dual-port distributed RAM for signal <EIRQ_FIFO>.
+    -----------------------------------------------------------------------
+    | aspect ratio       | 16-word x 1-bit                     |          |
+    | clock              | connected to signal <CLK8M>         | rise     |
+    | write enable       | connected to internal node          | low      |
+    | address            | connected to signal <EIRQ_WP>       |          |
+    | dual address       | connected to signal <EIRQ_RP>       |          |
+    | data in            | connected to signal <EIRQI.Once>    |          |
+    | data out           | not connected                       |          |
+    | dual data out      | connected to signal <EIRQO>         |          |
+    | ram_style          | Auto                                |          |
+    -----------------------------------------------------------------------
+INFO:Xst:1442 - HDL ADVISOR - The RAM contents appears to be read asynchronousely. A synchronous read would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    Found 16x8-bit dual-port distributed RAM for signal <FCE_FIFO>.
+    -----------------------------------------------------------------------
+    | aspect ratio       | 16-word x 8-bit                     |          |
+    | clock              | connected to signal <FCEn>          | rise     |
+    | write enable       | connected to internal node          | high     |
+    | address            | connected to signal <FCE_WP>        |          |
+    | dual address       | connected to signal <FCE_RP>        |          |
+    | data in            | connected to signal <FCDI>          |          |
+    | data out           | not connected                       |          |
+    | dual data out      | connected to signal <FCEO>          |          |
+    | ram_style          | Auto                                |          |
+    -----------------------------------------------------------------------
+INFO:Xst:1442 - HDL ADVISOR - The RAM contents appears to be read asynchronousely. A synchronous read would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    Found 16x1-bit dual-port distributed RAM for signal <SENSE_FIFO>.
+    -----------------------------------------------------------------------
+    | aspect ratio       | 16-word x 1-bit                     |          |
+    | clock              | connected to signal <FCEn>          | rise     |
+    | write enable       | connected to internal node          | high     |
+    | address            | connected to signal <FCE_WP>        |          |
+    | dual address       | connected to signal <FCE_RP>        |          |
+    | data in            | connected to internal node          |          |
+    | data out           | not connected                       |          |
+    | dual data out      | connected to signal <SENSEO>        |          |
+    | ram_style          | Auto                                |          |
+    -----------------------------------------------------------------------
+INFO:Xst:1442 - HDL ADVISOR - The RAM contents appears to be read asynchronousely. A synchronous read would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    Found 16x8-bit dual-port distributed RAM for signal <MCTX_FIFO>.
+    -----------------------------------------------------------------------
+    | aspect ratio       | 16-word x 8-bit                     |          |
+    | clock              | connected to signal <WRn>           | rise     |
+    | write enable       | connected to internal node          | high     |
+    | address            | connected to signal <MCTX_WP>       |          |
+    | dual address       | connected to signal <MCTX_RP>       |          |
+    | data in            | connected to signal <D>             |          |
+    | data out           | not connected                       |          |
+    | dual data out      | connected to internal node          |          |
+    | ram_style          | Auto                                |          |
+    -----------------------------------------------------------------------
+INFO:Xst:1442 - HDL ADVISOR - The RAM contents appears to be read asynchronousely. A synchronous read would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    Found 2-bit tristate buffer for signal <KA_IO>.
+    Found 1-bit tristate buffer for signal <FCC>.
+    Found 1-bit tristate buffer for signal <FCD>.
+    Found 1-bit tristate buffer for signal <FCEn>.
+    Found 1-bit tristate buffer for signal <CLK8M>.
+    Found 1-bit tristate buffer for signal <CLK4M>.
+    Found 1-bit tristate buffer for signal <SYNC4>.
+    Found 1-bit tristate buffer for signal <SYNC2>.
+    Found 4-bit tristate buffer for signal <TPCM>.
+    Found 1-bit tristate buffer for signal <CTX>.
+    Found 8-bit tristate buffer for signal <D>.
+    Found 8-bit tristate buffer for signal <PC>.
+    Found 11-bit adder for signal <$n0074> created at line 544.
+    Found 11-bit adder for signal <$n0075> created at line 568.
+    Found 4-bit comparator equal for signal <$n0081> created at line 806.
+    Found 4-bit comparator equal for signal <$n0082> created at line 808.
+    Found 4-bit comparator equal for signal <$n0083> created at line 809.
+    Found 4-bit comparator equal for signal <$n0084> created at line 810.
+    Found 4-bit comparator equal for signal <$n0085> created at line 811.
+    Found 3-bit comparator equal for signal <$n0086> created at line 812.
+    Found 4-bit comparator greatequal for signal <$n0091> created at line 412.
+    Found 4-bit comparator greatequal for signal <$n0125> created at line 552.
+    Found 4-bit comparator greatequal for signal <$n0129> created at line 576.
+    Found 4-bit adder for signal <$n0136> created at line 415.
+    Found 4-bit comparator greatequal for signal <$n0166> created at line 435.
+    Found 4-bit comparator lessequal for signal <$n0167> created at line 435.
+    Found 3-bit comparator greatequal for signal <$n0169> created at line 442.
+    Found 3-bit comparator lessequal for signal <$n0170> created at line 442.
+    Found 1-bit xor2 for signal <$n0193> created at line 517.
+    Found 11-bit up counter for signal <CNT>.
+    Found 11-bit register for signal <CRX_CNT>.
+    Found 4-bit up counter for signal <CRX_RP>.
+    Found 4-bit up counter for signal <CRX_WP>.
+    Found 8-bit register for signal <CRXI>.
+    Found 11-bit register for signal <CTX_CNT>.
+    Found 4-bit up counter for signal <CTX_RP>.
+    Found 4-bit up counter for signal <CTX_WP>.
+    Found 8-bit register for signal <CTXI>.
+    Found 4-bit up counter for signal <EIRQ_RP>.
+    Found 4-bit up counter for signal <EIRQ_WP>.
+    Found 1-bit register for signal <EIRQI.Once>.
+    Found 1-bit register for signal <EIRQI.Twice>.
+    Found 8-bit register for signal <FCDI>.
+    Found 4-bit up counter for signal <FCE_RP>.
+    Found 4-bit up counter for signal <FCE_WP>.
+    Found 1-bit register for signal <IEN_CRX>.
+    Found 1-bit register for signal <IEN_CTX>.
+    Found 1-bit register for signal <IEN_CTXE>.
+    Found 1-bit register for signal <IEN_EIRQ>.
+    Found 1-bit register for signal <IEN_FC>.
+    Found 1-bit register for signal <IEN_PCM>.
+    Found 1-bit register for signal <LED_G>.
+    Found 1-bit register for signal <LED_R>.
+    Found 1-bit register for signal <LED_Y>.
+    Found 1-bit register for signal <MCPU>.
+    Found 4-bit register for signal <MCTX_CNT>.
+    Found 4-bit up counter for signal <MCTX_RP>.
+    Found 4-bit up counter for signal <MCTX_WP>.
+    Found 9-bit register for signal <MCTXO>.
+    Found 1-bit register for signal <MFCC>.
+    Found 1-bit register for signal <MFCD>.
+    Found 1-bit register for signal <MFCE>.
+    Found 1-bit register for signal <MSYNC2>.
+    Found 1-bit register for signal <MSYNC4>.
+    Found 9-bit up counter for signal <PCM_BITC>.
+    Found 3-bit up counter for signal <PCM_RP>.
+    Found 1-bit register for signal <PCM_WE>.
+    Found 3-bit up counter for signal <PCM_WP>.
+    Found 8-bit register for signal <RPCM0_I>.
+    Found 6-bit register for signal <RPCM0_TSR>.
+    Found 8-bit register for signal <RPCM1_I>.
+    Found 6-bit register for signal <RPCM1_TSR>.
+    Found 8-bit register for signal <TPCM0_I>.
+    Found 6-bit register for signal <TPCM0_TSR>.
+    Found 8-bit register for signal <TPCM1_I>.
+    Found 6-bit register for signal <TPCM1_TSR>.
+    Found 45 1-bit 2-to-1 multiplexers.
+    Summary:
+	inferred   6 RAM(s).
+	inferred  14 Counter(s).
+	inferred 133 D-type flip-flop(s).
+	inferred   3 Adder/Subtracter(s).
+	inferred  13 Comparator(s).
+	inferred  45 Multiplexer(s).
+	inferred  30 Tristate(s).
+Unit <pub> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                             : 6
+  16x8-bit dual-port distributed RAM: 4
+  16x1-bit dual-port distributed RAM: 2
+# Registers                        : 68
+  1-bit register                   : 58
+  4-bit register                   : 1
+  9-bit register                   : 1
+  11-bit register                  : 2
+  8-bit register                   : 2
+  6-bit register                   : 4
+# Counters                         : 14
+  4-bit up counter                 : 10
+  3-bit up counter                 : 2
+  11-bit up counter                : 1
+  9-bit up counter                 : 1
+# Multiplexers                     : 17
+  2-to-1 multiplexer               : 17
+# Tristates                        : 12
+  1-bit tristate buffer            : 8
+  2-bit tristate buffer            : 1
+  4-bit tristate buffer            : 1
+  8-bit tristate buffer            : 2
+# Adders/Subtractors               : 3
+  11-bit adder                     : 2
+  4-bit adder                      : 1
+# Comparators                      : 13
+  4-bit comparator equal           : 5
+  3-bit comparator equal           : 1
+  4-bit comparator greatequal      : 4
+  4-bit comparator lessequal       : 1
+  3-bit comparator greatequal      : 1
+  3-bit comparator lessequal       : 1
+# Xors                             : 1
+  1-bit xor2                       : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <pub> ...
+Loading device for application Xst from file 'v100.nph' in environment C:/Xilinx.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block pub, actual ratio is 21.
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : pub.ngr
+Top Level Output File Name         : pub
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : NO
+
+Design Statistics
+# IOs                              : 62
+
+Macro Statistics :
+# RAM                              : 6
+#      16x1-bit dual-port distributed RAM: 2
+#      16x8-bit dual-port distributed RAM: 4
+# Registers                        : 81
+#      1-bit register              : 58
+#      11-bit register             : 2
+#      4-bit register              : 14
+#      6-bit register              : 4
+#      8-bit register              : 2
+#      9-bit register              : 1
+# Counters                         : 1
+#      9-bit up counter            : 1
+# Multiplexers                     : 17
+#      2-to-1 multiplexer          : 17
+# Tristates                        : 12
+#      1-bit tristate buffer       : 8
+#      2-bit tristate buffer       : 1
+#      4-bit tristate buffer       : 1
+#      8-bit tristate buffer       : 2
+# Adders/Subtractors               : 16
+#      11-bit adder                : 2
+#      4-bit adder                 : 14
+# Comparators                      : 13
+#      3-bit comparator equal      : 1
+#      3-bit comparator greatequal : 1
+#      3-bit comparator lessequal  : 1
+#      4-bit comparator equal      : 5
+#      4-bit comparator greatequal : 4
+#      4-bit comparator lessequal  : 1
+
+Cell Usage :
+# BELS                             : 517
+#      BUF                         : 1
+#      GND                         : 1
+#      LUT1                        : 88
+#      LUT2                        : 32
+#      LUT2_L                      : 2
+#      LUT3                        : 80
+#      LUT3_L                      : 22
+#      LUT4                        : 138
+#      LUT4_D                      : 6
+#      LUT4_L                      : 1
+#      MUXCY                       : 72
+#      MUXF5                       : 1
+#      VCC                         : 1
+#      XORCY                       : 72
+# FlipFlops/Latches                : 199
+#      FD_1                        : 11
+#      FDC                         : 15
+#      FDCE                        : 113
+#      FDCPE_1                     : 9
+#      FDE                         : 5
+#      FDP                         : 32
+#      FDPE                        : 14
+# RAMS                             : 38
+#      RAM16X1D                    : 34
+#      RAMB4_S8_S8                 : 4
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 61
+#      IBUF                        : 26
+#      IOBUF                       : 21
+#      OBUF                        : 5
+#      OBUFT                       : 9
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 2s100tq144-5 
+
+ Number of Slices:                     252  out of   1200    21%  
+ Number of Slice Flip Flops:           199  out of   2400     8%  
+ Number of 4 input LUTs:               403  out of   2400    16%  
+ Number of bonded IOBs:                 61  out of     96    63%  
+ Number of BRAMs:                        4  out of     10    40%  
+ Number of GCLKs:                        1  out of      4    25%  
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK16M                             | BUFGP                  | 28    |
+WRn                                | IBUF                   | 49    |
+RDn                                | IBUF                   | 19    |
+N11259(CLK8M_IOBUF:O)              | NONE(*)(CTXI_0)        | 69    |
+N11257(CLK4M_IOBUF:O)              | NONE(*)(TPCM1_FIFO)    | 51    |
+N11235(FCEn_IOBUF:O)               | NONE(*)(Mram_FCE_FIFO_inst_ramx_0)| 13    |
+RPCM0_RCLK(_n00761:O)              | NONE(*)(RPCM0_FIFO)    | 1     |
+RPCM1_RCLK(_n00771:O)              | NONE(*)(RPCM1_FIFO)    | 1     |
+TPCM0_RCLK(_n00781:O)              | NONE(*)(TPCM0_FIFO)    | 1     |
+TPCM1_RCLK(_n00791:O)              | NONE(*)(TPCM1_FIFO)    | 1     |
+N11231(FCC_IOBUF:O)                | NONE(*)(FCDI_1)        | 8     |
+-----------------------------------+------------------------+-------+
+(*) These 8 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 17.228ns (Maximum Frequency: 58.045MHz)
+   Minimum input arrival time before clock: 12.646ns
+   Maximum output required time after clock: 21.299ns
+   Maximum combinational path delay: 26.025ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+-------------------------------------------------------------------------
+Timing constraint: Default period analysis for Clock 'CLK16M'
+Delay:               8.614ns (Levels of Logic = 2)
+  Source:            CNT_4 (FF)
+  Destination:       MCTXO_1 (FF)
+  Source Clock:      CLK16M falling
+  Destination Clock: CLK16M rising
+
+  Data Path: CNT_4 to MCTXO_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD_1:C->Q             3   1.292   1.480  CNT_4 (CNT_4)
+     LUT4_D:I0->O          1   0.653   1.150  _n024125 (CHOICE539)
+     LUT4:I3->O           13   0.653   2.500  _n03421 (_n0342)
+     FDCE:CE                   0.886          MCTX_CNT_1
+    ----------------------------------------
+    Total                      8.614ns (3.484ns logic, 5.130ns route)
+                                       (40.4% logic, 59.6% route)
+
+-------------------------------------------------------------------------
+Timing constraint: Default period analysis for Clock 'WRn'
+Delay:               6.282ns (Levels of Logic = 5)
+  Source:            MCTX_WP_0 (FF)
+  Destination:       MCTX_WP_3 (FF)
+  Source Clock:      WRn rising
+  Destination Clock: WRn rising
+
+  Data Path: MCTX_WP_0 to MCTX_WP_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            10   1.292   2.200  MCTX_WP_0 (MCTX_WP_0)
+     LUT1:I0->O            2   0.653   0.000  MCTX_WP_Madd__n0000_inst_lut2_01 (MCTX_WP_Madd__n0000_inst_lut2_0)
+     MUXCY:S->O            1   0.784   0.000  MCTX_WP_Madd__n0000_inst_cy_0 (MCTX_WP_Madd__n0000_inst_cy_0)
+     MUXCY:CI->O           1   0.050   0.000  MCTX_WP_Madd__n0000_inst_cy_1 (MCTX_WP_Madd__n0000_inst_cy_1)
+     MUXCY:CI->O           0   0.050   0.000  MCTX_WP_Madd__n0000_inst_cy_2 (MCTX_WP_Madd__n0000_inst_cy_2)
+     XORCY:CI->O           1   0.500   0.000  MCTX_WP_Madd__n0000_inst_sum_3 (MCTX_WP__n0000<3>)
+     FDCE:D                    0.753          MCTX_WP_3
+    ----------------------------------------
+    Total                      6.282ns (4.082ns logic, 2.200ns route)
+                                       (65.0% logic, 35.0% route)
+
+-------------------------------------------------------------------------
+Timing constraint: Default period analysis for Clock 'RDn'
+Delay:               6.382ns (Levels of Logic = 5)
+  Source:            FCE_RP_0 (FF)
+  Destination:       FCE_RP_3 (FF)
+  Source Clock:      RDn rising
+  Destination Clock: RDn rising
+
+  Data Path: FCE_RP_0 to FCE_RP_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            11   1.292   2.300  FCE_RP_0 (FCE_RP_0)
+     LUT1:I0->O            2   0.653   0.000  FCE_RP_Madd__n0000_inst_lut2_01 (FCE_RP_Madd__n0000_inst_lut2_0)
+     MUXCY:S->O            1   0.784   0.000  FCE_RP_Madd__n0000_inst_cy_0 (FCE_RP_Madd__n0000_inst_cy_0)
+     MUXCY:CI->O           1   0.050   0.000  FCE_RP_Madd__n0000_inst_cy_1 (FCE_RP_Madd__n0000_inst_cy_1)
+     MUXCY:CI->O           0   0.050   0.000  FCE_RP_Madd__n0000_inst_cy_2 (FCE_RP_Madd__n0000_inst_cy_2)
+     XORCY:CI->O           1   0.500   0.000  FCE_RP_Madd__n0000_inst_sum_3 (FCE_RP__n0000<3>)
+     FDCE:D                    0.753          FCE_RP_3
+    ----------------------------------------
+    Total                      6.382ns (4.082ns logic, 2.300ns route)
+                                       (64.0% logic, 36.0% route)
+
+-------------------------------------------------------------------------
+Timing constraint: Default period analysis for Clock 'CLK8M_IOBUF:O'
+Delay:               12.330ns (Levels of Logic = 4)
+  Source:            CRX_CNT_9 (FF)
+  Destination:       CRXI_5 (FF)
+  Source Clock:      CLK8M_IOBUF:O rising
+  Destination Clock: CLK8M_IOBUF:O rising
+
+  Data Path: CRX_CNT_9 to CRXI_5
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             5   1.292   1.740  CRX_CNT_9 (CRX_CNT_9)
+     LUT3:I2->O            1   0.653   1.150  Ker7722_SW0 (N9620)
+     LUT4_D:I2->LO         1   0.653   0.100  Ker7722 (N11503)
+     LUT3:I0->O           13   0.653   2.500  _n00981 (_n0098)
+     LUT4:I0->O            8   0.653   2.050  _n0350 (_n0350)
+     FDCE:CE                   0.886          CRXI_0
+    ----------------------------------------
+    Total                     12.330ns (4.790ns logic, 7.540ns route)
+                                       (38.8% logic, 61.2% route)
+
+-------------------------------------------------------------------------
+Timing constraint: Default period analysis for Clock 'CLK4M_IOBUF:O'
+Delay:               7.964ns (Levels of Logic = 2)
+  Source:            PCM_BITC_6 (FF)
+  Destination:       PCM_WP_2 (FF)
+  Source Clock:      CLK4M_IOBUF:O falling
+  Destination Clock: CLK4M_IOBUF:O rising
+
+  Data Path: PCM_BITC_6 to PCM_WP_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCPE_1:C->Q          6   1.292   1.850  PCM_BITC_6 (PCM_BITC_6)
+     LUT3:I2->O            1   0.653   1.150  PCM_WP_ClkEn_INV25 (CHOICE523)
+     LUT4:I3->O            3   0.653   1.480  PCM_WP_ClkEn_INV34 (PCM_WP_0_N1368)
+     FDCE:CE                   0.886          PCM_WP_0
+    ----------------------------------------
+    Total                      7.964ns (3.484ns logic, 4.480ns route)
+                                       (43.7% logic, 56.3% route)
+
+-------------------------------------------------------------------------
+Timing constraint: Default period analysis for Clock 'FCC_IOBUF:O'
+Delay:               3.385ns (Levels of Logic = 0)
+  Source:            FCDI_6 (FF)
+  Destination:       FCDI_7 (FF)
+  Source Clock:      FCC_IOBUF:O rising
+  Destination Clock: FCC_IOBUF:O rising
+
+  Data Path: FCDI_6 to FCDI_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   1.292   1.340  FCDI_6 (FCDI_6)
+     FDC:D                     0.753          FCDI_7
+    ----------------------------------------
+    Total                      3.385ns (2.045ns logic, 1.340ns route)
+                                       (60.4% logic, 39.6% route)
+
+-------------------------------------------------------------------------
+Timing constraint: Default period analysis for Clock 'FCEn_IOBUF:O'
+Delay:               6.382ns (Levels of Logic = 5)
+  Source:            FCE_WP_0 (FF)
+  Destination:       FCE_WP_3 (FF)
+  Source Clock:      FCEn_IOBUF:O rising
+  Destination Clock: FCEn_IOBUF:O rising
+
+  Data Path: FCE_WP_0 to FCE_WP_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             11   1.292   2.300  FCE_WP_0 (FCE_WP_0)
+     LUT1:I0->O            2   0.653   0.000  FCE_WP_Madd__n0000_inst_lut2_01 (FCE_WP_Madd__n0000_inst_lut2_0)
+     MUXCY:S->O            1   0.784   0.000  FCE_WP_Madd__n0000_inst_cy_0 (FCE_WP_Madd__n0000_inst_cy_0)
+     MUXCY:CI->O           1   0.050   0.000  FCE_WP_Madd__n0000_inst_cy_1 (FCE_WP_Madd__n0000_inst_cy_1)
+     MUXCY:CI->O           0   0.050   0.000  FCE_WP_Madd__n0000_inst_cy_2 (FCE_WP_Madd__n0000_inst_cy_2)
+     XORCY:CI->O           1   0.500   0.000  FCE_WP_Madd__n0000_inst_sum_3 (FCE_WP__n0000<3>)
+     FDC:D                     0.753          FCE_WP_3
+    ----------------------------------------
+    Total                      6.382ns (4.082ns logic, 2.300ns route)
+                                       (64.0% logic, 36.0% route)
+
+-------------------------------------------------------------------------
+Timing constraint: Default OFFSET IN BEFORE for Clock 'WRn'
+Offset:              11.036ns (Levels of Logic = 3)
+  Source:            A<4> (PAD)
+  Destination:       MCTX_WP_2 (FF)
+  Destination Clock: WRn rising
+
+  Data Path: A<4> to MCTX_WP_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            24   0.924   3.400  A_4_IBUF (A_4_IBUF)
+     LUT4:I0->O            9   0.653   2.120  Ker77271 (N7729)
+     LUT4:I3->O           12   0.653   2.400  _n00321 (_n0032)
+     FDCE:CE                   0.886          MCTX_WP_3
+    ----------------------------------------
+    Total                     11.036ns (3.116ns logic, 7.920ns route)
+                                       (28.2% logic, 71.8% route)
+
+-------------------------------------------------------------------------
+Timing constraint: Default OFFSET IN BEFORE for Clock 'RDn'
+Offset:              12.646ns (Levels of Logic = 3)
+  Source:            RESET (PAD)
+  Destination:       PCM_RP_2 (FF)
+  Destination Clock: RDn rising
+
+  Data Path: RESET to PCM_RP_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            94   0.924   6.900  RESET_IBUF (RESET_IBUF)
+     LUT3:I2->O            1   0.653   1.150  _n0073_SW0 (N8283)
+     LUT4:I2->O            3   0.653   1.480  _n0073 (_n0073)
+     FDE:CE                    0.886          PCM_RP_0
+    ----------------------------------------
+    Total                     12.646ns (3.116ns logic, 9.530ns route)
+                                       (24.6% logic, 75.4% route)
+
+-------------------------------------------------------------------------
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK8M_IOBUF:O'
+Offset:              6.243ns (Levels of Logic = 2)
+  Source:            CRX (PAD)
+  Destination:       CRX_CNT_8 (FF)
+  Destination Clock: CLK8M_IOBUF:O rising
+
+  Data Path: CRX to CRX_CNT_8
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   0.924   1.480  CRX_IBUF (CRX_IBUF)
+     LUT4:I1->O           11   0.653   2.300  _n03481 (_n0348)
+     FDCE:CE                   0.886          CRX_CNT_0
+    ----------------------------------------
+    Total                      6.243ns (2.463ns logic, 3.780ns route)
+                                       (39.5% logic, 60.5% route)
+
+-------------------------------------------------------------------------
+Timing constraint: Default OFFSET IN BEFORE for Clock 'FCEn_IOBUF:O'
+Offset:              3.741ns (Levels of Logic = 2)
+  Source:            SENSEn (PAD)
+  Destination:       Mram_SENSE_FIFO_inst_ramx_9 (RAM)
+  Destination Clock: FCEn_IOBUF:O rising
+
+  Data Path: SENSEn to Mram_SENSE_FIFO_inst_ramx_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   0.924   1.340  SENSEn_IBUF (SENSEn_IBUF)
+     LUT1:I0->O            1   0.653   0.000  _n02641 (FCIN<3>)
+     RAM16X1D:D                0.824          Mram_SENSE_FIFO_inst_ramx_9
+    ----------------------------------------
+    Total                      3.741ns (2.401ns logic, 1.340ns route)
+                                       (64.2% logic, 35.8% route)
+
+-------------------------------------------------------------------------
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK4M_IOBUF:O'
+Offset:              2.827ns (Levels of Logic = 1)
+  Source:            RPCM<0> (PAD)
+  Destination:       RPCM0_I_0 (FF)
+  Destination Clock: CLK4M_IOBUF:O rising
+
+  Data Path: RPCM<0> to RPCM0_I_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.924   1.150  RPCM_0_IBUF (RPCM_0_IBUF)
+     FDP:D                     0.753          RPCM0_I_0
+    ----------------------------------------
+    Total                      2.827ns (1.677ns logic, 1.150ns route)
+                                       (59.3% logic, 40.7% route)
+
+-------------------------------------------------------------------------
+Timing constraint: Default OFFSET OUT AFTER for Clock 'WRn'
+Offset:              18.514ns (Levels of Logic = 6)
+  Source:            MCTX_WP_1 (FF)
+  Destination:       INTn (PAD)
+  Source Clock:      WRn rising
+
+  Data Path: MCTX_WP_1 to INTn
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            10   1.292   2.200  MCTX_WP_1 (MCTX_WP_1)
+     LUT4:I1->O            1   0.653   1.150  Mcompar__n0081_AEB26 (CHOICE364)
+     LUT2:I0->O            4   0.653   1.600  Mcompar__n0081_AEB54 (MCTXE)
+     LUT4:I3->O            1   0.653   1.150  INTn22 (CHOICE200)
+     LUT4:I2->O            1   0.653   1.150  INTn63_SW0 (N11376)
+     LUT4:I3->O            1   0.653   1.150  INTn63 (INTn_OBUF)
+     OBUF:I->O                 5.557          INTn_OBUF (INTn)
+    ----------------------------------------
+    Total                     18.514ns (10.114ns logic, 8.400ns route)
+                                       (54.6% logic, 45.4% route)
+
+-------------------------------------------------------------------------
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK16M'
+Offset:              18.514ns (Levels of Logic = 6)
+  Source:            MCTX_RP_1 (FF)
+  Destination:       INTn (PAD)
+  Source Clock:      CLK16M rising
+
+  Data Path: MCTX_RP_1 to INTn
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            10   1.292   2.200  MCTX_RP_1 (MCTX_RP_1)
+     LUT4:I0->O            1   0.653   1.150  Mcompar__n0081_AEB26 (CHOICE364)
+     LUT2:I0->O            4   0.653   1.600  Mcompar__n0081_AEB54 (MCTXE)
+     LUT4:I3->O            1   0.653   1.150  INTn22 (CHOICE200)
+     LUT4:I2->O            1   0.653   1.150  INTn63_SW0 (N11376)
+     LUT4:I3->O            1   0.653   1.150  INTn63 (INTn_OBUF)
+     OBUF:I->O                 5.557          INTn_OBUF (INTn)
+    ----------------------------------------
+    Total                     18.514ns (10.114ns logic, 8.400ns route)
+                                       (54.6% logic, 45.4% route)
+
+-------------------------------------------------------------------------
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK8M_IOBUF:O'
+Offset:              18.499ns (Levels of Logic = 7)
+  Source:            Mram_CRX_FIFO_inst_ramx_0 (RAM)
+  Destination:       D<0> (PAD)
+  Source Clock:      CLK8M_IOBUF:O rising
+
+  Data Path: Mram_CRX_FIFO_inst_ramx_0 to D<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAM16X1D:WCLK->DPO    1   2.414   1.150  Mram_CRX_FIFO_inst_ramx_0 (CRXO<0>)
+     LUT3:I2->O            1   0.653   0.000  _n0088<0>63_G (N11471)
+     MUXF5:I1->O           1   0.363   1.150  _n0088<0>63 (CHOICE475)
+     LUT4:I2->O            1   0.653   1.150  _n0088<0>89 (CHOICE480)
+     LUT3:I2->O            1   0.653   1.150  _n0088<0>102 (CHOICE481)
+     LUT3:I1->O            1   0.653   1.150  _n0088<0>134 (CHOICE487)
+     LUT3:I2->O            1   0.653   1.150  _n0088<0>147 (D_0_IOBUF)
+     IOBUF:I->IO               5.557          D_0_IOBUF (D<0>)
+    ----------------------------------------
+    Total                     18.499ns (11.599ns logic, 6.900ns route)
+                                       (62.7% logic, 37.3% route)
+
+-------------------------------------------------------------------------
+Timing constraint: Default OFFSET OUT AFTER for Clock 'RDn'
+Offset:              20.944ns (Levels of Logic = 8)
+  Source:            FCE_RP_0 (FF)
+  Destination:       D<0> (PAD)
+  Source Clock:      RDn rising
+
+  Data Path: FCE_RP_0 to D<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            11   1.292   2.300  FCE_RP_0 (FCE_RP_0)
+     RAM16X1D:DPRA0->DPO    1   1.255   1.150  Mram_SENSE_FIFO_inst_ramx_9 (SENSEO)
+     LUT4:I2->O            1   0.653   0.000  _n0088<0>63_F (N11469)
+     MUXF5:I0->O           1   0.375   1.150  _n0088<0>63 (CHOICE475)
+     LUT4:I2->O            1   0.653   1.150  _n0088<0>89 (CHOICE480)
+     LUT3:I2->O            1   0.653   1.150  _n0088<0>102 (CHOICE481)
+     LUT3:I1->O            1   0.653   1.150  _n0088<0>134 (CHOICE487)
+     LUT3:I2->O            1   0.653   1.150  _n0088<0>147 (D_0_IOBUF)
+     IOBUF:I->IO               5.557          D_0_IOBUF (D<0>)
+    ----------------------------------------
+    Total                     20.944ns (11.744ns logic, 9.200ns route)
+                                       (56.1% logic, 43.9% route)
+
+-------------------------------------------------------------------------
+Timing constraint: Default OFFSET OUT AFTER for Clock '_n00761:O'
+Offset:              17.693ns (Levels of Logic = 5)
+  Source:            RPCM0_FIFO (RAM)
+  Destination:       D<0> (PAD)
+  Source Clock:      _n00761:O rising
+
+  Data Path: RPCM0_FIFO to D<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB4_S8_S8:CLKB->DOB0    1   3.774   1.150  RPCM0_FIFO (RPCM0_O<0>)
+     LUT4:I1->O            1   0.653   1.150  _n0088<0>89 (CHOICE480)
+     LUT3:I2->O            1   0.653   1.150  _n0088<0>102 (CHOICE481)
+     LUT3:I1->O            1   0.653   1.150  _n0088<0>134 (CHOICE487)
+     LUT3:I2->O            1   0.653   1.150  _n0088<0>147 (D_0_IOBUF)
+     IOBUF:I->IO               5.557          D_0_IOBUF (D<0>)
+    ----------------------------------------
+    Total                     17.693ns (11.943ns logic, 5.750ns route)
+                                       (67.5% logic, 32.5% route)
+
+-------------------------------------------------------------------------
+Timing constraint: Default OFFSET OUT AFTER for Clock 'FCEn_IOBUF:O'
+Offset:              18.511ns (Levels of Logic = 7)
+  Source:            Mram_FCE_FIFO_inst_ramx_0 (RAM)
+  Destination:       D<0> (PAD)
+  Source Clock:      FCEn_IOBUF:O rising
+
+  Data Path: Mram_FCE_FIFO_inst_ramx_0 to D<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAM16X1D:WCLK->DPO    1   2.414   1.150  Mram_FCE_FIFO_inst_ramx_0 (FCEO<0>)
+     LUT4:I1->O            1   0.653   0.000  _n0088<0>63_F (N11469)
+     MUXF5:I0->O           1   0.375   1.150  _n0088<0>63 (CHOICE475)
+     LUT4:I2->O            1   0.653   1.150  _n0088<0>89 (CHOICE480)
+     LUT3:I2->O            1   0.653   1.150  _n0088<0>102 (CHOICE481)
+     LUT3:I1->O            1   0.653   1.150  _n0088<0>134 (CHOICE487)
+     LUT3:I2->O            1   0.653   1.150  _n0088<0>147 (D_0_IOBUF)
+     IOBUF:I->IO               5.557          D_0_IOBUF (D<0>)
+    ----------------------------------------
+    Total                     18.511ns (11.611ns logic, 6.900ns route)
+                                       (62.7% logic, 37.3% route)
+
+-------------------------------------------------------------------------
+Timing constraint: Default OFFSET OUT AFTER for Clock '_n00771:O'
+Offset:              19.496ns (Levels of Logic = 6)
+  Source:            RPCM1_FIFO (RAM)
+  Destination:       D<0> (PAD)
+  Source Clock:      _n00771:O rising
+
+  Data Path: RPCM1_FIFO to D<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB4_S8_S8:CLKB->DOB0    1   3.774   1.150  RPCM1_FIFO (RPCM1_O<0>)
+     LUT3:I1->O            1   0.653   1.150  _n0088<0>89_SW0 (N11372)
+     LUT4:I3->O            1   0.653   1.150  _n0088<0>89 (CHOICE480)
+     LUT3:I2->O            1   0.653   1.150  _n0088<0>102 (CHOICE481)
+     LUT3:I1->O            1   0.653   1.150  _n0088<0>134 (CHOICE487)
+     LUT3:I2->O            1   0.653   1.150  _n0088<0>147 (D_0_IOBUF)
+     IOBUF:I->IO               5.557          D_0_IOBUF (D<0>)
+    ----------------------------------------
+    Total                     19.496ns (12.596ns logic, 6.900ns route)
+                                       (64.6% logic, 35.4% route)
+
+-------------------------------------------------------------------------
+Timing constraint: Default OFFSET OUT AFTER for Clock '_n00781:O'
+Offset:              21.299ns (Levels of Logic = 7)
+  Source:            TPCM0_FIFO (RAM)
+  Destination:       D<0> (PAD)
+  Source Clock:      _n00781:O rising
+
+  Data Path: TPCM0_FIFO to D<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB4_S8_S8:CLKB->DOB0    1   3.774   1.150  TPCM0_FIFO (TPCM0_O<0>)
+     LUT4:I1->O            1   0.653   1.150  _n0088<0>75 (CHOICE478)
+     LUT3:I2->O            1   0.653   1.150  _n0088<0>89_SW0 (N11372)
+     LUT4:I3->O            1   0.653   1.150  _n0088<0>89 (CHOICE480)
+     LUT3:I2->O            1   0.653   1.150  _n0088<0>102 (CHOICE481)
+     LUT3:I1->O            1   0.653   1.150  _n0088<0>134 (CHOICE487)
+     LUT3:I2->O            1   0.653   1.150  _n0088<0>147 (D_0_IOBUF)
+     IOBUF:I->IO               5.557          D_0_IOBUF (D<0>)
+    ----------------------------------------
+    Total                     21.299ns (13.249ns logic, 8.050ns route)
+                                       (62.2% logic, 37.8% route)
+
+-------------------------------------------------------------------------
+Timing constraint: Default OFFSET OUT AFTER for Clock '_n00791:O'
+Offset:              21.299ns (Levels of Logic = 7)
+  Source:            TPCM1_FIFO (RAM)
+  Destination:       D<0> (PAD)
+  Source Clock:      _n00791:O rising
+
+  Data Path: TPCM1_FIFO to D<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB4_S8_S8:CLKB->DOB0    1   3.774   1.150  TPCM1_FIFO (TPCM1_O<0>)
+     LUT4:I3->O            1   0.653   1.150  _n0088<0>75 (CHOICE478)
+     LUT3:I2->O            1   0.653   1.150  _n0088<0>89_SW0 (N11372)
+     LUT4:I3->O            1   0.653   1.150  _n0088<0>89 (CHOICE480)
+     LUT3:I2->O            1   0.653   1.150  _n0088<0>102 (CHOICE481)
+     LUT3:I1->O            1   0.653   1.150  _n0088<0>134 (CHOICE487)
+     LUT3:I2->O            1   0.653   1.150  _n0088<0>147 (D_0_IOBUF)
+     IOBUF:I->IO               5.557          D_0_IOBUF (D<0>)
+    ----------------------------------------
+    Total                     21.299ns (13.249ns logic, 8.050ns route)
+                                       (62.2% logic, 37.8% route)
+
+-------------------------------------------------------------------------
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK4M_IOBUF:O'
+Offset:              18.004ns (Levels of Logic = 6)
+  Source:            PCM_WP_1 (FF)
+  Destination:       D<4> (PAD)
+  Source Clock:      CLK4M_IOBUF:O rising
+
+  Data Path: PCM_WP_1 to D<4>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             7   1.292   1.950  PCM_WP_1 (PCM_WP_1)
+     LUT4:I1->O            1   0.653   1.150  Mcompar__n0086_AEB_SW0 (N8331)
+     LUT3:I2->O            2   0.653   1.340  Mcompar__n0086_AEB (_n0086)
+     LUT4:I0->O            1   0.653   1.150  INTn33 (CHOICE205)
+     LUT4:I3->O            1   0.653   1.150  INTn63_SW0 (N11376)
+     LUT4:I3->O            1   0.653   1.150  INTn63 (INTn_OBUF)
+     OBUF:I->O                 5.557          INTn_OBUF (INTn)
+    ----------------------------------------
+    Total                     18.004ns (10.114ns logic, 7.890ns route)
+                                       (56.2% logic, 43.8% route)
+
+-------------------------------------------------------------------------
+Timing constraint: Default path analysis
+Delay:               26.025ns (Levels of Logic = 10)
+  Source:            A<0> (PAD)
+  Destination:       D<0> (PAD)
+
+  Data Path: A<0> to D<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            23   0.924   3.350  A_0_IBUF (A_0_IBUF)
+     LUT3:I1->O            7   0.653   1.950  Ker76891 (N7691)
+     LUT4:I1->O            9   0.653   2.120  _n01531 (_n0153)
+     LUT4:I2->O            1   0.653   1.150  _n0088<0>75 (CHOICE478)
+     LUT3:I2->O            1   0.653   1.150  _n0088<0>89_SW0 (N11372)
+     LUT4:I3->O            1   0.653   1.150  _n0088<0>89 (CHOICE480)
+     LUT3:I2->O            1   0.653   1.150  _n0088<0>102 (CHOICE481)
+     LUT3:I1->O            1   0.653   1.150  _n0088<0>134 (CHOICE487)
+     LUT3:I2->O            1   0.653   1.150  _n0088<0>147 (D_0_IOBUF)
+     IOBUF:I->IO               5.557          D_0_IOBUF (D<0>)
+    ----------------------------------------
+    Total                     26.025ns (11.705ns logic, 14.320ns route)
+                                       (45.0% logic, 55.0% route)
+
+=========================================================================
+CPU : 5.66 / 6.11 s | Elapsed : 6.00 / 6.00 s
+ 
+--> 
+
+Total memory usage is 63824 kilobytes
+
+

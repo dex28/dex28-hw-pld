@@ -1,0 +1,362 @@
+MDF Database:  version 1.0
+MDF_INFO | ebi2hpi | XC9572XL-10-VQ64
+MACROCELL | 0 | 10 | HRSTn_0
+ATTRIBUTES | 8659810 | 0
+INPUTS | 6 | D<0>.PIN  | CSn  | WRn  | A<3>  | A<5>  | A<4>
+INPUTP | 6 | 5 | 16 | 15 | 11 | 9 | 10
+EQ | 4 | 
+   HRSTn<0>.D = !D<0>.PIN;
+   HRSTn<0>.CLK = CSn;
+   HRSTn<0>.AR = RESET;	// GSR
+   HRSTn<0>.CE = !WRn & A<3> & !A<5> & !A<4>;
+GLOBALS | 1 | 4 | RESET
+
+MACROCELL | 0 | 13 | HRSTn_1
+ATTRIBUTES | 8659810 | 0
+INPUTS | 6 | D<0>.PIN  | CSn  | WRn  | A<3>  | A<5>  | A<4>
+INPUTP | 6 | 5 | 16 | 15 | 11 | 9 | 10
+EQ | 4 | 
+   HRSTn<1>.D = !D<0>.PIN;
+   HRSTn<1>.CLK = CSn;
+   HRSTn<1>.AR = RESET;	// GSR
+   HRSTn<1>.CE = !WRn & A<3> & !A<5> & A<4>;
+GLOBALS | 1 | 4 | RESET
+
+MACROCELL | 0 | 9 | HRSTn_2
+ATTRIBUTES | 8659810 | 0
+INPUTS | 6 | D<0>.PIN  | CSn  | WRn  | A<3>  | A<5>  | A<4>
+INPUTP | 6 | 5 | 16 | 15 | 11 | 9 | 10
+EQ | 4 | 
+   HRSTn<2>.D = !D<0>.PIN;
+   HRSTn<2>.CLK = CSn;
+   HRSTn<2>.AR = RESET;	// GSR
+   HRSTn<2>.CE = !WRn & A<3> & A<5> & !A<4>;
+GLOBALS | 1 | 4 | RESET
+
+MACROCELL | 0 | 14 | HRSTn_3
+ATTRIBUTES | 8659810 | 0
+INPUTS | 6 | D<0>.PIN  | CSn  | WRn  | A<3>  | A<5>  | A<4>
+INPUTP | 6 | 5 | 16 | 15 | 11 | 9 | 10
+EQ | 4 | 
+   HRSTn<3>.D = !D<0>.PIN;
+   HRSTn<3>.CLK = CSn;
+   HRSTn<3>.AR = RESET;	// GSR
+   HRSTn<3>.CE = !WRn & A<3> & A<5> & A<4>;
+GLOBALS | 1 | 4 | RESET
+
+MACROCELL | 0 | 8 | INTn_OBUF
+ATTRIBUTES | 264962 | 0
+INPUTS | 4 | HINTn<3>  | HINTn<2>  | HINTn<1>  | HINTn<0>
+INPUTP | 4 | 55 | 54 | 52 | 30
+EQ | 1 | 
+   INTn = HINTn<3> & HINTn<2> & HINTn<1> & HINTn<0>;
+
+MACROCELL | 2 | 8 | HD_0_IOBUFE
+ATTRIBUTES | 265986 | 0
+INPUTS | 5 | D<0>.PIN  | D2HD_en  | WRn  | RDn  | HD_7_IOBUFE/HD_7_IOBUFE_TRST
+INPUTMC | 2 | 1 | 17 | 3 | 17
+INPUTP | 3 | 5 | 15 | 1
+EQ | 3 | 
+   !HD<0> = !D<0>.PIN & D2HD_en
+	# !WRn & RDn & !D<0>.PIN;
+   HD<0>.OE = HD_7_IOBUFE/HD_7_IOBUFE_TRST;
+
+MACROCELL | 2 | 10 | HD_1_IOBUFE
+ATTRIBUTES | 265986 | 0
+INPUTS | 5 | D2HD_en  | D<1>.PIN  | WRn  | RDn  | HD_7_IOBUFE/HD_7_IOBUFE_TRST
+INPUTMC | 2 | 1 | 17 | 3 | 17
+INPUTP | 3 | 7 | 15 | 1
+EQ | 3 | 
+   !HD<1> = D2HD_en & !D<1>.PIN
+	# !WRn & RDn & !D<1>.PIN;
+   HD<1>.OE = HD_7_IOBUFE/HD_7_IOBUFE_TRST;
+
+MACROCELL | 2 | 4 | HD_2_IOBUFE
+ATTRIBUTES | 265986 | 0
+INPUTS | 5 | D2HD_en  | D<2>.PIN  | WRn  | RDn  | HD_7_IOBUFE/HD_7_IOBUFE_TRST
+INPUTMC | 2 | 1 | 17 | 3 | 17
+INPUTP | 3 | 90 | 15 | 1
+EQ | 3 | 
+   !HD<2> = D2HD_en & !D<2>.PIN
+	# !WRn & RDn & !D<2>.PIN;
+   HD<2>.OE = HD_7_IOBUFE/HD_7_IOBUFE_TRST;
+
+MACROCELL | 3 | 3 | HD_3_IOBUFE
+ATTRIBUTES | 265986 | 0
+INPUTS | 5 | D2HD_en  | D<3>.PIN  | WRn  | RDn  | HD_7_IOBUFE/HD_7_IOBUFE_TRST
+INPUTMC | 2 | 1 | 17 | 3 | 17
+INPUTP | 3 | 89 | 15 | 1
+EQ | 3 | 
+   !HD<3> = D2HD_en & !D<3>.PIN
+	# !WRn & RDn & !D<3>.PIN;
+   HD<3>.OE = HD_7_IOBUFE/HD_7_IOBUFE_TRST;
+
+MACROCELL | 3 | 13 | HD_4_IOBUFE
+ATTRIBUTES | 265986 | 0
+INPUTS | 5 | D2HD_en  | D<4>.PIN  | WRn  | RDn  | HD_7_IOBUFE/HD_7_IOBUFE_TRST
+INPUTMC | 2 | 1 | 17 | 3 | 17
+INPUTP | 3 | 88 | 15 | 1
+EQ | 3 | 
+   !HD<4> = D2HD_en & !D<4>.PIN
+	# !WRn & RDn & !D<4>.PIN;
+   HD<4>.OE = HD_7_IOBUFE/HD_7_IOBUFE_TRST;
+
+MACROCELL | 3 | 5 | HD_5_IOBUFE
+ATTRIBUTES | 265986 | 0
+INPUTS | 5 | D2HD_en  | D<5>.PIN  | WRn  | RDn  | HD_7_IOBUFE/HD_7_IOBUFE_TRST
+INPUTMC | 2 | 1 | 17 | 3 | 17
+INPUTP | 3 | 87 | 15 | 1
+EQ | 3 | 
+   !HD<5> = D2HD_en & !D<5>.PIN
+	# !WRn & RDn & !D<5>.PIN;
+   HD<5>.OE = HD_7_IOBUFE/HD_7_IOBUFE_TRST;
+
+MACROCELL | 3 | 11 | HD_6_IOBUFE
+ATTRIBUTES | 265986 | 0
+INPUTS | 5 | D2HD_en  | D<6>.PIN  | WRn  | RDn  | HD_7_IOBUFE/HD_7_IOBUFE_TRST
+INPUTMC | 2 | 1 | 17 | 3 | 17
+INPUTP | 3 | 86 | 15 | 1
+EQ | 3 | 
+   !HD<6> = D2HD_en & !D<6>.PIN
+	# !WRn & RDn & !D<6>.PIN;
+   HD<6>.OE = HD_7_IOBUFE/HD_7_IOBUFE_TRST;
+
+MACROCELL | 3 | 10 | HD_7_IOBUFE
+ATTRIBUTES | 265986 | 0
+INPUTS | 5 | D2HD_en  | D<7>.PIN  | WRn  | RDn  | HD_7_IOBUFE/HD_7_IOBUFE_TRST
+INPUTMC | 2 | 1 | 17 | 3 | 17
+INPUTP | 3 | 84 | 15 | 1
+EQ | 3 | 
+   !HD<7> = D2HD_en & !D<7>.PIN
+	# !WRn & RDn & !D<7>.PIN;
+   HD<7>.OE = HD_7_IOBUFE/HD_7_IOBUFE_TRST;
+
+MACROCELL | 1 | 17 | D2HD_en
+ATTRIBUTES | 8520496 | 0
+OUTPUTMC | 9 | 2 | 8 | 2 | 10 | 2 | 4 | 3 | 3 | 3 | 13 | 3 | 5 | 3 | 11 | 3 | 10 | 3 | 17
+INPUTS | 5 | WRn  | RDn  | A<3>  | CSn  | D2HD_en/D2HD_en_RSTF__$INT
+INPUTMC | 1 | 0 | 17
+INPUTP | 4 | 15 | 1 | 11 | 16
+EQ | 3 | 
+   D2HD_en.D = !WRn & RDn & !A<3>;
+   D2HD_en.CLK = !CSn;
+   D2HD_en.AR = !D2HD_en/D2HD_en_RSTF__$INT;
+
+MACROCELL | 1 | 11 | D_0_IOBUFE$BUF0
+ATTRIBUTES | 265986 | 0
+INPUTS | 5 | HD<0>.PIN  | WRn  | RDn  | CSn  | A<3>
+INPUTP | 5 | 38 | 15 | 1 | 16 | 11
+EQ | 2 | 
+   D<0> = HD<0>.PIN;
+   D<0>.OE = WRn & !RDn & !CSn & !A<3>;
+
+MACROCELL | 1 | 13 | D_1_IOBUFE$BUF0
+ATTRIBUTES | 265986 | 0
+INPUTS | 5 | HD<1>.PIN  | WRn  | RDn  | CSn  | A<3>
+INPUTP | 5 | 46 | 15 | 1 | 16 | 11
+EQ | 2 | 
+   D<1> = HD<1>.PIN;
+   D<1>.OE = WRn & !RDn & !CSn & !A<3>;
+
+MACROCELL | 1 | 7 | D_2_IOBUFE$BUF0
+ATTRIBUTES | 265986 | 0
+INPUTS | 5 | HD<2>.PIN  | WRn  | RDn  | CSn  | A<3>
+INPUTP | 5 | 31 | 15 | 1 | 16 | 11
+EQ | 2 | 
+   D<2> = HD<2>.PIN;
+   D<2>.OE = WRn & !RDn & !CSn & !A<3>;
+
+MACROCELL | 1 | 5 | D_3_IOBUFE$BUF0
+ATTRIBUTES | 265986 | 0
+INPUTS | 5 | HD<3>.PIN  | WRn  | RDn  | CSn  | A<3>
+INPUTP | 5 | 67 | 15 | 1 | 16 | 11
+EQ | 2 | 
+   D<3> = HD<3>.PIN;
+   D<3>.OE = WRn & !RDn & !CSn & !A<3>;
+
+MACROCELL | 1 | 4 | D_4_IOBUFE$BUF0
+ATTRIBUTES | 265986 | 0
+INPUTS | 5 | HD<4>.PIN  | WRn  | RDn  | CSn  | A<3>
+INPUTP | 5 | 72 | 15 | 1 | 16 | 11
+EQ | 2 | 
+   D<4> = HD<4>.PIN;
+   D<4>.OE = WRn & !RDn & !CSn & !A<3>;
+
+MACROCELL | 1 | 1 | D_5_IOBUFE$BUF0
+ATTRIBUTES | 265986 | 0
+INPUTS | 5 | HD<5>.PIN  | WRn  | RDn  | CSn  | A<3>
+INPUTP | 5 | 70 | 15 | 1 | 16 | 11
+EQ | 2 | 
+   D<5> = HD<5>.PIN;
+   D<5>.OE = WRn & !RDn & !CSn & !A<3>;
+
+MACROCELL | 1 | 3 | D_6_IOBUFE$BUF0
+ATTRIBUTES | 265986 | 0
+INPUTS | 5 | HD<6>.PIN  | WRn  | RDn  | CSn  | A<3>
+INPUTP | 5 | 75 | 15 | 1 | 16 | 11
+EQ | 2 | 
+   D<6> = HD<6>.PIN;
+   D<6>.OE = WRn & !RDn & !CSn & !A<3>;
+
+MACROCELL | 1 | 2 | D_7_IOBUFE$BUF0
+ATTRIBUTES | 265986 | 0
+INPUTS | 5 | HD<7>.PIN  | WRn  | RDn  | CSn  | A<3>
+INPUTP | 5 | 68 | 15 | 1 | 16 | 11
+EQ | 2 | 
+   D<7> = HD<7>.PIN;
+   D<7>.OE = WRn & !RDn & !CSn & !A<3>;
+
+MACROCELL | 2 | 7 | A_0_IBUF$BUF0
+ATTRIBUTES | 264962 | 0
+INPUTS | 1 | A<0>
+INPUTP | 1 | 13
+EQ | 1 | 
+   HBIL = A<0>;
+
+MACROCELL | 2 | 2 | A_1_IBUF$BUF0
+ATTRIBUTES | 264962 | 0
+INPUTS | 1 | A<1>
+INPUTP | 1 | 3
+EQ | 1 | 
+   HCNTL0 = A<1>;
+
+MACROCELL | 2 | 3 | A_2_IBUF$BUF0
+ATTRIBUTES | 264962 | 0
+INPUTS | 1 | A<2>
+INPUTP | 1 | 12
+EQ | 1 | 
+   HCNTL1 = A<2>;
+
+MACROCELL | 3 | 4 | HCSn_0_OBUF
+ATTRIBUTES | 264962 | 0
+INPUTS | 3 | A<3>  | A<5>  | A<4>
+INPUTP | 3 | 11 | 9 | 10
+EQ | 1 | 
+   !HCSn<0> = !A<3> & !A<5> & !A<4>;
+
+MACROCELL | 3 | 1 | HCSn_1_OBUF
+ATTRIBUTES | 264962 | 0
+INPUTS | 3 | A<3>  | A<5>  | A<4>
+INPUTP | 3 | 11 | 9 | 10
+EQ | 1 | 
+   !HCSn<1> = !A<3> & !A<5> & A<4>;
+
+MACROCELL | 3 | 7 | HCSn_2_OBUF
+ATTRIBUTES | 264962 | 0
+INPUTS | 3 | A<3>  | A<5>  | A<4>
+INPUTP | 3 | 11 | 9 | 10
+EQ | 1 | 
+   !HCSn<2> = !A<3> & A<5> & !A<4>;
+
+MACROCELL | 3 | 2 | HCSn_3_OBUF
+ATTRIBUTES | 264962 | 0
+INPUTS | 3 | A<3>  | A<5>  | A<4>
+INPUTP | 3 | 11 | 9 | 10
+EQ | 1 | 
+   !HCSn<3> = !A<3> & A<5> & A<4>;
+
+MACROCELL | 3 | 9 | HDSn_OBUF$BUF0
+ATTRIBUTES | 264962 | 0
+INPUTS | 1 | CSn
+INPUTP | 1 | 16
+EQ | 1 | 
+   HDSn = CSn;
+
+MACROCELL | 3 | 16 | HR_Wn_OBUF$BUF0
+ATTRIBUTES | 264962 | 0
+INPUTS | 1 | WRn
+INPUTP | 1 | 15
+EQ | 1 | 
+   HR_Wn = WRn;
+
+MACROCELL | 0 | 3 | CLKMD_1_OBUF
+ATTRIBUTES | 265986 | 0
+INPUTS | 0
+EQ | 2 | 
+   WAITn = Gnd;
+   WAITn.OE = Gnd;
+
+MACROCELL | 2 | 13 | CLKMD_1_OBUF$BUF0
+ATTRIBUTES | 264962 | 0
+INPUTS | 0
+EQ | 1 | 
+   CLKMD<2> = Gnd;
+
+MACROCELL | 2 | 5 | CLKMD_1_OBUF$BUF1
+ATTRIBUTES | 264962 | 0
+INPUTS | 0
+EQ | 1 | 
+   CLKMD<1> = Gnd;
+
+MACROCELL | 2 | 14 | CLKMD_3_OBUF
+ATTRIBUTES | 264962 | 0
+INPUTS | 0
+EQ | 1 | 
+   CLKMD<3> = Vcc;
+
+MACROCELL | 3 | 17 | HD_7_IOBUFE/HD_7_IOBUFE_TRST
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 8 | 2 | 8 | 2 | 10 | 2 | 4 | 3 | 3 | 3 | 13 | 3 | 5 | 3 | 11 | 3 | 10
+INPUTS | 3 | D2HD_en  | WRn  | RDn
+INPUTMC | 1 | 1 | 17
+INPUTP | 2 | 15 | 1
+EQ | 2 | 
+   HD_7_IOBUFE/HD_7_IOBUFE_TRST = D2HD_en
+	# !WRn & RDn;
+
+MACROCELL | 0 | 17 | D2HD_en/D2HD_en_RSTF__$INT
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 1 | 1 | 17
+INPUTS | 3 | WRn  | RDn  | RESET
+INPUTP | 3 | 15 | 1 | 92
+EQ | 1 | 
+   D2HD_en/D2HD_en_RSTF__$INT = !WRn & RDn & !RESET;
+
+PIN | WRn | 64 | 0 | N/A | 15 | 24 | 0 | 10 | 0 | 13 | 0 | 9 | 0 | 14 | 2 | 8 | 2 | 10 | 2 | 4 | 3 | 3 | 3 | 13 | 3 | 5 | 3 | 11 | 3 | 10 | 1 | 17 | 1 | 11 | 1 | 13 | 1 | 7 | 1 | 5 | 1 | 4 | 1 | 1 | 1 | 3 | 1 | 2 | 3 | 16 | 3 | 17 | 0 | 17
+PIN | RDn | 64 | 0 | N/A | 1 | 19 | 2 | 8 | 2 | 10 | 2 | 4 | 3 | 3 | 3 | 13 | 3 | 5 | 3 | 11 | 3 | 10 | 1 | 17 | 1 | 11 | 1 | 13 | 1 | 7 | 1 | 5 | 1 | 4 | 1 | 1 | 1 | 3 | 1 | 2 | 3 | 17 | 0 | 17
+PIN | CSn | 64 | 0 | N/A | 16 | 14 | 0 | 10 | 0 | 13 | 0 | 9 | 0 | 14 | 1 | 17 | 1 | 11 | 1 | 13 | 1 | 7 | 1 | 5 | 1 | 4 | 1 | 1 | 1 | 3 | 1 | 2 | 3 | 9
+PIN | A<3> | 64 | 0 | N/A | 11 | 17 | 0 | 10 | 0 | 13 | 0 | 9 | 0 | 14 | 1 | 17 | 1 | 11 | 1 | 13 | 1 | 7 | 1 | 5 | 1 | 4 | 1 | 1 | 1 | 3 | 1 | 2 | 3 | 4 | 3 | 1 | 3 | 7 | 3 | 2
+PIN | RESET | 65600 | 0 | N/A | 92 | 5 | 0 | 17 | 0 | 10 | 0 | 13 | 0 | 9 | 0 | 14
+PIN | A<4> | 64 | 0 | N/A | 10 | 8 | 0 | 10 | 0 | 13 | 0 | 9 | 0 | 14 | 3 | 4 | 3 | 1 | 3 | 7 | 3 | 2
+PIN | A<5> | 64 | 0 | N/A | 9 | 8 | 0 | 10 | 0 | 13 | 0 | 9 | 0 | 14 | 3 | 4 | 3 | 1 | 3 | 7 | 3 | 2
+PIN | HINTn<3> | 64 | 0 | N/A | 55 | 1 | 0 | 8
+PIN | HINTn<2> | 64 | 0 | N/A | 54 | 1 | 0 | 8
+PIN | HINTn<1> | 64 | 0 | N/A | 52 | 1 | 0 | 8
+PIN | HINTn<0> | 64 | 0 | N/A | 30 | 1 | 0 | 8
+PIN | A<0> | 64 | 0 | N/A | 13 | 1 | 2 | 7
+PIN | A<1> | 64 | 0 | N/A | 3 | 1 | 2 | 2
+PIN | A<2> | 64 | 0 | N/A | 12 | 1 | 2 | 3
+PIN | HRSTn<0> | 536871040 | 0 | N/A | 21
+PIN | HRSTn<1> | 536871040 | 0 | N/A | 24
+PIN | HRSTn<2> | 536871040 | 0 | N/A | 25
+PIN | HRSTn<3> | 536871040 | 0 | N/A | 26
+PIN | INTn | 536871040 | 0 | N/A | 20
+PIN | HBIL | 536871040 | 0 | N/A | 33
+PIN | HCNTL0 | 536871040 | 0 | N/A | 43
+PIN | HCNTL1 | 536871040 | 0 | N/A | 44
+PIN | HCSn<0> | 536871040 | 0 | N/A | 63
+PIN | HCSn<1> | 536871040 | 0 | N/A | 62
+PIN | HCSn<2> | 536871040 | 0 | N/A | 65
+PIN | HCSn<3> | 536871040 | 0 | N/A | 66
+PIN | HDSn | 536871040 | 0 | N/A | 74
+PIN | HR_Wn | 536871040 | 0 | N/A | 83
+PIN | WAITn | 536871040 | 0 | N/A | 17
+PIN | CLKMD<2> | 536871040 | 0 | N/A | 49
+PIN | CLKMD<1> | 536871040 | 0 | N/A | 47
+PIN | CLKMD<3> | 536871040 | 0 | N/A | 50
+PIN | HD<0> | 536870976 | 0 | N/A | 38 | 1 | 1 | 11
+PIN | HD<1> | 536870976 | 0 | N/A | 46 | 1 | 1 | 13
+PIN | HD<2> | 536870976 | 0 | N/A | 31 | 1 | 1 | 7
+PIN | HD<3> | 536870976 | 0 | N/A | 67 | 1 | 1 | 5
+PIN | HD<4> | 536870976 | 0 | N/A | 72 | 1 | 1 | 4
+PIN | HD<5> | 536870976 | 0 | N/A | 70 | 1 | 1 | 1
+PIN | HD<6> | 536870976 | 0 | N/A | 75 | 1 | 1 | 3
+PIN | HD<7> | 536870976 | 0 | N/A | 68 | 1 | 1 | 2
+PIN | D<0> | 536870976 | 0 | N/A | 5 | 5 | 0 | 10 | 0 | 13 | 0 | 9 | 0 | 14 | 2 | 8
+PIN | D<1> | 536870976 | 0 | N/A | 7 | 1 | 2 | 10
+PIN | D<2> | 536870976 | 0 | N/A | 90 | 1 | 2 | 4
+PIN | D<3> | 536870976 | 0 | N/A | 89 | 1 | 3 | 3
+PIN | D<4> | 536870976 | 0 | N/A | 88 | 1 | 3 | 13
+PIN | D<5> | 536870976 | 0 | N/A | 87 | 1 | 3 | 5
+PIN | D<6> | 536870976 | 0 | N/A | 86 | 1 | 3 | 11
+PIN | D<7> | 536870976 | 0 | N/A | 84 | 1 | 3 | 10

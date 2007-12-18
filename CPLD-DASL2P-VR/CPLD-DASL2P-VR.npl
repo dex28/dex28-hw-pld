@@ -1,0 +1,33 @@
+JDF G
+// Created by Project Navigator ver 1.0
+PROJECT CPLD-DASL2P-VR
+DESIGN cpld-dasl2p-vr
+DEVFAM xc9500xl
+DEVFAMTIME 0
+DEVICE xc9572xl
+DEVICETIME 0
+DEVPKG VQ64
+DEVPKGTIME 0
+DEVSPEED -10
+DEVSPEEDTIME 0
+DEVTOPLEVELMODULETYPE HDL
+TOPLEVELMODULETYPETIME 1139695051
+DEVSYNTHESISTOOL XST (VHDL/Verilog)
+SYNTHESISTOOLTIME 0
+DEVSIMULATOR Modelsim
+SIMULATORTIME 0
+DEVGENERATEDSIMULATIONMODEL VHDL
+GENERATEDSIMULATIONMODELTIME 0
+DOCUMENT dasl2p_tb1.udo
+SOURCE dasl2p.vhd
+STIMULUS testbench_1.vhd
+STIMULUS testbench_2.vhd
+DEPASSOC dasl2p dasl2p.ucf
+[Normal]
+p_fitGenSimModel=xstvhd, 9500xl, VHDL Test Bench.t_MSimulatePostPlace&RouteVhdlModel, 1139703499, True
+p_ModelSimSignalWin=xstvhd, 9500xl, VHDL Test Bench.t_MSimulatePostPlace&RouteVhdlModel, 1139778773, False
+p_ModelSimStructWin=xstvhd, 9500xl, VHDL Test Bench.t_MSimulatePostPlace&RouteVhdlModel, 1139778773, False
+p_SimModelTarget=xstvhd, 9500xl, VHDL Test Bench.t_MSimulatePostPlace&RouteVhdlModel, 1139703499, Modelsim_VHDL
+xcpldFittimRptOption=xstvhd, 9500xl, VHDL.t_timRpt, 1139940484, Summary
+[STRATEGY-LIST]
+Normal=True

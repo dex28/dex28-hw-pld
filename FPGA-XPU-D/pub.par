@@ -1,0 +1,199 @@
+Release 6.1.03i Par G.26
+Copyright (c) 1995-2003 Xilinx, Inc.  All rights reserved.
+
+HELGA::  Sun Nov 26 05:49:08 2006
+
+
+C:/Xilinx/bin/nt/par.exe -w -intstyle ise -ol std -t 1 pub_map.ncd pub.ncd
+pub.pcf 
+
+
+Constraints file: pub.pcf
+
+Loading device database for application Par from file "pub_map.ncd".
+   "pub" is an NCD, version 2.38, device xc2s100, package tq144, speed -5
+Loading device for application Par from file 'v100.nph' in environment
+C:/Xilinx.
+Device speed data version:  PRODUCTION 1.27 2003-11-04.
+
+
+Resolved that IOB <FCEn> must be placed at site P58.
+Resolved that IOB <HSSC> must be placed at site P41.
+Resolved that IOB <CLK4M> must be placed at site P29.
+Resolved that IOB <CLK8M> must be placed at site P63.
+Resolved that IOB <INTn> must be placed at site P103.
+Resolved that IOB <PA<5>> must be placed at site P112.
+Resolved that IOB <PA<6>> must be placed at site P113.
+Resolved that IOB <PA<7>> must be placed at site P114.
+Resolved that IOB <EIRQn> must be placed at site P42.
+Resolved that IOB <KA_I<0>> must be placed at site P22.
+Resolved that IOB <KA_I<1>> must be placed at site P23.
+Resolved that IOB <KA_I<2>> must be placed at site P26.
+Resolved that GCLKIOB <CLK16M> must be placed at site P15.
+Resolved that IOB <KA_I<3>> must be placed at site P19.
+Resolved that IOB <RESET> must be placed at site P102.
+Resolved that IOB <Test> must be placed at site P141.
+Resolved that IOB <LED<1>> must be placed at site P136.
+Resolved that IOB <LED<2>> must be placed at site P137.
+Resolved that IOB <LED<3>> must be placed at site P138.
+Resolved that IOB <FCC> must be placed at site P57.
+Resolved that IOB <FCD> must be placed at site P60.
+Resolved that IOB <SYNC2> must be placed at site P62.
+Resolved that IOB <CRX> must be placed at site P28.
+Resolved that IOB <SYNC4> must be placed at site P65.
+Resolved that IOB <CTX> must be placed at site P27.
+Resolved that IOB <CSn> must be placed at site P101.
+Resolved that IOB <TSYNC> must be placed at site P64.
+Resolved that IOB <RDn> must be placed at site P86.
+Resolved that IOB <WRn> must be placed at site P100.
+Resolved that IOB <RPCM<0>> must be placed at site P46.
+Resolved that IOB <RPCM<1>> must be placed at site P44.
+Resolved that IOB <RPCM<2>> must be placed at site P47.
+Resolved that IOB <RPCM<3>> must be placed at site P43.
+Resolved that IOB <KA_IO<4>> must be placed at site P20.
+Resolved that IOB <KA_IO<5>> must be placed at site P21.
+Resolved that IOB <A<0>> must be placed at site P99.
+Resolved that IOB <A<1>> must be placed at site P87.
+Resolved that IOB <A<2>> must be placed at site P96.
+Resolved that IOB <A<3>> must be placed at site P95.
+Resolved that IOB <A<4>> must be placed at site P94.
+Resolved that IOB <A<5>> must be placed at site P93.
+Resolved that IOB <SENSEn> must be placed at site P59.
+Resolved that IOB <TPCM<0>> must be placed at site P50.
+Resolved that IOB <D<0>> must be placed at site P76.
+Resolved that IOB <TPCM<1>> must be placed at site P56.
+Resolved that IOB <D<1>> must be placed at site P77.
+Resolved that IOB <TPCM<2>> must be placed at site P49.
+Resolved that IOB <D<2>> must be placed at site P78.
+Resolved that IOB <TPCM<3>> must be placed at site P40.
+Resolved that IOB <D<3>> must be placed at site P79.
+Resolved that IOB <D<4>> must be placed at site P80.
+Resolved that IOB <D<5>> must be placed at site P83.
+Resolved that IOB <D<6>> must be placed at site P84.
+Resolved that IOB <D<7>> must be placed at site P85.
+
+
+Device utilization summary:
+
+   Number of External GCLKIOBs         1 out of 4      25%
+   Number of External IOBs            53 out of 92     57%
+      Number of LOCed External IOBs   53 out of 53    100%
+
+   Number of BLOCKRAMs                 4 out of 10     40%
+   Number of SLICEs                  248 out of 1200   20%
+
+   Number of GCLKs                     1 out of 4      25%
+
+
+
+Overall effort level (-ol):   Standard (set by user)
+Placer effort level (-pl):    Standard (set by user)
+Placer cost table entry (-t): 1
+Router effort level (-rl):    Standard (set by user)
+
+
+Phase 1.1
+Phase 1.1 (Checksum:989f27) REAL time: 0 secs 
+
+Phase 2.23
+Phase 2.23 (Checksum:1312cfe) REAL time: 0 secs 
+
+Phase 3.3
+Phase 3.3 (Checksum:1c9c37d) REAL time: 0 secs 
+
+Phase 4.5
+Phase 4.5 (Checksum:26259fc) REAL time: 0 secs 
+
+Phase 5.8
+.....................................................
+Phase 5.8 (Checksum:aca1a6) REAL time: 2 secs 
+
+Phase 6.5
+Phase 6.5 (Checksum:39386fa) REAL time: 2 secs 
+
+Phase 7.18
+Phase 7.18 (Checksum:42c1d79) REAL time: 2 secs 
+
+Writing design to file pub.ncd.
+
+Total REAL time to Placer completion: 3 secs 
+Total CPU time to Placer completion: 2 secs 
+
+
+Phase 1: 1986 unrouted;       REAL time: 3 secs 
+
+Phase 2: 1783 unrouted;       REAL time: 7 secs 
+
+Phase 3: 571 unrouted;       REAL time: 7 secs 
+
+Phase 4: 0 unrouted;       REAL time: 7 secs 
+
+Total REAL time to Router completion: 7 secs 
+Total CPU time to Router completion: 6 secs 
+
+Generating "par" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++----------------------------+----------+--------+------------+-------------+
+|         Clock Net          | Resource | Fanout |Net Skew(ns)|Max Delay(ns)|
++----------------------------+----------+--------+------------+-------------+
+|      CLK16M_BUFGP          |  Global  |   17   |  0.150     |  0.710      |
++----------------------------+----------+--------+------------+-------------+
+|            N11259          |Low-Skew  |   45   |  0.876     |  5.992      |
++----------------------------+----------+--------+------------+-------------+
+|          RDn_IBUF          |Low-Skew  |   15   |  0.446     |  5.245      |
++----------------------------+----------+--------+------------+-------------+
+|            N11235          |   Local  |   12   |  2.449     |  3.728      |
++----------------------------+----------+--------+------------+-------------+
+|            N11257          |   Local  |   30   |  2.120     |  5.310      |
++----------------------------+----------+--------+------------+-------------+
+|            N11231          |   Local  |    6   |  0.490     |  3.495      |
++----------------------------+----------+--------+------------+-------------+
+|          WRn_IBUF          |   Local  |   33   |  0.757     |  4.920      |
++----------------------------+----------+--------+------------+-------------+
+|        RPCM0_RCLK          |   Local  |    1   |  0.000     |  2.458      |
++----------------------------+----------+--------+------------+-------------+
+|        TPCM0_RCLK          |   Local  |    1   |  0.000     |  2.141      |
++----------------------------+----------+--------+------------+-------------+
+|        RPCM1_RCLK          |   Local  |    1   |  0.000     |  3.550      |
++----------------------------+----------+--------+------------+-------------+
+|        TPCM1_RCLK          |   Local  |    1   |  0.000     |  1.336      |
++----------------------------+----------+--------+------------+-------------+
+
+
+   The Delay Summary Report
+
+   The SCORE FOR THIS DESIGN is: 329
+
+
+The NUMBER OF SIGNALS NOT COMPLETELY ROUTED for this design is: 0
+
+   The AVERAGE CONNECTION DELAY for this design is:        2.156
+   The MAXIMUM PIN DELAY IS:                               7.031
+   The AVERAGE CONNECTION DELAY on the 10 WORST NETS is:   5.673
+
+   Listing Pin Delays by value: (nsec)
+
+    d < 1.00   < d < 2.00  < d < 3.00  < d < 4.00  < d < 8.00  d >= 8.00
+   ---------   ---------   ---------   ---------   ---------   ---------
+         388         763         359         222         254           0
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+Total REAL time to PAR completion: 8 secs 
+Total CPU time to PAR completion: 7 secs 
+
+Peak Memory Usage:  55 MB
+
+Placement: Completed - No errors found.
+Routing: Completed - No errors found.
+
+Writing design to file pub.ncd.
+
+
+PAR done.

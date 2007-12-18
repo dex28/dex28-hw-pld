@@ -1,0 +1,21 @@
+Release 6.1.03i - ngdbuild G.26
+Copyright (c) 1995-2003 Xilinx, Inc.  All rights reserved.
+
+Command Line: ngdbuild -dd _ngo -i -p xc9500xl tdm_mux.ngc tdm_mux.ngd 
+
+Reading NGO file "D:/WORK/CPLD-DASL2P/tdm_mux.ngc" ...
+Reading component libraries for design expansion...
+
+Checking timing specifications ...
+Checking expanded design ...
+WARNING:NgdBuild:454 - logical net 'U43/XLXI_45/CEO' has no load
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   1
+
+Total memory usage is 35828 kilobytes
+
+Writing NGD file "tdm_mux.ngd" ...
+
+Writing NGDBUILD log file "tdm_mux.bld"...

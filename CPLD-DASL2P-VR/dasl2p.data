@@ -1,0 +1,1363 @@
+MODELDATA
+MODELDATA_VERSION "v1998.8"
+DESIGN "dasl2p";
+
+/* port drive, load, max capacitance and max transition in data file */
+PORTDATA
+CLK_16M: MAXTRANS(0.0);
+RESETn: MAXTRANS(0.0);
+IOSTRn: MAXTRANS(0.0);
+R_Wn: MAXTRANS(0.0);
+DSP_A<1>: MAXTRANS(0.0);
+DSP_A<0>: MAXTRANS(0.0);
+DSP_A<2>: MAXTRANS(0.0);
+DR<0>: MAXTRANS(0.0);
+DR<1>: MAXTRANS(0.0);
+CINTn: MAXTRANS(0.0);
+COUT: MAXTRANS(0.0);
+BR<1>: MAXTRANS(0.0);
+DSP_BX<0>: MAXTRANS(0.0);
+BR<0>: MAXTRANS(0.0);
+DSP_BX<1>: MAXTRANS(0.0);
+DSP_D<0>: MAXTRANS(0.0);
+FSc<0>: MAXTRANS(0.0);
+DSP_D<1>: MAXTRANS(0.0);
+DCLK<0>: MAXTRANS(0.0);
+BCLK<0>: MAXTRANS(0.0);
+DCLK<1>: MAXTRANS(0.0);
+BCLK<1>: MAXTRANS(0.0);
+FSc<1>: MAXTRANS(0.0);
+LEDG<0>: MAXTRANS(0.0);
+LEDG<1>: MAXTRANS(0.0);
+FSb<1>: MAXTRANS(0.0);
+CCLK: MAXTRANS(0.0);
+CCSn<0>: MAXTRANS(0.0);
+CCSn<1>: MAXTRANS(0.0);
+CIN: MAXTRANS(0.0);
+DX<0>: MAXTRANS(0.0);
+DX<1>: MAXTRANS(0.0);
+LEDY<0>: MAXTRANS(0.0);
+LEDY<1>: MAXTRANS(0.0);
+FSb<0>: MAXTRANS(0.0);
+FSa<0>: MAXTRANS(0.0);
+TST_M_Sn: MAXTRANS(0.0);
+MCLK<0>: MAXTRANS(0.0);
+TST_FS: MAXTRANS(0.0);
+FSa<1>: MAXTRANS(0.0);
+BX<0>: MAXTRANS(0.0);
+BX<1>: MAXTRANS(0.0);
+DSP_BCLK<0>: MAXTRANS(0.0);
+DSP_BCLK<1>: MAXTRANS(0.0);
+DSP_BFS<0>: MAXTRANS(0.0);
+DSP_BFS<1>: MAXTRANS(0.0);
+DSP_INTn<0>: MAXTRANS(0.0);
+DSP_INTn<1>: MAXTRANS(0.0);
+MCLK<1>: MAXTRANS(0.0);
+DSP_BR<0>: MAXTRANS(0.0);
+DSP_BR<1>: MAXTRANS(0.0);
+DSP_INTn3: MAXTRANS(0.0);
+ENDPORTDATA
+
+/* timing arc data */
+TIMINGDATA
+
+ARCDATA
+BCLK<0>_BCLK<1>_delay:
+CELL_RISE(scalar) {
+  VALUES("10");
+}
+CELL_FALL(scalar) {
+  VALUES("10");
+}
+ENDARCDATA
+
+ARCDATA
+DSP_BX<0>_BX<0>_delay:
+CELL_RISE(scalar) {
+  VALUES("10");
+}
+CELL_FALL(scalar) {
+  VALUES("10");
+}
+ENDARCDATA
+
+ARCDATA
+BR<1>_BX<0>_delay:
+CELL_RISE(scalar) {
+  VALUES("10");
+}
+CELL_FALL(scalar) {
+  VALUES("10");
+}
+ENDARCDATA
+
+ARCDATA
+DSP_BX<1>_BX<1>_delay:
+CELL_RISE(scalar) {
+  VALUES("10");
+}
+CELL_FALL(scalar) {
+  VALUES("10");
+}
+ENDARCDATA
+
+ARCDATA
+BR<0>_BX<1>_delay:
+CELL_RISE(scalar) {
+  VALUES("10");
+}
+CELL_FALL(scalar) {
+  VALUES("10");
+}
+ENDARCDATA
+
+ARCDATA
+DCLK<0>_DCLK<1>_delay:
+CELL_RISE(scalar) {
+  VALUES("10");
+}
+CELL_FALL(scalar) {
+  VALUES("10");
+}
+ENDARCDATA
+
+ARCDATA
+BCLK<0>_DSP_BCLK<0>_delay:
+CELL_RISE(scalar) {
+  VALUES("10");
+}
+CELL_FALL(scalar) {
+  VALUES("10");
+}
+ENDARCDATA
+
+ARCDATA
+BCLK<0>_DSP_BCLK<1>_delay:
+CELL_RISE(scalar) {
+  VALUES("10");
+}
+CELL_FALL(scalar) {
+  VALUES("10");
+}
+ENDARCDATA
+
+ARCDATA
+BCLK<1>_DSP_BCLK<1>_delay:
+CELL_RISE(scalar) {
+  VALUES("10");
+}
+CELL_FALL(scalar) {
+  VALUES("10");
+}
+ENDARCDATA
+
+ARCDATA
+FSc<0>_DSP_BFS<0>_delay:
+CELL_RISE(scalar) {
+  VALUES("10");
+}
+CELL_FALL(scalar) {
+  VALUES("10");
+}
+ENDARCDATA
+
+ARCDATA
+FSc<1>_DSP_BFS<1>_delay:
+CELL_RISE(scalar) {
+  VALUES("10");
+}
+CELL_FALL(scalar) {
+  VALUES("10");
+}
+ENDARCDATA
+
+ARCDATA
+FSc<0>_DSP_BFS<1>_delay:
+CELL_RISE(scalar) {
+  VALUES("10");
+}
+CELL_FALL(scalar) {
+  VALUES("10");
+}
+ENDARCDATA
+
+ARCDATA
+BR<0>_DSP_BR<0>_delay:
+CELL_RISE(scalar) {
+  VALUES("10");
+}
+CELL_FALL(scalar) {
+  VALUES("10");
+}
+ENDARCDATA
+
+ARCDATA
+BR<1>_DSP_BR<1>_delay:
+CELL_RISE(scalar) {
+  VALUES("10");
+}
+CELL_FALL(scalar) {
+  VALUES("10");
+}
+ENDARCDATA
+
+ARCDATA
+R_Wn_DSP_D<0>_delay:
+CELL_RISE(scalar) {
+  VALUES("11");
+}
+CELL_FALL(scalar) {
+  VALUES("11");
+}
+ENDARCDATA
+
+ARCDATA
+COUT_DSP_D<0>_delay:
+CELL_RISE(scalar) {
+  VALUES("10");
+}
+CELL_FALL(scalar) {
+  VALUES("10");
+}
+ENDARCDATA
+
+ARCDATA
+CINTn_DSP_D<0>_delay:
+CELL_RISE(scalar) {
+  VALUES("10");
+}
+CELL_FALL(scalar) {
+  VALUES("10");
+}
+ENDARCDATA
+
+ARCDATA
+DSP_A<2>_DSP_D<0>_delay:
+CELL_RISE(scalar) {
+  VALUES("11");
+}
+CELL_FALL(scalar) {
+  VALUES("11");
+}
+ENDARCDATA
+
+ARCDATA
+DSP_A<0>_DSP_D<0>_delay:
+CELL_RISE(scalar) {
+  VALUES("11");
+}
+CELL_FALL(scalar) {
+  VALUES("11");
+}
+ENDARCDATA
+
+ARCDATA
+DSP_A<1>_DSP_D<0>_delay:
+CELL_RISE(scalar) {
+  VALUES("11");
+}
+CELL_FALL(scalar) {
+  VALUES("11");
+}
+ENDARCDATA
+
+ARCDATA
+IOSTRn_DSP_D<0>_delay:
+CELL_RISE(scalar) {
+  VALUES("11");
+}
+CELL_FALL(scalar) {
+  VALUES("11");
+}
+ENDARCDATA
+
+ARCDATA
+R_Wn_DSP_D<1>_delay:
+CELL_RISE(scalar) {
+  VALUES("11");
+}
+CELL_FALL(scalar) {
+  VALUES("11");
+}
+ENDARCDATA
+
+ARCDATA
+IOSTRn_DSP_D<1>_delay:
+CELL_RISE(scalar) {
+  VALUES("11");
+}
+CELL_FALL(scalar) {
+  VALUES("11");
+}
+ENDARCDATA
+
+ARCDATA
+CINTn_DSP_INTn3_delay:
+CELL_RISE(scalar) {
+  VALUES("10");
+}
+CELL_FALL(scalar) {
+  VALUES("10");
+}
+ENDARCDATA
+
+ARCDATA
+DCLK<0>_DSP_INTn<0>_delay:
+CELL_RISE(scalar) {
+  VALUES("10");
+}
+CELL_FALL(scalar) {
+  VALUES("10");
+}
+ENDARCDATA
+
+ARCDATA
+DCLK<0>_DSP_INTn<1>_delay:
+CELL_RISE(scalar) {
+  VALUES("10");
+}
+CELL_FALL(scalar) {
+  VALUES("10");
+}
+ENDARCDATA
+
+ARCDATA
+DCLK<1>_DSP_INTn<1>_delay:
+CELL_RISE(scalar) {
+  VALUES("10");
+}
+CELL_FALL(scalar) {
+  VALUES("10");
+}
+ENDARCDATA
+
+ARCDATA
+FSc<0>_FSa<1>_delay:
+CELL_RISE(scalar) {
+  VALUES("10");
+}
+CELL_FALL(scalar) {
+  VALUES("10");
+}
+ENDARCDATA
+
+ARCDATA
+FSc<0>_FSb<1>_delay:
+CELL_RISE(scalar) {
+  VALUES("10");
+}
+CELL_FALL(scalar) {
+  VALUES("10");
+}
+ENDARCDATA
+
+ARCDATA
+RESETn_LEDG<0>_delay:
+CELL_RISE(scalar) {
+  VALUES("11");
+}
+CELL_FALL(scalar) {
+  VALUES("11");
+}
+ENDARCDATA
+
+ARCDATA
+RESETn_LEDG<1>_delay:
+CELL_RISE(scalar) {
+  VALUES("11");
+}
+CELL_FALL(scalar) {
+  VALUES("11");
+}
+ENDARCDATA
+
+ARCDATA
+BCLK<0>_MCLK<1>_delay:
+CELL_RISE(scalar) {
+  VALUES("10");
+}
+CELL_FALL(scalar) {
+  VALUES("10");
+}
+ENDARCDATA
+
+ARCDATA
+DCLK<1>_DSP_D<0>_delay:
+CELL_RISE(scalar) {
+  VALUES("18.9");
+}
+CELL_FALL(scalar) {
+  VALUES("18.9");
+}
+ENDARCDATA
+
+ARCDATA
+DCLK<0>_DSP_D<0>_delay:
+CELL_RISE(scalar) {
+  VALUES("17.9");
+}
+CELL_FALL(scalar) {
+  VALUES("17.9");
+}
+ENDARCDATA
+
+ARCDATA
+R_Wn_DSP_D<0>_delay:
+CELL_RISE(scalar) {
+  VALUES("18.9");
+}
+CELL_FALL(scalar) {
+  VALUES("18.9");
+}
+ENDARCDATA
+
+ARCDATA
+R_Wn_FSc<0>_delay:
+CELL_RISE(scalar) {
+  VALUES("18.9");
+}
+CELL_FALL(scalar) {
+  VALUES("18.9");
+}
+ENDARCDATA
+
+ARCDATA
+R_Wn_DCLK<0>_delay:
+CELL_RISE(scalar) {
+  VALUES("18.9");
+}
+CELL_FALL(scalar) {
+  VALUES("18.9");
+}
+ENDARCDATA
+
+ARCDATA
+R_Wn_BCLK<0>_delay:
+CELL_RISE(scalar) {
+  VALUES("18.9");
+}
+CELL_FALL(scalar) {
+  VALUES("18.9");
+}
+ENDARCDATA
+
+ARCDATA
+R_Wn_DCLK<1>_delay:
+CELL_RISE(scalar) {
+  VALUES("18.9");
+}
+CELL_FALL(scalar) {
+  VALUES("18.9");
+}
+ENDARCDATA
+
+ARCDATA
+R_Wn_BCLK<1>_delay:
+CELL_RISE(scalar) {
+  VALUES("18.9");
+}
+CELL_FALL(scalar) {
+  VALUES("18.9");
+}
+ENDARCDATA
+
+ARCDATA
+R_Wn_FSc<1>_delay:
+CELL_RISE(scalar) {
+  VALUES("18.9");
+}
+CELL_FALL(scalar) {
+  VALUES("18.9");
+}
+ENDARCDATA
+
+ARCDATA
+R_Wn_LEDG<0>_delay:
+CELL_RISE(scalar) {
+  VALUES("10.2");
+}
+CELL_FALL(scalar) {
+  VALUES("10.2");
+}
+ENDARCDATA
+
+ARCDATA
+R_Wn_LEDG<1>_delay:
+CELL_RISE(scalar) {
+  VALUES("10.2");
+}
+CELL_FALL(scalar) {
+  VALUES("10.2");
+}
+ENDARCDATA
+
+ARCDATA
+R_Wn_FSb<1>_delay:
+CELL_RISE(scalar) {
+  VALUES("18.9");
+}
+CELL_FALL(scalar) {
+  VALUES("18.9");
+}
+ENDARCDATA
+
+ARCDATA
+R_Wn_CCLK_delay:
+CELL_RISE(scalar) {
+  VALUES("10.2");
+}
+CELL_FALL(scalar) {
+  VALUES("10.2");
+}
+ENDARCDATA
+
+ARCDATA
+R_Wn_CCSn<0>_delay:
+CELL_RISE(scalar) {
+  VALUES("10.2");
+}
+CELL_FALL(scalar) {
+  VALUES("10.2");
+}
+ENDARCDATA
+
+ARCDATA
+R_Wn_CCSn<1>_delay:
+CELL_RISE(scalar) {
+  VALUES("10.2");
+}
+CELL_FALL(scalar) {
+  VALUES("10.2");
+}
+ENDARCDATA
+
+ARCDATA
+R_Wn_CIN_delay:
+CELL_RISE(scalar) {
+  VALUES("10.2");
+}
+CELL_FALL(scalar) {
+  VALUES("10.2");
+}
+ENDARCDATA
+
+ARCDATA
+R_Wn_DX<0>_delay:
+CELL_RISE(scalar) {
+  VALUES("10.2");
+}
+CELL_FALL(scalar) {
+  VALUES("10.2");
+}
+ENDARCDATA
+
+ARCDATA
+R_Wn_DX<1>_delay:
+CELL_RISE(scalar) {
+  VALUES("10.2");
+}
+CELL_FALL(scalar) {
+  VALUES("10.2");
+}
+ENDARCDATA
+
+ARCDATA
+R_Wn_LEDY<0>_delay:
+CELL_RISE(scalar) {
+  VALUES("10.2");
+}
+CELL_FALL(scalar) {
+  VALUES("10.2");
+}
+ENDARCDATA
+
+ARCDATA
+R_Wn_LEDY<1>_delay:
+CELL_RISE(scalar) {
+  VALUES("10.2");
+}
+CELL_FALL(scalar) {
+  VALUES("10.2");
+}
+ENDARCDATA
+
+ARCDATA
+R_Wn_FSb<0>_delay:
+CELL_RISE(scalar) {
+  VALUES("18.9");
+}
+CELL_FALL(scalar) {
+  VALUES("18.9");
+}
+ENDARCDATA
+
+ARCDATA
+R_Wn_FSa<0>_delay:
+CELL_RISE(scalar) {
+  VALUES("18.9");
+}
+CELL_FALL(scalar) {
+  VALUES("18.9");
+}
+ENDARCDATA
+
+ARCDATA
+R_Wn_TST_M_Sn_delay:
+CELL_RISE(scalar) {
+  VALUES("17.9");
+}
+CELL_FALL(scalar) {
+  VALUES("17.9");
+}
+ENDARCDATA
+
+ARCDATA
+R_Wn_FSa<1>_delay:
+CELL_RISE(scalar) {
+  VALUES("18.9");
+}
+CELL_FALL(scalar) {
+  VALUES("18.9");
+}
+ENDARCDATA
+
+ARCDATA
+R_Wn_BX<0>_delay:
+CELL_RISE(scalar) {
+  VALUES("17.9");
+}
+CELL_FALL(scalar) {
+  VALUES("17.9");
+}
+ENDARCDATA
+
+ARCDATA
+R_Wn_BX<1>_delay:
+CELL_RISE(scalar) {
+  VALUES("17.9");
+}
+CELL_FALL(scalar) {
+  VALUES("17.9");
+}
+ENDARCDATA
+
+ARCDATA
+R_Wn_DSP_BCLK<0>_delay:
+CELL_RISE(scalar) {
+  VALUES("17.9");
+}
+CELL_FALL(scalar) {
+  VALUES("17.9");
+}
+ENDARCDATA
+
+ARCDATA
+R_Wn_DSP_BCLK<1>_delay:
+CELL_RISE(scalar) {
+  VALUES("17.9");
+}
+CELL_FALL(scalar) {
+  VALUES("17.9");
+}
+ENDARCDATA
+
+ARCDATA
+R_Wn_DSP_BFS<0>_delay:
+CELL_RISE(scalar) {
+  VALUES("17.9");
+}
+CELL_FALL(scalar) {
+  VALUES("17.9");
+}
+ENDARCDATA
+
+ARCDATA
+R_Wn_DSP_BFS<1>_delay:
+CELL_RISE(scalar) {
+  VALUES("17.9");
+}
+CELL_FALL(scalar) {
+  VALUES("17.9");
+}
+ENDARCDATA
+
+ARCDATA
+R_Wn_DSP_INTn<0>_delay:
+CELL_RISE(scalar) {
+  VALUES("17.9");
+}
+CELL_FALL(scalar) {
+  VALUES("17.9");
+}
+ENDARCDATA
+
+ARCDATA
+R_Wn_DSP_INTn<1>_delay:
+CELL_RISE(scalar) {
+  VALUES("17.9");
+}
+CELL_FALL(scalar) {
+  VALUES("17.9");
+}
+ENDARCDATA
+
+ARCDATA
+R_Wn_MCLK<1>_delay:
+CELL_RISE(scalar) {
+  VALUES("17.9");
+}
+CELL_FALL(scalar) {
+  VALUES("17.9");
+}
+ENDARCDATA
+
+ARCDATA
+IOSTRn_DSP_D<0>_delay:
+CELL_RISE(scalar) {
+  VALUES("18.9");
+}
+CELL_FALL(scalar) {
+  VALUES("18.9");
+}
+ENDARCDATA
+
+ARCDATA
+IOSTRn_FSc<0>_delay:
+CELL_RISE(scalar) {
+  VALUES("18.9");
+}
+CELL_FALL(scalar) {
+  VALUES("18.9");
+}
+ENDARCDATA
+
+ARCDATA
+IOSTRn_DCLK<0>_delay:
+CELL_RISE(scalar) {
+  VALUES("18.9");
+}
+CELL_FALL(scalar) {
+  VALUES("18.9");
+}
+ENDARCDATA
+
+ARCDATA
+IOSTRn_BCLK<0>_delay:
+CELL_RISE(scalar) {
+  VALUES("18.9");
+}
+CELL_FALL(scalar) {
+  VALUES("18.9");
+}
+ENDARCDATA
+
+ARCDATA
+IOSTRn_DCLK<1>_delay:
+CELL_RISE(scalar) {
+  VALUES("18.9");
+}
+CELL_FALL(scalar) {
+  VALUES("18.9");
+}
+ENDARCDATA
+
+ARCDATA
+IOSTRn_BCLK<1>_delay:
+CELL_RISE(scalar) {
+  VALUES("18.9");
+}
+CELL_FALL(scalar) {
+  VALUES("18.9");
+}
+ENDARCDATA
+
+ARCDATA
+IOSTRn_FSc<1>_delay:
+CELL_RISE(scalar) {
+  VALUES("18.9");
+}
+CELL_FALL(scalar) {
+  VALUES("18.9");
+}
+ENDARCDATA
+
+ARCDATA
+IOSTRn_LEDG<0>_delay:
+CELL_RISE(scalar) {
+  VALUES("10.2");
+}
+CELL_FALL(scalar) {
+  VALUES("10.2");
+}
+ENDARCDATA
+
+ARCDATA
+IOSTRn_LEDG<1>_delay:
+CELL_RISE(scalar) {
+  VALUES("10.2");
+}
+CELL_FALL(scalar) {
+  VALUES("10.2");
+}
+ENDARCDATA
+
+ARCDATA
+IOSTRn_FSb<1>_delay:
+CELL_RISE(scalar) {
+  VALUES("18.9");
+}
+CELL_FALL(scalar) {
+  VALUES("18.9");
+}
+ENDARCDATA
+
+ARCDATA
+IOSTRn_CCLK_delay:
+CELL_RISE(scalar) {
+  VALUES("10.2");
+}
+CELL_FALL(scalar) {
+  VALUES("10.2");
+}
+ENDARCDATA
+
+ARCDATA
+IOSTRn_CCSn<0>_delay:
+CELL_RISE(scalar) {
+  VALUES("10.2");
+}
+CELL_FALL(scalar) {
+  VALUES("10.2");
+}
+ENDARCDATA
+
+ARCDATA
+IOSTRn_CCSn<1>_delay:
+CELL_RISE(scalar) {
+  VALUES("10.2");
+}
+CELL_FALL(scalar) {
+  VALUES("10.2");
+}
+ENDARCDATA
+
+ARCDATA
+IOSTRn_CIN_delay:
+CELL_RISE(scalar) {
+  VALUES("10.2");
+}
+CELL_FALL(scalar) {
+  VALUES("10.2");
+}
+ENDARCDATA
+
+ARCDATA
+IOSTRn_DX<0>_delay:
+CELL_RISE(scalar) {
+  VALUES("10.2");
+}
+CELL_FALL(scalar) {
+  VALUES("10.2");
+}
+ENDARCDATA
+
+ARCDATA
+IOSTRn_DX<1>_delay:
+CELL_RISE(scalar) {
+  VALUES("10.2");
+}
+CELL_FALL(scalar) {
+  VALUES("10.2");
+}
+ENDARCDATA
+
+ARCDATA
+IOSTRn_LEDY<0>_delay:
+CELL_RISE(scalar) {
+  VALUES("10.2");
+}
+CELL_FALL(scalar) {
+  VALUES("10.2");
+}
+ENDARCDATA
+
+ARCDATA
+IOSTRn_LEDY<1>_delay:
+CELL_RISE(scalar) {
+  VALUES("10.2");
+}
+CELL_FALL(scalar) {
+  VALUES("10.2");
+}
+ENDARCDATA
+
+ARCDATA
+IOSTRn_FSb<0>_delay:
+CELL_RISE(scalar) {
+  VALUES("18.9");
+}
+CELL_FALL(scalar) {
+  VALUES("18.9");
+}
+ENDARCDATA
+
+ARCDATA
+IOSTRn_FSa<0>_delay:
+CELL_RISE(scalar) {
+  VALUES("18.9");
+}
+CELL_FALL(scalar) {
+  VALUES("18.9");
+}
+ENDARCDATA
+
+ARCDATA
+IOSTRn_TST_M_Sn_delay:
+CELL_RISE(scalar) {
+  VALUES("17.9");
+}
+CELL_FALL(scalar) {
+  VALUES("17.9");
+}
+ENDARCDATA
+
+ARCDATA
+IOSTRn_FSa<1>_delay:
+CELL_RISE(scalar) {
+  VALUES("18.9");
+}
+CELL_FALL(scalar) {
+  VALUES("18.9");
+}
+ENDARCDATA
+
+ARCDATA
+IOSTRn_BX<0>_delay:
+CELL_RISE(scalar) {
+  VALUES("17.9");
+}
+CELL_FALL(scalar) {
+  VALUES("17.9");
+}
+ENDARCDATA
+
+ARCDATA
+IOSTRn_BX<1>_delay:
+CELL_RISE(scalar) {
+  VALUES("17.9");
+}
+CELL_FALL(scalar) {
+  VALUES("17.9");
+}
+ENDARCDATA
+
+ARCDATA
+IOSTRn_DSP_BCLK<0>_delay:
+CELL_RISE(scalar) {
+  VALUES("17.9");
+}
+CELL_FALL(scalar) {
+  VALUES("17.9");
+}
+ENDARCDATA
+
+ARCDATA
+IOSTRn_DSP_BCLK<1>_delay:
+CELL_RISE(scalar) {
+  VALUES("17.9");
+}
+CELL_FALL(scalar) {
+  VALUES("17.9");
+}
+ENDARCDATA
+
+ARCDATA
+IOSTRn_DSP_BFS<0>_delay:
+CELL_RISE(scalar) {
+  VALUES("17.9");
+}
+CELL_FALL(scalar) {
+  VALUES("17.9");
+}
+ENDARCDATA
+
+ARCDATA
+IOSTRn_DSP_BFS<1>_delay:
+CELL_RISE(scalar) {
+  VALUES("17.9");
+}
+CELL_FALL(scalar) {
+  VALUES("17.9");
+}
+ENDARCDATA
+
+ARCDATA
+IOSTRn_DSP_INTn<0>_delay:
+CELL_RISE(scalar) {
+  VALUES("17.9");
+}
+CELL_FALL(scalar) {
+  VALUES("17.9");
+}
+ENDARCDATA
+
+ARCDATA
+IOSTRn_DSP_INTn<1>_delay:
+CELL_RISE(scalar) {
+  VALUES("17.9");
+}
+CELL_FALL(scalar) {
+  VALUES("17.9");
+}
+ENDARCDATA
+
+ARCDATA
+IOSTRn_MCLK<1>_delay:
+CELL_RISE(scalar) {
+  VALUES("17.9");
+}
+CELL_FALL(scalar) {
+  VALUES("17.9");
+}
+ENDARCDATA
+
+ARCDATA
+CLK_16M_DCLK<0>_delay:
+CELL_RISE(scalar) {
+  VALUES("5.8");
+}
+CELL_FALL(scalar) {
+  VALUES("5.8");
+}
+ENDARCDATA
+
+ARCDATA
+CLK_16M_BCLK<0>_delay:
+CELL_RISE(scalar) {
+  VALUES("5.8");
+}
+CELL_FALL(scalar) {
+  VALUES("5.8");
+}
+ENDARCDATA
+
+ARCDATA
+CLK_16M_DCLK<1>_delay:
+CELL_RISE(scalar) {
+  VALUES("13.5");
+}
+CELL_FALL(scalar) {
+  VALUES("13.5");
+}
+ENDARCDATA
+
+ARCDATA
+CLK_16M_BCLK<1>_delay:
+CELL_RISE(scalar) {
+  VALUES("13.5");
+}
+CELL_FALL(scalar) {
+  VALUES("13.5");
+}
+ENDARCDATA
+
+ARCDATA
+CLK_16M_FSb<1>_delay:
+CELL_RISE(scalar) {
+  VALUES("13.5");
+}
+CELL_FALL(scalar) {
+  VALUES("13.5");
+}
+ENDARCDATA
+
+ARCDATA
+CLK_16M_FSb<0>_delay:
+CELL_RISE(scalar) {
+  VALUES("5.8");
+}
+CELL_FALL(scalar) {
+  VALUES("5.8");
+}
+ENDARCDATA
+
+ARCDATA
+CLK_16M_FSa<0>_delay:
+CELL_RISE(scalar) {
+  VALUES("5.8");
+}
+CELL_FALL(scalar) {
+  VALUES("5.8");
+}
+ENDARCDATA
+
+ARCDATA
+CLK_16M_MCLK<0>_delay:
+CELL_RISE(scalar) {
+  VALUES("5.8");
+}
+CELL_FALL(scalar) {
+  VALUES("5.8");
+}
+ENDARCDATA
+
+ARCDATA
+CLK_16M_TST_FS_delay:
+CELL_RISE(scalar) {
+  VALUES("5.8");
+}
+CELL_FALL(scalar) {
+  VALUES("5.8");
+}
+ENDARCDATA
+
+ARCDATA
+CLK_16M_FSa<1>_delay:
+CELL_RISE(scalar) {
+  VALUES("13.5");
+}
+CELL_FALL(scalar) {
+  VALUES("13.5");
+}
+ENDARCDATA
+
+ARCDATA
+CLK_16M_DSP_BCLK<0>_delay:
+CELL_RISE(scalar) {
+  VALUES("13.5");
+}
+CELL_FALL(scalar) {
+  VALUES("13.5");
+}
+ENDARCDATA
+
+ARCDATA
+CLK_16M_DSP_BCLK<1>_delay:
+CELL_RISE(scalar) {
+  VALUES("13.5");
+}
+CELL_FALL(scalar) {
+  VALUES("13.5");
+}
+ENDARCDATA
+
+ARCDATA
+CLK_16M_DSP_BFS<0>_delay:
+CELL_RISE(scalar) {
+  VALUES("13.5");
+}
+CELL_FALL(scalar) {
+  VALUES("13.5");
+}
+ENDARCDATA
+
+ARCDATA
+CLK_16M_DSP_BFS<1>_delay:
+CELL_RISE(scalar) {
+  VALUES("13.5");
+}
+CELL_FALL(scalar) {
+  VALUES("13.5");
+}
+ENDARCDATA
+
+ARCDATA
+CLK_16M_DSP_INTn<0>_delay:
+CELL_RISE(scalar) {
+  VALUES("13.5");
+}
+CELL_FALL(scalar) {
+  VALUES("13.5");
+}
+ENDARCDATA
+
+ARCDATA
+CLK_16M_DSP_INTn<1>_delay:
+CELL_RISE(scalar) {
+  VALUES("13.5");
+}
+CELL_FALL(scalar) {
+  VALUES("13.5");
+}
+ENDARCDATA
+
+ARCDATA
+CLK_16M_MCLK<1>_delay:
+CELL_RISE(scalar) {
+  VALUES("13.5");
+}
+CELL_FALL(scalar) {
+  VALUES("13.5");
+}
+ENDARCDATA
+
+ARCDATA
+DR<1>_DCLK<1>_setup:
+CONSTRAINT(scalar) {
+  VALUES("5.1");
+}
+ENDARCDATA
+
+ARCDATA
+DR<1>_DCLK<1>_hold:
+CONSTRAINT(scalar) {
+  VALUES("1.4");
+}
+ENDARCDATA
+
+ARCDATA
+DR<0>_DCLK<0>_setup:
+CONSTRAINT(scalar) {
+  VALUES("5.1");
+}
+ENDARCDATA
+
+ARCDATA
+DR<0>_DCLK<0>_hold:
+CONSTRAINT(scalar) {
+  VALUES("1.4");
+}
+ENDARCDATA
+
+ARCDATA
+DSP_A<0>_R_Wn_setup:
+CONSTRAINT(scalar) {
+  VALUES("5.1");
+}
+ENDARCDATA
+
+ARCDATA
+DSP_A<1>_R_Wn_setup:
+CONSTRAINT(scalar) {
+  VALUES("5.1");
+}
+ENDARCDATA
+
+ARCDATA
+DSP_A<2>_R_Wn_setup:
+CONSTRAINT(scalar) {
+  VALUES("5.1");
+}
+ENDARCDATA
+
+ARCDATA
+DSP_D<0>_R_Wn_setup:
+CONSTRAINT(scalar) {
+  VALUES("5.1");
+}
+ENDARCDATA
+
+ARCDATA
+DSP_D<1>_R_Wn_setup:
+CONSTRAINT(scalar) {
+  VALUES("5.1");
+}
+ENDARCDATA
+
+ARCDATA
+DSP_A<0>_R_Wn_hold:
+CONSTRAINT(scalar) {
+  VALUES("1.4");
+}
+ENDARCDATA
+
+ARCDATA
+DSP_A<1>_R_Wn_hold:
+CONSTRAINT(scalar) {
+  VALUES("1.4");
+}
+ENDARCDATA
+
+ARCDATA
+DSP_A<2>_R_Wn_hold:
+CONSTRAINT(scalar) {
+  VALUES("1.4");
+}
+ENDARCDATA
+
+ARCDATA
+DSP_D<0>_R_Wn_hold:
+CONSTRAINT(scalar) {
+  VALUES("1.4");
+}
+ENDARCDATA
+
+ARCDATA
+DSP_D<1>_R_Wn_hold:
+CONSTRAINT(scalar) {
+  VALUES("1.4");
+}
+ENDARCDATA
+
+ARCDATA
+DSP_A<0>_IOSTRn_setup:
+CONSTRAINT(scalar) {
+  VALUES("5.1");
+}
+ENDARCDATA
+
+ARCDATA
+DSP_A<1>_IOSTRn_setup:
+CONSTRAINT(scalar) {
+  VALUES("5.1");
+}
+ENDARCDATA
+
+ARCDATA
+DSP_A<2>_IOSTRn_setup:
+CONSTRAINT(scalar) {
+  VALUES("5.1");
+}
+ENDARCDATA
+
+ARCDATA
+DSP_D<0>_IOSTRn_setup:
+CONSTRAINT(scalar) {
+  VALUES("5.1");
+}
+ENDARCDATA
+
+ARCDATA
+DSP_D<1>_IOSTRn_setup:
+CONSTRAINT(scalar) {
+  VALUES("5.1");
+}
+ENDARCDATA
+
+ARCDATA
+DSP_A<0>_IOSTRn_hold:
+CONSTRAINT(scalar) {
+  VALUES("1.4");
+}
+ENDARCDATA
+
+ARCDATA
+DSP_A<1>_IOSTRn_hold:
+CONSTRAINT(scalar) {
+  VALUES("1.4");
+}
+ENDARCDATA
+
+ARCDATA
+DSP_A<2>_IOSTRn_hold:
+CONSTRAINT(scalar) {
+  VALUES("1.4");
+}
+ENDARCDATA
+
+ARCDATA
+DSP_D<0>_IOSTRn_hold:
+CONSTRAINT(scalar) {
+  VALUES("1.4");
+}
+ENDARCDATA
+
+ARCDATA
+DSP_D<1>_IOSTRn_hold:
+CONSTRAINT(scalar) {
+  VALUES("1.4");
+}
+ENDARCDATA
+
+ENDTIMINGDATA
+ENDMODELDATA

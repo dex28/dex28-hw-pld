@@ -1,0 +1,24 @@
+# begin LFP file D:\work\FPGA-XPU-D\pub.lfp
+designfile pub.ngd
+IO_GROUP "PC"  ;
+IO_GROUP "LED"  ;
+IO_GROUP "D"  ;
+NET "PC<7>" IO_GROUP="PC"  ;
+NET "PC<6>" IO_GROUP="PC"  ;
+NET "PC<5>" IO_GROUP="PC"  ;
+NET "PC<4>" IO_GROUP="PC"  ;
+NET "PC<3>" IO_GROUP="PC"  ;
+NET "PC<2>" IO_GROUP="PC"  ;
+NET "PC<1>" IO_GROUP="PC"  ;
+NET "PC<0>" IO_GROUP="PC"  ;
+NET "LED<3>" IO_GROUP="LED"  ;
+NET "LED<2>" IO_GROUP="LED"  ;
+NET "LED<1>" IO_GROUP="LED"  ;
+NET "D<7>" IO_GROUP="D"  ;
+NET "D<6>" IO_GROUP="D"  ;
+NET "D<5>" IO_GROUP="D"  ;
+NET "D<4>" IO_GROUP="D"  ;
+NET "D<3>" IO_GROUP="D"  ;
+NET "D<2>" IO_GROUP="D"  ;
+NET "D<1>" IO_GROUP="D"  ;
+NET "D<0>" IO_GROUP="D"  ;

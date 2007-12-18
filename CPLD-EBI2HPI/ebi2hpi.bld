@@ -1,0 +1,23 @@
+Release 6.1.03i - ngdbuild G.26
+Copyright (c) 1995-2003 Xilinx, Inc.  All rights reserved.
+
+Command Line: ngdbuild -dd _ngo -uc ebi2hpi.ucf -p xc9500xl ebi2hpi.ngc
+ebi2hpi.ngd 
+
+Reading NGO file "D:/WORK/CPLD-EBI2HPI/ebi2hpi.ngc" ...
+Reading component libraries for design expansion...
+
+Annotating constraints to design from file "ebi2hpi.ucf" ...
+
+Checking timing specifications ...
+Checking expanded design ...
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 37876 kilobytes
+
+Writing NGD file "ebi2hpi.ngd" ...
+
+Writing NGDBUILD log file "ebi2hpi.bld"...

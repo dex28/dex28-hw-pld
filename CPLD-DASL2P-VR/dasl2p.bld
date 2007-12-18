@@ -1,0 +1,37 @@
+Release 6.1.03i - ngdbuild G.26
+Copyright (c) 1995-2003 Xilinx, Inc.  All rights reserved.
+
+Command Line: ngdbuild -dd _ngo -uc dasl2p.ucf -p xc9500xl dasl2p.ngc dasl2p.ngd
+
+Reading NGO file "D:/WORK/CPLD-DASL2P-VR/dasl2p.ngc" ...
+Reading component libraries for design expansion...
+
+Annotating constraints to design from file "dasl2p.ucf" ...
+INFO:NgdBuild:738 - A case sensitive search for the INST, PAD, or NET element
+   referred to by a constraint entry in 'dasl2p.ucf' that accompanies this
+   design has failed, while a case insensitive search is in progress. The result
+   of the case insensitive search will be used, but messages will accompany each
+   and every use of a case insensitive result. Constraints are case sensitive
+   with respect to user-specified identifiers, which includes names of logic
+   elements in a design.
+INFO:NgdBuild:740 - Line 46 in 'dasl2p.ucf': Found case insensitive match for
+   NET name 'LEDg<0>'. NET is 'LEDG<0>'.
+INFO:NgdBuild:740 - Line 47 in 'dasl2p.ucf': Found case insensitive match for
+   NET name 'LEDg<1>'. NET is 'LEDG<1>'.
+INFO:NgdBuild:740 - Line 48 in 'dasl2p.ucf': Found case insensitive match for
+   NET name 'LEDy<0>'. NET is 'LEDY<0>'.
+INFO:NgdBuild:740 - Line 49 in 'dasl2p.ucf': Found case insensitive match for
+   NET name 'LEDy<1>'. NET is 'LEDY<1>'.
+
+Checking timing specifications ...
+Checking expanded design ...
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 37876 kilobytes
+
+Writing NGD file "dasl2p.ngd" ...
+
+Writing NGDBUILD log file "dasl2p.bld"...

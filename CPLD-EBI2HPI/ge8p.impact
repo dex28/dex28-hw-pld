@@ -1,0 +1,37 @@
+setPreference -pref UserLevel:NOVICE
+setPreference -pref MessageLevel:DETAILED
+setPreference -pref ConcurrentMode:FALSE
+setPreference -pref UseHighz:FALSE
+setPreference -pref ConfigOnFailure:STOP
+setPreference -pref StartupCLock:AUTO_CORRECTION
+setPreference -pref AutoSignature:FALSE
+setPreference -pref KeepSVF:FALSE
+setPreference -pref svfUseTime:FALSE
+setPreference -pref UserLevel:NOVICE
+setPreference -pref MessageLevel:DETAILED
+setPreference -pref ConcurrentMode:FALSE
+setPreference -pref UseHighz:FALSE
+setPreference -pref ConfigOnFailure:STOP
+setPreference -pref StartupCLock:AUTO_CORRECTION
+setPreference -pref AutoSignature:FALSE
+setPreference -pref KeepSVF:FALSE
+setPreference -pref svfUseTime:FALSE
+setMode -bs
+setMode -cf
+setMode -bsfile
+setCable -port xsvf -file "D:\WORK\CPLD-EBI2HPI\ge8p-p1.xsvf"
+addDevice -position 1 -file "D:\WORK\CPLD-EBI2HPI\ebi2hpi.jed"
+addDevice -position 2 -file "D:\WORK\CPLD-DASL2P-VR\dasl2p.jed"
+addDevice -position 3 -file "D:\WORK\CPLD-DASL2P-VR\dasl2p.jed"
+addDevice -position 4 -file "D:\WORK\CPLD-DASL2P-VR\dasl2p.jed"
+addDevice -position 5 -file "D:\WORK\CPLD-DASL2P-VR\dasl2p.jed"
+Program -p 1 -e -v 
+setCable -port xsvf -file "D:\WORK\CPLD-EBI2HPI\ge8p-p2.xsvf"
+Program -p 2 -e -v 
+setCable -port xsvf -file "D:\WORK\CPLD-EBI2HPI\ge8p-p3.xsvf"
+Program -p 3 -e -v 
+setCable -port xsvf -file "D:\WORK\CPLD-EBI2HPI\ge8p-p4.xsvf"
+Program -p 4 -e -v 
+setCable -port xsvf -file "D:\WORK\CPLD-EBI2HPI\ge8p-p5.xsvf"
+Program -p 5 -e -v 
+exit

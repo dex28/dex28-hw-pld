@@ -1,0 +1,65 @@
+Release 6.1.03i - ngdbuild G.26
+Copyright (c) 1995-2003 Xilinx, Inc.  All rights reserved.
+
+Command Line: ngdbuild -intstyle ise -dd d:\work\fpga-xpu-d/_ngo -uc pub.ucf -p
+xc2s100-tq144-5 pub.ngc pub.ngd 
+
+Reading NGO file "D:/work/FPGA-XPU-D/pub.ngc" ...
+Reading component libraries for design expansion...
+
+Annotating constraints to design from file "pub.ucf" ...
+Attached a PULLUP primitive to pad net KA_IO<5> 
+Attached a PULLUP primitive to pad net KA_IO<4> 
+
+Checking timing specifications ...
+Checking expanded design ...
+INFO:NgdBuild:526 - On the RAMB4_S8_S8 symbol "RPCM0_FIFO", the following
+   properties are undefined: INIT_00, INIT_01, INIT_02, INIT_03, INIT_04,
+   INIT_05, INIT_06, INIT_07, INIT_08, INIT_09, INIT_0A, INIT_0B, INIT_0C,
+   INIT_0D, INIT_0E, INIT_0F. A default value of all zeroes will be used.
+INFO:NgdBuild:526 - On the RAMB4_S8_S8 symbol "RPCM1_FIFO", the following
+   properties are undefined: INIT_00, INIT_01, INIT_02, INIT_03, INIT_04,
+   INIT_05, INIT_06, INIT_07, INIT_08, INIT_09, INIT_0A, INIT_0B, INIT_0C,
+   INIT_0D, INIT_0E, INIT_0F. A default value of all zeroes will be used.
+INFO:NgdBuild:526 - On the RAMB4_S8_S8 symbol "TPCM0_FIFO", the following
+   properties are undefined: INIT_00, INIT_01, INIT_02, INIT_03, INIT_04,
+   INIT_05, INIT_06, INIT_07, INIT_08, INIT_09, INIT_0A, INIT_0B, INIT_0C,
+   INIT_0D, INIT_0E, INIT_0F. A default value of all zeroes will be used.
+INFO:NgdBuild:526 - On the RAMB4_S8_S8 symbol "TPCM1_FIFO", the following
+   properties are undefined: INIT_00, INIT_01, INIT_02, INIT_03, INIT_04,
+   INIT_05, INIT_06, INIT_07, INIT_08, INIT_09, INIT_0A, INIT_0B, INIT_0C,
+   INIT_0D, INIT_0E, INIT_0F. A default value of all zeroes will be used.
+WARNING:NgdBuild:479 - The input pad net 'RDn' is driving one or more clock
+   loads that should only use a dedicated clock buffer. This could result in
+   large clock skews on this net. Check whether the correct type of BUF is being
+   used to drive the clock buffer.
+WARNING:NgdBuild:479 - The input pad net 'WRn' is driving one or more clock
+   loads that should only use a dedicated clock buffer. This could result in
+   large clock skews on this net. Check whether the correct type of BUF is being
+   used to drive the clock buffer.
+WARNING:NgdBuild:479 - The input pad net 'CLK4M' is driving one or more clock
+   loads that should only use a dedicated clock buffer. This could result in
+   large clock skews on this net. Check whether the correct type of BUF is being
+   used to drive the clock buffer.
+WARNING:NgdBuild:479 - The input pad net 'CLK8M' is driving one or more clock
+   loads that should only use a dedicated clock buffer. This could result in
+   large clock skews on this net. Check whether the correct type of BUF is being
+   used to drive the clock buffer.
+WARNING:NgdBuild:479 - The input pad net 'FCC' is driving one or more clock
+   loads that should only use a dedicated clock buffer. This could result in
+   large clock skews on this net. Check whether the correct type of BUF is being
+   used to drive the clock buffer.
+WARNING:NgdBuild:479 - The input pad net 'FCEn' is driving one or more clock
+   loads that should only use a dedicated clock buffer. This could result in
+   large clock skews on this net. Check whether the correct type of BUF is being
+   used to drive the clock buffer.
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   6
+
+Total memory usage is 39988 kilobytes
+
+Writing NGD file "pub.ngd" ...
+
+Writing NGDBUILD log file "pub.bld"...

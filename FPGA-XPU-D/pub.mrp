@@ -1,0 +1,268 @@
+Release 6.1.03i Map G.26
+Xilinx Mapping Report File for Design 'pub'
+
+Design Information
+------------------
+Command Line   : C:/Xilinx/bin/nt/map.exe -intstyle ise -p xc2s100-tq144-5 -cm
+area -pr b -k 4 -c 100 -tx off -o pub_map.ncd pub.ngd pub.pcf 
+Target Device  : x2s100
+Target Package : tq144
+Target Speed   : -5
+Mapper Version : spartan2 -- $Revision: 1.16 $
+Mapped Date    : Sun Nov 26 05:49:06 2006
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:    0
+Logic Utilization:
+  Number of Slice Flip Flops:       194 out of  2,400    8%
+  Number of 4 input LUTs:           296 out of  2,400   12%
+Logic Distribution:
+    Number of occupied Slices:                         248 out of  1,200   20%
+    Number of Slices containing only related logic:    248 out of    248  100%
+    Number of Slices containing unrelated logic:         0 out of    248    0%
+        *See NOTES below for an explanation of the effects of unrelated logic
+Total Number 4 input LUTs:          444 out of  2,400   18%
+      Number used as logic:                       296
+      Number used as a route-thru:                 80
+      Number used for Dual Port RAMs:              68
+      (Two LUTs used per Dual Port RAM)
+   Number of bonded IOBs:            53 out of     92   57%
+      IOB Flip Flops:                               5
+   Number of Block RAMs:              4 out of     10   40%
+   Number of GCLKs:                   1 out of      4   25%
+   Number of GCLKIOBs:                1 out of      4   25%
+
+Total equivalent gate count for design:  73,757
+Additional JTAG gate count for IOBs:  2,592
+Peak Memory Usage:  61 MB
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity -
+   e.g. two LUTs are "related" if they share common inputs.
+   When assembling slices, Map gives priority to combine logic that
+   is related.  Doing so results in the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin
+   packing unrelated logic into a slice once 99% of the slices are
+   occupied through related logic packing.
+
+   Note that once logic distribution reaches the 99% level through
+   related logic packing, this does not mean the device is completely
+   utilized.  Unrelated logic packing will then begin, continuing until
+   all usable LUTs and FFs are occupied.  Depending on your timing
+   budget, increased levels of unrelated logic packing may adversely
+   affect the overall timing performance of your design.
+
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group Summary
+Section 10 - Modular Design Summary
+Section 11 - Timing Report
+Section 12 - Configuration String Information
+Section 13 - Additional Device Resource Counts
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+
+Section 3 - Informational
+-------------------------
+INFO:MapLib:562 - No environment variables are currently set.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+  16 block(s) removed
+   2 block(s) optimized away
+   8 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic reported below is either:
+   1. part of a cycle
+   2. part of disabled logic
+   3. a side-effect of other trimmed logic
+
+The signal "PC<7>" is unused and has been removed.
+ Unused block "PC_7_OBUFT" (TRI) removed.
+The signal "PC<6>" is unused and has been removed.
+ Unused block "PC_6_OBUFT" (TRI) removed.
+The signal "PC<5>" is unused and has been removed.
+ Unused block "PC_5_OBUFT" (TRI) removed.
+The signal "PC<4>" is unused and has been removed.
+ Unused block "PC_4_OBUFT" (TRI) removed.
+The signal "PC<3>" is unused and has been removed.
+ Unused block "PC_3_OBUFT" (TRI) removed.
+The signal "PC<2>" is unused and has been removed.
+ Unused block "PC_2_OBUFT" (TRI) removed.
+The signal "PC<1>" is unused and has been removed.
+ Unused block "PC_1_OBUFT" (TRI) removed.
+The signal "PC<0>" is unused and has been removed.
+ Unused block "PC_0_OBUFT" (TRI) removed.
+Unused block "PC<0>" (PAD) removed.
+Unused block "PC<1>" (PAD) removed.
+Unused block "PC<2>" (PAD) removed.
+Unused block "PC<3>" (PAD) removed.
+Unused block "PC<4>" (PAD) removed.
+Unused block "PC<5>" (PAD) removed.
+Unused block "PC<6>" (PAD) removed.
+Unused block "PC<7>" (PAD) removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XST_GND
+VCC 		XST_VCC
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type    | Direction | IO Standard | Drive    | Slew | Reg (s)  | Resistor | IOB   |
+|                                    |         |           |             | Strength | Rate |          |          | Delay |
++------------------------------------------------------------------------------------------------------------------------+
+| CLK16M                             | GCLKIOB | INPUT     | LVTTL       |          |      |          |          |       |
+| A<0>                               | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
+| A<1>                               | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
+| A<2>                               | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
+| A<3>                               | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
+| A<4>                               | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
+| A<5>                               | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
+| CLK4M                              | IOB     | BIDIR     | LVTTL       | 24       | FAST |          |          |       |
+| CLK8M                              | IOB     | BIDIR     | LVTTL       | 24       | FAST |          |          |       |
+| CRX                                | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
+| CSn                                | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
+| CTX                                | IOB     | BIDIR     | LVTTL       | 24       | FAST | OUTFF    |          |       |
+| D<0>                               | IOB     | BIDIR     | LVTTL       | 12       | FAST | INFF     |          | IFD   |
+| D<1>                               | IOB     | BIDIR     | LVTTL       | 12       | FAST |          |          |       |
+| D<2>                               | IOB     | BIDIR     | LVTTL       | 12       | FAST |          |          |       |
+| D<3>                               | IOB     | BIDIR     | LVTTL       | 12       | FAST |          |          |       |
+| D<4>                               | IOB     | BIDIR     | LVTTL       | 12       | FAST |          |          |       |
+| D<5>                               | IOB     | BIDIR     | LVTTL       | 12       | FAST |          |          |       |
+| D<6>                               | IOB     | BIDIR     | LVTTL       | 12       | FAST |          |          |       |
+| D<7>                               | IOB     | BIDIR     | LVTTL       | 12       | FAST |          |          |       |
+| EIRQn                              | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
+| FCC                                | IOB     | BIDIR     | LVTTL       | 24       | FAST |          |          |       |
+| FCD                                | IOB     | BIDIR     | LVTTL       | 24       | FAST | INFF     |          | IFD   |
+| FCEn                               | IOB     | BIDIR     | LVTTL       | 24       | FAST |          |          |       |
+| HSSC                               | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
+| INTn                               | IOB     | OUTPUT    | LVTTL       | 12       | FAST |          |          |       |
+| KA_I<0>                            | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
+| KA_I<1>                            | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
+| KA_I<2>                            | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
+| KA_I<3>                            | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
+| KA_IO<4>                           | IOB     | BIDIR     | LVTTL       | 24       | SLOW |          | PULLUP   |       |
+| KA_IO<5>                           | IOB     | BIDIR     | LVTTL       | 24       | SLOW |          | PULLUP   |       |
+| LED<1>                             | IOB     | OUTPUT    | LVTTL       | 24       | SLOW |          |          |       |
+| LED<2>                             | IOB     | OUTPUT    | LVTTL       | 24       | SLOW |          |          |       |
+| LED<3>                             | IOB     | OUTPUT    | LVTTL       | 24       | SLOW |          |          |       |
+| PA<5>                              | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
+| PA<6>                              | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
+| PA<7>                              | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
+| RDn                                | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
+| RESET                              | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
+| RPCM<0>                            | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
+| RPCM<1>                            | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
+| RPCM<2>                            | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
+| RPCM<3>                            | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
+| SENSEn                             | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
+| SYNC2                              | IOB     | OUTPUT    | LVTTL       | 24       | FAST | OUTFF    |          |       |
+| SYNC4                              | IOB     | BIDIR     | LVTTL       | 24       | FAST | OUTFF    |          |       |
+| TPCM<0>                            | IOB     | BIDIR     | LVTTL       | 24       | SLOW |          |          |       |
+| TPCM<1>                            | IOB     | BIDIR     | LVTTL       | 24       | SLOW |          |          |       |
+| TPCM<2>                            | IOB     | BIDIR     | LVTTL       | 24       | SLOW |          |          |       |
+| TPCM<3>                            | IOB     | BIDIR     | LVTTL       | 24       | SLOW |          |          |       |
+| TSYNC                              | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
+| Test                               | IOB     | OUTPUT    | LVTTL       | 12       | SLOW |          |          |       |
+| WRn                                | IOB     | INPUT     | LVTTL       |          |      |          |          |       |
++------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group Summary
+------------------------------
+No area groups were found in this design.
+
+Section 10 - Modular Design Summary
+-----------------------------------
+Modular Design not used for this design.
+
+Section 11 - Timing Report
+--------------------------
+This design was not run using timing mode.
+
+Section 12 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 13 - Additional Device Resource Counts
+----------------------------------------------
+Number of JTAG Gates for IOBs = 54
+Number of Equivalent Gates for Design = 73,757
+Number of RPM Macros = 0
+Number of Hard Macros = 0
+PCI IOBs = 0
+PCI LOGICs = 0
+CAPTUREs = 0
+BSCANs = 0
+STARTUPs = 0
+DLLs = 0
+GCLKIOBs = 1
+GCLKs = 1
+Block RAMs = 4
+TBUFs = 0
+Total Registers (Flops & Latches in Slices & IOBs) not driven by LUTs = 94
+IOB Latches not driven by LUTs = 0
+IOB Latches = 0
+IOB Flip Flops not driven by LUTs = 2
+IOB Flip Flops = 5
+Unbonded IOBs = 0
+Bonded IOBs = 53
+Shift Registers = 0
+Static Shift Registers = 0
+Dynamic Shift Registers = 34
+16x1 ROMs = 0
+16x1 RAMs = 0
+32x1 RAMs = 0
+Dual Port RAMs = 34
+MULTANDs = 0
+MUXF5s + MUXF6s = 1
+4 input LUTs used as Route-Thrus = 80
+4 input LUTs = 296
+Slice Latches not driven by LUTs = 0
+Slice Latches = 0
+Slice Flip Flops not driven by LUTs = 92
+Slice Flip Flops = 194
+Slices = 248
+Number of LUT signals with 4 loads = 11
+Number of LUT signals with 3 loads = 7
+Number of LUT signals with 2 loads = 31
+Number of LUT signals with 1 load = 209
+NGM Average fanout of LUT = 2.48
+NGM Maximum fanout of LUT = 95
+NGM Average fanin for LUT = 3.2736
+Number of LUT symbols = 296
+Number of IPAD symbols = 27
+Number of IBUF symbols = 47
+Number of BIPAD symbols = 21

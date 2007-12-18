@@ -1,0 +1,5 @@
+vhdl work FS_Gen.vhf
+vhdl work TDM_Mux.vhf
+vhdl work FD2CN.vhf
+vhdl work FD1CN.vhf
+vhdl work DASL2P.vhf

@@ -1,0 +1,93 @@
+Release 6.1i - Fit G.26
+Copyright(c) 1995-2003 Xilinx Inc. All rights reserved
+
+ 4- 5-2006  2:25AM
+
+NOTE: This file is designed to be imported into a spreadsheet program
+such as Microsoft Excel for viewing, printing and sorting. The comma ','
+character is used as the data field separator.
+This file is also designed to support parsing.
+
+Input file:  dasl2p.ngd
+output file: dasl2p_pad.csv
+Part type:   xc9572xl
+Speed grade: -10
+Package:     vq64
+
+Pinout by Pin Number:
+
+-----,-----,-----,-----,-----,-----,-----,-----,-----,-----,
+Pin Number,Signal Name,Pin Usage,Pin Name,Direction,IO Standard,IO Bank Number,{blank},Slew Rate,Termination,{blank},Voltage,Constraint,
+P1,CIN,O,I/O,OUTPUT,,,,,,,,,
+P2,CINTn,I,I/O/GTS2,INPUT,,,,,,,,,
+P3,VCC,,VCCINT,,,,,,,,,,
+P4,MCLK1,O,I/O,OUTPUT,,,,,,,,,
+P5,BR1,I,I/O/GTS1,INPUT,,,,,,,,,
+P6,BX1,O,I/O,OUTPUT,,,,,,,,,
+P7,BCLK1,I/O,I/O,BIDIR,,,,,,,,,
+P8,FSb1,O,I/O,OUTPUT,,,,,,,,,
+P9,FSa1,O,I/O,OUTPUT,,,,,,,,,
+P10,FSc1,I/O,I/O,BIDIR,,,,,,,,,
+P11,TST_M_Sn,O,I/O,OUTPUT,,,,,,,,,
+P12,DSP_A2,I,I/O,INPUT,,,,,,,,,
+P13,DSP_A1,I,I/O,INPUT,,,,,,,,,
+P14,GND,,GND,,,,,,,,,,
+P15,CLK,GCK,I/O/GCK1,,,,,,,,,,
+P16,DSP_A0,I,I/O/GCK2,INPUT,,,,,,,,,
+P17,DSP_D1,I/O,I/O/GCK3,BIDIR,,,,,,,,,
+P18,DSP_D0,I/O,I/O,BIDIR,,,,,,,,,
+P19,DSP_BX1,I,I/O,INPUT,,,,,,,,,
+P20,DSP_BFS1,O,I/O,OUTPUT,,,,,,,,,
+P21,GND,,GND,,,,,,,,,,
+P22,DSP_BCLK1,O,I/O,OUTPUT,,,,,,,,,
+P23,DSP_INT3n,O,I/O,OUTPUT,,,,,,,,,
+P24,DSP_INT1n,O,I/O,OUTPUT,,,,,,,,,
+P25,DSP_INT0n,O,I/O,OUTPUT,,,,,,,,,
+P26,VCC,,VCCIO,,,,,,,,,,
+P27,DSP_BX0,I,I/O,INPUT,,,,,,,,,
+P28,TDI,,TDI,,,,,,,,,,
+P29,TMS,,TMS,,,,,,,,,,
+P30,TCK,,TCK,,,,,,,,,,
+P31,DSP_BFS0,O,I/O,OUTPUT,,,,,,,,,
+P32,DSP_BCLK0,O,I/O,OUTPUT,,,,,,,,,
+P33,DSP_BR0,O,I/O,OUTPUT,,,,,,,,,
+P34,DSP_BR1,O,I/O,OUTPUT,,,,,,,,,
+P35,IOSTRn,I,I/O,INPUT,,,,,,,,,
+P36,R_Wn,I,I/O,INPUT,,,,,,,,,
+P37,VCC,,VCCINT,,,,,,,,,,
+P38,TST_FS,O,I/O,OUTPUT,,,,,,,,,
+P39,LED0b,O,I/O,OUTPUT,,,,,,,,,
+P40,LED0a,O,I/O,OUTPUT,,,,,,,,,
+P41,GND,,GND,,,,,,,,,,
+P42,DX0,O,I/O,OUTPUT,,,,,,,,,
+P43,DR0,I,I/O,INPUT,,,,,,,,,
+P44,DCLK0,I/O,I/O,BIDIR,,,,,,,,,
+P45,CCS0n,O,I/O,OUTPUT,,,,,,,,,
+P46,MCLK0,O,I/O,OUTPUT,,,,,,,,,
+P47,BR0,I,I/O,INPUT,,,,,,,,,
+P48,BX0,O,I/O,OUTPUT,,,,,,,,,
+P49,BCLK0,I/O,I/O,BIDIR,,,,,,,,,
+P50,FSb0,O,I/O,OUTPUT,,,,,,,,,
+P51,FSa0,O,I/O,OUTPUT,,,,,,,,,
+P52,FSc0,I/O,I/O,BIDIR,,,,,,,,,
+P53,TDO,,TDO,,,,,,,,,,
+P54,GND,,GND,,,,,,,,,,
+P55,VCC,,VCCIO,,,,,,,,,,
+P56,LED1b,O,I/O,OUTPUT,,,,,,,,,
+P57,LED1a,O,I/O,OUTPUT,,,,,,,,,
+P58,DX1,O,I/O,OUTPUT,,,,,,,,,
+P59,DR1,I,I/O,INPUT,,,,,,,,,
+P60,DCLK1,I/O,I/O,BIDIR,,,,,,,,,
+P61,CCLK,O,I/O,OUTPUT,,,,,,,,,
+P62,CCS1n,O,I/O,OUTPUT,,,,,,,,,
+P63,COUT,I,I/O,INPUT,,,,,,,,,
+P64,RESETn,GSR/I,I/O/GSR,,,,,,,,,,
+
+To preserve the pinout above for future design iterations in
+Project Navigator simply execute the (Lock Pins) process
+located under the (Implement Design) process in a toolbox named
+(Optional Implementation Tools) or invoke PIN2UCF from the
+command line. The location constraints will be written into your
+specified UCF file
+
+

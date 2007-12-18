@@ -1,0 +1,703 @@
+ 
+cpldfit:  version G.26                              Xilinx Inc.
+                                  Fitter Report
+Design Name: dasl2p                              Date:  4- 5-2006,  2:25AM
+Device Used: XC9572XL-10-VQ64
+Fitting Status: Successful
+
+****************************  Resource Summary  ****************************
+
+Macrocells     Product Terms    Registers      Pins           Function Block 
+Used           Used             Used           Used           Inputs Used    
+53 /72  ( 74%) 94  /360  ( 26%) 28 /72  ( 39%) 52 /52  (100%) 91 /216 ( 42%)
+
+PIN RESOURCES:
+
+Signal Type    Required     Mapped  |  Pin Type            Used   Remaining 
+------------------------------------|---------------------------------------
+Input         :   13          13    |  I/O              :    46        0
+Output        :   29          29    |  GCK/IO           :     3        0
+Bidirectional :    8           8    |  GTS/IO           :     2        0
+GCK           :    1           1    |  GSR/IO           :     1        0
+GTS           :    0           0    |
+GSR           :    1           1    |
+                 ----        ----
+        Total     52          52
+
+MACROCELL RESOURCES:
+
+Total Macrocells Available                    72
+Registered Macrocells                         28
+Non-registered Macrocell driving I/O          25
+
+GLOBAL RESOURCES:
+
+Signal 'CLK' mapped onto global clock net GCK1.
+Global output enable net(s) unused.
+Signal 'RESETn' mapped onto global set/reset net GSR.
+
+POWER DATA:
+
+There are 53 macrocells in high performance mode (MCHP).
+There are 0 macrocells in low power mode (MCLP).
+There are a total of 53 macrocells used (MC).
+
+End of Resource Summary
+*************** Summary of Required Resources ******************
+
+** LOGIC **
+Signal              Total   Signals Loc     Pwr  Slew Pin  Pin       Pin       Reg Init
+Name                Pt      Used            Mode Rate #    Type      Use       State
+BCLK0               2       2       FB4_6   STD  FAST 49   I/O       I/O       
+BCLK1               2       3       FB2_17  STD  FAST 7    I/O       I/O       SET
+BX0                 2       3       FB4_11  STD  FAST 48   I/O       O         
+BX1                 2       3       FB2_15  STD  FAST 6    I/O       O         
+CA0                 2       6       FB1_18  STD            (b)       (b)       RESET
+CCLK                2       6       FB2_5   STD  FAST 61   I/O       O         RESET
+CCS0n               1       2       FB4_8   STD  FAST 45   I/O       O         
+CCS1n               1       2       FB2_6   STD  FAST 62   I/O       O         
+CEN                 2       6       FB2_18  STD            (b)       (b)       RESET
+CIN                 2       6       FB2_10  STD  FAST 1    I/O       O         RESET
+DCLK0               2       2       FB4_5   STD  FAST 44   I/O       I/O       
+DCLK1               2       10      FB2_2   STD  FAST 60   I/O       I/O       SET
+DSP_BCLK0           2       3       FB3_4   STD  FAST 32   I/O       O         
+DSP_BCLK1           2       3       FB3_2   STD  FAST 22   I/O       O         
+DSP_BFS0            2       3       FB3_3   STD  FAST 31   I/O       O         
+DSP_BFS1            2       3       FB1_17  STD  FAST 20   I/O       O         
+DSP_BR0             1       1       FB3_11  STD  FAST 33   I/O       O         
+DSP_BR1             1       1       FB3_6   STD  FAST 34   I/O       O         
+DSP_D0              7       11      FB1_10  STD  FAST 18   I/O       I/O       
+DSP_D1              1       2       FB1_14  STD  FAST 17   GCK/I/O   I/O       
+DSP_INT0n           1       1       FB3_8   STD  FAST 25   I/O       O         
+DSP_INT1n           1       1       FB3_5   STD  FAST 24   I/O       O         
+DSP_INT3n           1       1       FB1_12  STD  FAST 23   I/O       O         
+DX0                 2       3       FB3_16  STD  FAST 42   I/O       O         
+DX1                 2       3       FB2_3   STD  FAST 58   I/O       O         
+FSa0                2       2       FB4_10  STD  FAST 51   I/O       O         
+FSa1                5       12      FB1_5   STD  FAST 9    I/O       O         RESET
+FSb0                2       2       FB4_14  STD  FAST 50   I/O       O         
+FSb1                2       2       FB1_2   STD  FAST 8    I/O       O         
+FSc0                2       2       FB4_12  STD  FAST 52   I/O       I/O       
+FSc1                2       12      FB1_6   STD  FAST 10   I/O       I/O       SET
+LED0a               3       7       FB3_12  STD  FAST 40   I/O       O         RESET
+LED0b               2       6       FB3_10  STD  FAST 39   I/O       O         RESET
+LED1a               3       7       FB4_17  STD  FAST 57   I/O       O         RESET
+LED1b               2       6       FB4_15  STD  FAST 56   I/O       O         RESET
+MCLK0               2       3       FB4_3   STD  FAST 46   I/O       O         SET
+MCLK1               2       3       FB2_12  STD  FAST 4    I/O       O         SET
+MS_Loop             2       6       FB2_16  STD            (b)       (b)       RESET
+MnS0                2       6       FB1_16  STD            (b)       (b)       RESET
+MnS1                2       6       FB1_15  STD       19   I/O       I         RESET
+TST_FS              0       0       FB3_17  STD  FAST 38   I/O       O         
+TST_M_Sn            0       0       FB1_8   STD  FAST 11   I/O       O         
+U25/U43/Q0          0       0       FB2_14  STD       5    GTS/I/O   I         RESET
+U25/U43/Q1          1       1       FB2_13  STD            (b)       (b)       RESET
+U25/U43/Q10         1       10      FB1_9   STD       15   GCK/I/O   GCK       RESET
+U25/U43/Q3          1       3       FB2_11  STD       2    GTS/I/O   I         RESET
+U25/U43/Q4          1       4       FB2_9   STD       64   GSR/I/O   GSR/I     RESET
+U25/U43/Q5          1       5       FB1_7   STD            (b)       (b)       RESET
+U25/U43/Q6          1       6       FB1_4   STD       13   I/O       I         RESET
+U25/U43/Q7          1       7       FB1_3   STD       12   I/O       I         RESET
+U25/U43/Q8          1       8       FB1_1   STD            (b)       (b)       RESET
+XLXN_2561           2       6       FB1_13  STD            (b)       (b)       RESET
+XLXN_2566           2       6       FB1_11  STD       16   GCK/I/O   I         RESET
+
+** INPUTS **
+Signal                              Loc               Pin  Pin       Pin
+Name                                                  #    Type      Use
+BR0                                 FB4_4             47   I/O       I
+BR1                                 FB2_14            5    GTS/I/O   I
+CINTn                               FB2_11            2    GTS/I/O   I
+CLK                                 FB1_9             15   GCK/I/O   GCK
+COUT                                FB2_8             63   I/O       I
+DR0                                 FB4_2             43   I/O       I
+DR1                                 FB2_4             59   I/O       I
+DSP_A0                              FB1_11            16   GCK/I/O   I
+DSP_A1                              FB1_4             13   I/O       I
+DSP_A2                              FB1_3             12   I/O       I
+DSP_BX0                             FB3_9             27   I/O       I
+DSP_BX1                             FB1_15            19   I/O       I
+IOSTRn                              FB3_14            35   I/O       I
+RESETn                              FB2_9             64   GSR/I/O   GSR/I
+R_Wn                                FB3_15            36   I/O       I
+
+End of Resources
+
+*********************Function Block Resource Summary***********************
+Function    # of        FB Inputs   Signals     Total       O/IO      IO    
+Block       Macrocells  Used        Used        Pt Used     Req       Avail 
+FB1          18          25          25           35         5/3       13   
+FB2          14          24          24           22         6/2       13   
+FB3          11          22          22           17        11/0       14   
+FB4          10          20          20           20         7/3       12   
+            ----                                -----       -----     ----- 
+             53                                   94        29/8       52   
+*********************************** FB1 ***********************************
+Number of function block inputs used/remaining:               25/29
+Number of signals used by logic mapping into function block:  25
+Signal              Total   Imp   Exp Unused  Loc     Pwr   Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt              Mode   #    Type    Use
+U25/U43/Q8            1       0     0   4     FB1_1   STD         (b)     (b)
+FSb1                  2       0     0   3     FB1_2   STD   8     I/O     O
+U25/U43/Q7            1       0     0   4     FB1_3   STD   12    I/O     I
+U25/U43/Q6            1       0     0   4     FB1_4   STD   13    I/O     I
+FSa1                  5       0     0   0     FB1_5   STD   9     I/O     O
+FSc1                  2       0     0   3     FB1_6   STD   10    I/O     I/O
+U25/U43/Q5            1       0     0   4     FB1_7   STD         (b)     (b)
+TST_M_Sn              0       0     0   5     FB1_8   STD   11    I/O     O
+U25/U43/Q10           1       0   \/1   3     FB1_9   STD   15    GCK/I/O GCK
+DSP_D0                7       2<-   0   0     FB1_10  STD   18    I/O     I/O
+XLXN_2566             2       0   /\1   2     FB1_11  STD   16    GCK/I/O I
+DSP_INT3n             1       0     0   4     FB1_12  STD   23    I/O     O
+XLXN_2561             2       0     0   3     FB1_13  STD         (b)     (b)
+DSP_D1                1       0     0   4     FB1_14  STD   17    GCK/I/O I/O
+MnS1                  2       0     0   3     FB1_15  STD   19    I/O     I
+MnS0                  2       0     0   3     FB1_16  STD         (b)     (b)
+DSP_BFS1              2       0     0   3     FB1_17  STD   20    I/O     O
+CA0                   2       0     0   3     FB1_18  STD         (b)     (b)
+
+Signals Used by Logic in Function Block
+  1: BCLK1             10: DSP_D0.PIN        18: U25/U43/Q10 
+  2: CINTn             11: FSa1              19: U25/U43/Q3 
+  3: COUT              12: IOSTRn            20: U25/U43/Q4 
+  4: DCLK1             13: MnS0              21: U25/U43/Q5 
+  5: DR0               14: MnS1              22: U25/U43/Q6 
+  6: DR1               15: R_Wn              23: U25/U43/Q7 
+  7: DSP_A0            16: U25/U43/Q0        24: U25/U43/Q8 
+  8: DSP_A1            17: U25/U43/Q1        25: FSc1.PIN 
+  9: DSP_A2           
+
+Signal                        1         2         3         4 Signals FB
+Name                0----+----0----+----0----+----0----+----0 Used    Inputs
+U25/U43/Q8           X..............XX.XXXXX................. 8       8
+FSb1                 ..........X..X.......................... 2       2
+U25/U43/Q7           X..............XX.XXXX.................. 7       7
+U25/U43/Q6           X..............XX.XXX................... 6       6
+FSa1                 X..X.........X.XXXXXXXXX................ 12      12
+FSc1                 X..X.........X.XXXXXXXXX................ 12      12
+U25/U43/Q5           X..............XX.XX.................... 5       5
+TST_M_Sn             ........................................ 0       0
+U25/U43/Q10          X..X...........XX.XXXXXX................ 10      10
+DSP_D0               .XX.XXXXX..XXXX......................... 11      11
+XLXN_2566            ......XXXX.X..X......................... 6       6
+DSP_INT3n            .X...................................... 1       1
+XLXN_2561            ......XXXX.X..X......................... 6       6
+DSP_D1               ...........X..X......................... 2       2
+MnS1                 ......XXXX.X..X......................... 6       6
+MnS0                 ......XXXX.X..X......................... 6       6
+DSP_BFS1             ..........X..X..........X............... 3       3
+CA0                  ......XXXX.X..X......................... 6       6
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+Legend:
+Total Pt     - Total product terms used by the macrocell signal
+Imp Pt       - Product terms imported from other macrocells
+Exp Pt       - Product terms exported to other macrocells
+               in direction shown
+Unused Pt    - Unused local product terms remaining in macrocell
+Loc          - Location where logic was mapped in device
+Pwr Mode     - Macrocell power mode
+Pin Type/Use - I  - Input             GCK - Global Clock
+               O  - Output            GTS - Global Output Enable
+              (b) - Buried macrocell  GSR - Global Set/Reset
+X(@) - Signal used as input (wire-AND input) to the macrocell logic.
+    The number of Signals Used may exceed the number of FB Inputs Used due
+    to wire-ANDing in the switch matrix.
+*********************************** FB2 ***********************************
+Number of function block inputs used/remaining:               24/30
+Number of signals used by logic mapping into function block:  24
+Signal              Total   Imp   Exp Unused  Loc     Pwr   Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt              Mode   #    Type    Use
+(unused)              0       0     0   5     FB2_1               (b)     
+DCLK1                 2       0     0   3     FB2_2   STD   60    I/O     I/O
+DX1                   2       0     0   3     FB2_3   STD   58    I/O     O
+(unused)              0       0     0   5     FB2_4         59    I/O     I
+CCLK                  2       0     0   3     FB2_5   STD   61    I/O     O
+CCS1n                 1       0     0   4     FB2_6   STD   62    I/O     O
+(unused)              0       0     0   5     FB2_7               (b)     
+(unused)              0       0     0   5     FB2_8         63    I/O     I
+U25/U43/Q4            1       0     0   4     FB2_9   STD   64    GSR/I/O GSR/I
+CIN                   2       0     0   3     FB2_10  STD   1     I/O     O
+U25/U43/Q3            1       0     0   4     FB2_11  STD   2     GTS/I/O I
+MCLK1                 2       0     0   3     FB2_12  STD   4     I/O     O
+U25/U43/Q1            1       0     0   4     FB2_13  STD         (b)     (b)
+U25/U43/Q0            0       0     0   5     FB2_14  STD   5     GTS/I/O I
+BX1                   2       0     0   3     FB2_15  STD   6     I/O     O
+MS_Loop               2       0     0   3     FB2_16  STD         (b)     (b)
+BCLK1                 2       0     0   3     FB2_17  STD   7     I/O     I/O
+CEN                   2       0     0   3     FB2_18  STD         (b)     (b)
+
+Signals Used by Logic in Function Block
+  1: BCLK1              9: DSP_BX1           17: U25/U43/Q1 
+  2: BR0               10: DSP_D0.PIN        18: U25/U43/Q3 
+  3: CA0               11: DSP_D1.PIN        19: U25/U43/Q4 
+  4: CEN               12: IOSTRn            20: U25/U43/Q5 
+  5: DR0               13: MS_Loop           21: U25/U43/Q6 
+  6: DSP_A0            14: MnS1              22: U25/U43/Q7 
+  7: DSP_A1            15: R_Wn              23: U25/U43/Q8 
+  8: DSP_A2            16: U25/U43/Q0        24: XLXN_2566 
+
+Signal                        1         2         3         4 Signals FB
+Name                0----+----0----+----0----+----0----+----0 Used    Inputs
+DCLK1                X............X.XXXXXXXX................. 10      10
+DX1                  ....X.......X..........X................ 3       3
+CCLK                 .....XXX..XX..X......................... 6       6
+CCS1n                ..XX.................................... 2       2
+U25/U43/Q4           X..............XXX...................... 4       4
+CIN                  .....XXX.X.X..X......................... 6       6
+U25/U43/Q3           X..............XX....................... 3       3
+MCLK1                X..............XX....................... 3       3
+U25/U43/Q1           ...............X........................ 1       1
+U25/U43/Q0           ........................................ 0       0
+BX1                  .X......X...X........................... 3       3
+MS_Loop              .....XXX..XX..X......................... 6       6
+BCLK1                .............X.XX....................... 3       3
+CEN                  .....XXX..XX..X......................... 6       6
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+Legend:
+Total Pt     - Total product terms used by the macrocell signal
+Imp Pt       - Product terms imported from other macrocells
+Exp Pt       - Product terms exported to other macrocells
+               in direction shown
+Unused Pt    - Unused local product terms remaining in macrocell
+Loc          - Location where logic was mapped in device
+Pwr Mode     - Macrocell power mode
+Pin Type/Use - I  - Input             GCK - Global Clock
+               O  - Output            GTS - Global Output Enable
+              (b) - Buried macrocell  GSR - Global Set/Reset
+X(@) - Signal used as input (wire-AND input) to the macrocell logic.
+    The number of Signals Used may exceed the number of FB Inputs Used due
+    to wire-ANDing in the switch matrix.
+*********************************** FB3 ***********************************
+Number of function block inputs used/remaining:               22/32
+Number of signals used by logic mapping into function block:  22
+Signal              Total   Imp   Exp Unused  Loc     Pwr   Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt              Mode   #    Type    Use
+(unused)              0       0     0   5     FB3_1               (b)     
+DSP_BCLK1             2       0     0   3     FB3_2   STD   22    I/O     O
+DSP_BFS0              2       0     0   3     FB3_3   STD   31    I/O     O
+DSP_BCLK0             2       0     0   3     FB3_4   STD   32    I/O     O
+DSP_INT1n             1       0     0   4     FB3_5   STD   24    I/O     O
+DSP_BR1               1       0     0   4     FB3_6   STD   34    I/O     O
+(unused)              0       0     0   5     FB3_7               (b)     
+DSP_INT0n             1       0     0   4     FB3_8   STD   25    I/O     O
+(unused)              0       0     0   5     FB3_9         27    I/O     I
+LED0b                 2       0     0   3     FB3_10  STD   39    I/O     O
+DSP_BR0               1       0     0   4     FB3_11  STD   33    I/O     O
+LED0a                 3       0     0   2     FB3_12  STD   40    I/O     O
+(unused)              0       0     0   5     FB3_13              (b)     
+(unused)              0       0     0   5     FB3_14        35    I/O     I
+(unused)              0       0     0   5     FB3_15        36    I/O     I
+DX0                   2       0     0   3     FB3_16  STD   42    I/O     O
+TST_FS                0       0     0   5     FB3_17  STD   38    I/O     O
+(unused)              0       0     0   5     FB3_18              (b)     
+
+Signals Used by Logic in Function Block
+  1: BCLK1              9: DSP_D1.PIN        16: R_Wn 
+  2: BR0               10: FSa1              17: DCLK1.PIN 
+  3: BR1               11: IOSTRn            18: BCLK1.PIN 
+  4: DR1               12: MS_Loop           19: DCLK0.PIN 
+  5: DSP_A0            13: MnS0              20: FSc0.PIN 
+  6: DSP_A1            14: MnS1              21: BCLK0.PIN 
+  7: DSP_A2            15: RESETn            22: XLXN_2561 
+  8: DSP_D0.PIN       
+
+Signal                        1         2         3         4 Signals FB
+Name                0----+----0----+----0----+----0----+----0 Used    Inputs
+DSP_BCLK1            X............X...X...................... 3       3
+DSP_BFS0             .........X..X......X.................... 3       3
+DSP_BCLK0            X...........X.......X................... 3       3
+DSP_INT1n            ................X....................... 1       1
+DSP_BR1              ..X..................................... 1       1
+DSP_INT0n            ..................X..................... 1       1
+LED0b                ....XXX.X.X....X........................ 6       6
+DSP_BR0              .X...................................... 1       1
+LED0a                ....XXXX..X...XX........................ 7       7
+DX0                  ...X.......X.........X.................. 3       3
+TST_FS               ........................................ 0       0
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+Legend:
+Total Pt     - Total product terms used by the macrocell signal
+Imp Pt       - Product terms imported from other macrocells
+Exp Pt       - Product terms exported to other macrocells
+               in direction shown
+Unused Pt    - Unused local product terms remaining in macrocell
+Loc          - Location where logic was mapped in device
+Pwr Mode     - Macrocell power mode
+Pin Type/Use - I  - Input             GCK - Global Clock
+               O  - Output            GTS - Global Output Enable
+              (b) - Buried macrocell  GSR - Global Set/Reset
+X(@) - Signal used as input (wire-AND input) to the macrocell logic.
+    The number of Signals Used may exceed the number of FB Inputs Used due
+    to wire-ANDing in the switch matrix.
+*********************************** FB4 ***********************************
+Number of function block inputs used/remaining:               20/34
+Number of signals used by logic mapping into function block:  20
+Signal              Total   Imp   Exp Unused  Loc     Pwr   Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt              Mode   #    Type    Use
+(unused)              0       0     0   5     FB4_1               (b)     
+(unused)              0       0     0   5     FB4_2         43    I/O     I
+MCLK0                 2       0     0   3     FB4_3   STD   46    I/O     O
+(unused)              0       0     0   5     FB4_4         47    I/O     I
+DCLK0                 2       0     0   3     FB4_5   STD   44    I/O     I/O
+BCLK0                 2       0     0   3     FB4_6   STD   49    I/O     I/O
+(unused)              0       0     0   5     FB4_7               (b)     
+CCS0n                 1       0     0   4     FB4_8   STD   45    I/O     O
+(unused)              0       0     0   5     FB4_9               (b)     
+FSa0                  2       0     0   3     FB4_10  STD   51    I/O     O
+BX0                   2       0     0   3     FB4_11  STD   48    I/O     O
+FSc0                  2       0     0   3     FB4_12  STD   52    I/O     I/O
+(unused)              0       0     0   5     FB4_13              (b)     
+FSb0                  2       0     0   3     FB4_14  STD   50    I/O     O
+LED1b                 2       0     0   3     FB4_15  STD   56    I/O     O
+(unused)              0       0     0   5     FB4_16              (b)     
+LED1a                 3       0     0   2     FB4_17  STD   57    I/O     O
+(unused)              0       0     0   5     FB4_18              (b)     
+
+Signals Used by Logic in Function Block
+  1: BCLK1              8: DSP_A2            15: MS_Loop 
+  2: BR1                9: DSP_BX0           16: MnS0 
+  3: CA0               10: DSP_D0.PIN        17: RESETn 
+  4: CEN               11: DSP_D1.PIN        18: R_Wn 
+  5: DCLK1             12: FSa1              19: U25/U43/Q0 
+  6: DSP_A0            13: FSc1              20: U25/U43/Q1 
+  7: DSP_A1            14: IOSTRn           
+
+Signal                        1         2         3         4 Signals FB
+Name                0----+----0----+----0----+----0----+----0 Used    Inputs
+MCLK0                X.................XX.................... 3       3
+DCLK0                ....X..........X........................ 2       2
+BCLK0                X..............X........................ 2       2
+CCS0n                ..XX.................................... 2       2
+FSa0                 ...........X...X........................ 2       2
+BX0                  .X......X.....X......................... 3       3
+FSc0                 ............X..X........................ 2       2
+FSb0                 ...........X...X........................ 2       2
+LED1b                .....XXX..X..X...X...................... 6       6
+LED1a                .....XXX.X...X..XX...................... 7       7
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+Legend:
+Total Pt     - Total product terms used by the macrocell signal
+Imp Pt       - Product terms imported from other macrocells
+Exp Pt       - Product terms exported to other macrocells
+               in direction shown
+Unused Pt    - Unused local product terms remaining in macrocell
+Loc          - Location where logic was mapped in device
+Pwr Mode     - Macrocell power mode
+Pin Type/Use - I  - Input             GCK - Global Clock
+               O  - Output            GTS - Global Output Enable
+              (b) - Buried macrocell  GSR - Global Set/Reset
+X(@) - Signal used as input (wire-AND input) to the macrocell logic.
+    The number of Signals Used may exceed the number of FB Inputs Used due
+    to wire-ANDing in the switch matrix.
+;;-----------------------------------------------------------------;;
+; Implemented Equations.
+
+DSP_BR0 = BR0;    
+
+DSP_BR1 = BR1;    
+
+BX0 = MS_Loop & BR1
+	# !MS_Loop & DSP_BX0;    
+
+BX1 = MS_Loop & BR0
+	# !MS_Loop & DSP_BX1;    
+
+CA0.D = DSP_D0.PIN;
+   !CA0.CLK = !DSP_A2 & !DSP_A1 & !DSP_A0 & !R_Wn & !IOSTRn;
+   !CA0.AR = RESETn;	// GSR    
+
+CCLK.D = DSP_D1.PIN;
+   !CCLK.CLK = !DSP_A2 & !DSP_A1 & DSP_A0 & !R_Wn & !IOSTRn;
+   !CCLK.AR = RESETn;	// GSR    
+
+!CCS0n = !CA0 & CEN;    
+
+!CCS1n = CA0 & CEN;    
+
+CEN.D = DSP_D1.PIN;
+   !CEN.CLK = !DSP_A2 & !DSP_A1 & !DSP_A0 & !R_Wn & !IOSTRn;
+   !CEN.AR = RESETn;	// GSR    
+
+DSP_INT3n = CINTn;    
+
+CIN.D = DSP_D0.PIN;
+   !CIN.CLK = !DSP_A2 & !DSP_A1 & DSP_A0 & !R_Wn & !IOSTRn;
+   !CIN.AR = RESETn;	// GSR    
+
+DSP_BCLK0 = BCLK1 & MnS0
+	# !MnS0 & BCLK0.PIN;    
+
+DSP_BCLK1 = BCLK1 & MnS1
+	# !MnS1 & BCLK1.PIN;    
+
+DSP_BFS0 = FSa1 & MnS0
+	# !MnS0 & FSc0.PIN;    
+
+DSP_INT0n = !DCLK0.PIN;    
+
+DSP_INT1n = !DCLK1.PIN;    
+
+DX0 = MS_Loop & DR1
+	# !MS_Loop & XLXN_2561;    
+
+DX1 = MS_Loop & DR0
+	# !MS_Loop & XLXN_2566;    
+
+DSP_D0 = !DSP_A2 & DSP_A1 & DSP_A0 & DR0 & R_Wn & 
+	!IOSTRn
+	# !DSP_A2 & DSP_A1 & !DSP_A0 & MnS0 & R_Wn & 
+	!IOSTRn
+	# !DSP_A2 & !DSP_A1 & DSP_A0 & COUT & R_Wn & 
+	!IOSTRn
+	# !DSP_A2 & !DSP_A1 & !DSP_A0 & CINTn & R_Wn & 
+	!IOSTRn
+;Imported pterms FB1_9
+	# DSP_A2 & DSP_A1 & !DSP_A0 & DR1 & R_Wn & 
+	!IOSTRn
+;Imported pterms FB1_11
+	# DSP_A2 & !DSP_A1 & DSP_A0 & MnS1 & R_Wn & 
+	!IOSTRn;
+   DSP_D0.OE = R_Wn & !IOSTRn;    
+
+LED0b.D = DSP_D1.PIN;
+   !LED0b.CLK = DSP_A2 & !DSP_A1 & !DSP_A0 & !R_Wn & !IOSTRn;
+   !LED0b.AR = RESETn;	// GSR    
+
+LED1b.D = DSP_D1.PIN;
+   !LED1b.CLK = DSP_A2 & DSP_A1 & DSP_A0 & !R_Wn & !IOSTRn;
+   !LED1b.AR = RESETn;	// GSR    
+
+MS_Loop.D = DSP_D1.PIN;
+   !MS_Loop.CLK = DSP_A2 & !DSP_A1 & DSP_A0 & !R_Wn & !IOSTRn;
+   !MS_Loop.AR = RESETn;	// GSR    
+
+MnS0.D = DSP_D0.PIN;
+   !MnS0.CLK = !DSP_A2 & DSP_A1 & !DSP_A0 & !R_Wn & !IOSTRn;
+   !MnS0.AR = RESETn;	// GSR    
+
+MnS1.D = DSP_D0.PIN;
+   !MnS1.CLK = DSP_A2 & !DSP_A1 & DSP_A0 & !R_Wn & !IOSTRn;
+   !MnS1.AR = RESETn;	// GSR    
+
+TST_FS = Gnd;    
+
+TST_M_Sn = Gnd;    
+
+DCLK1.T = !BCLK1 & U25/U43/Q4 & U25/U43/Q0 & U25/U43/Q5 & 
+	U25/U43/Q8 & U25/U43/Q1 & U25/U43/Q6 & U25/U43/Q7 & 
+	U25/U43/Q3;
+   DCLK1.CLK = CLK;	// GCK
+   DCLK1.OE = MnS1;    
+
+DCLK0 = DCLK1;
+   DCLK0.OE = MnS0;    
+
+FSc1.T = !BCLK1 & !DCLK1 & U25/U43/Q4 & U25/U43/Q0 & 
+	U25/U43/Q5 & U25/U43/Q8 & U25/U43/Q1 & U25/U43/Q6 & 
+	U25/U43/Q10 & U25/U43/Q7 & U25/U43/Q3;
+   FSc1.CLK = CLK;	// GCK
+   FSc1.OE = MnS1;    
+
+FSc0 = FSc1;
+   FSc0.OE = MnS0;    
+
+FSa1.D = BCLK1 & !DCLK1 & !U25/U43/Q4 & U25/U43/Q5 & 
+	U25/U43/Q8 & U25/U43/Q6 & U25/U43/Q10 & !U25/U43/Q7 & 
+	U25/U43/Q3
+	# !DCLK1 & !U25/U43/Q4 & !U25/U43/Q0 & U25/U43/Q5 & 
+	U25/U43/Q8 & U25/U43/Q6 & U25/U43/Q10 & !U25/U43/Q7 & 
+	U25/U43/Q3
+	# !DCLK1 & !U25/U43/Q4 & U25/U43/Q5 & U25/U43/Q8 & 
+	!U25/U43/Q1 & U25/U43/Q6 & U25/U43/Q10 & !U25/U43/Q7 & 
+	U25/U43/Q3
+	# !BCLK1 & !DCLK1 & !U25/U43/Q4 & U25/U43/Q0 & 
+	U25/U43/Q5 & U25/U43/Q8 & U25/U43/Q1 & U25/U43/Q6 & 
+	U25/U43/Q10 & !U25/U43/Q7 & !U25/U43/Q3;
+   FSa1.CLK = CLK;	// GCK
+   FSa1.OE = MnS1;    
+
+FSb1 = FSa1;
+   FSb1.OE = MnS1;    
+
+FSa0 = FSa1;
+   FSa0.OE = MnS0;    
+
+FSb0 = FSa1;
+   FSb0.OE = MnS0;    
+
+MCLK0.D = U25/U43/Q0 & U25/U43/Q1
+	$ BCLK1;
+   MCLK0.CLK = CLK;	// GCK    
+
+BCLK1.T = U25/U43/Q0 & U25/U43/Q1;
+   BCLK1.CLK = CLK;	// GCK
+   BCLK1.OE = MnS1;    
+
+BCLK0 = BCLK1;
+   BCLK0.OE = MnS0;    
+
+MCLK1.D = U25/U43/Q0 & U25/U43/Q1
+	$ BCLK1;
+   MCLK1.CLK = CLK;	// GCK    
+
+U25/U43/Q0.T = Vcc;
+   U25/U43/Q0.CLK = CLK;	// GCK    
+
+U25/U43/Q1.T = U25/U43/Q0;
+   U25/U43/Q1.CLK = CLK;	// GCK    
+
+U25/U43/Q10.T = !BCLK1 & !DCLK1 & U25/U43/Q4 & U25/U43/Q0 & 
+	U25/U43/Q5 & U25/U43/Q8 & U25/U43/Q1 & U25/U43/Q6 & 
+	U25/U43/Q7 & U25/U43/Q3;
+   U25/U43/Q10.CLK = CLK;	// GCK    
+
+U25/U43/Q3.T = !BCLK1 & U25/U43/Q0 & U25/U43/Q1;
+   U25/U43/Q3.CLK = CLK;	// GCK    
+
+U25/U43/Q4.T = !BCLK1 & U25/U43/Q0 & U25/U43/Q1 & U25/U43/Q3;
+   U25/U43/Q4.CLK = CLK;	// GCK    
+
+U25/U43/Q5.T = !BCLK1 & U25/U43/Q4 & U25/U43/Q0 & U25/U43/Q1 & 
+	U25/U43/Q3;
+   U25/U43/Q5.CLK = CLK;	// GCK    
+
+U25/U43/Q6.T = !BCLK1 & U25/U43/Q4 & U25/U43/Q0 & U25/U43/Q5 & 
+	U25/U43/Q1 & U25/U43/Q3;
+   U25/U43/Q6.CLK = CLK;	// GCK    
+
+U25/U43/Q7.T = !BCLK1 & U25/U43/Q4 & U25/U43/Q0 & U25/U43/Q5 & 
+	U25/U43/Q1 & U25/U43/Q6 & U25/U43/Q3;
+   U25/U43/Q7.CLK = CLK;	// GCK    
+
+U25/U43/Q8.T = !BCLK1 & U25/U43/Q4 & U25/U43/Q0 & U25/U43/Q5 & 
+	U25/U43/Q1 & U25/U43/Q6 & U25/U43/Q7 & U25/U43/Q3;
+   U25/U43/Q8.CLK = CLK;	// GCK    
+
+DSP_BFS1 = FSa1 & MnS1
+	# !MnS1 & FSc1.PIN;    
+
+DSP_D1 = Gnd;
+   DSP_D1.OE = R_Wn & !IOSTRn;    
+
+LED0a.D = DSP_D0.PIN;
+   !LED0a.CLK = DSP_A2 & !DSP_A1 & !DSP_A0 & !R_Wn & !IOSTRn;
+   !LED0a.AR = RESETn;	// GSR
+   LED0a.OE = RESETn;    
+
+LED1a.D = DSP_D0.PIN;
+   !LED1a.CLK = DSP_A2 & DSP_A1 & DSP_A0 & !R_Wn & !IOSTRn;
+   !LED1a.AR = RESETn;	// GSR
+   LED1a.OE = RESETn;    
+
+XLXN_2561.D = DSP_D0.PIN;
+   !XLXN_2561.CLK = !DSP_A2 & DSP_A1 & DSP_A0 & !R_Wn & !IOSTRn;
+   !XLXN_2561.AR = RESETn;	// GSR    
+
+XLXN_2566.D = DSP_D0.PIN;
+   !XLXN_2566.CLK = DSP_A2 & DSP_A1 & !DSP_A0 & !R_Wn & !IOSTRn;
+   !XLXN_2566.AR = RESETn;	// GSR    
+
+
+
+Legend:  <signame>.COMB = combinational node mapped to the same physical macrocell
+                          as the FastInput "signal" (not logically related)
+****************************  Device Pin Out ****************************
+
+Device : XC9572XL-10-VQ64
+
+
+   -----------------------------------------------  
+  /48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 \
+ | 49                                           32 | 
+ | 50                                           31 | 
+ | 51                                           30 | 
+ | 52                                           29 | 
+ | 53                                           28 | 
+ | 54                                           27 | 
+ | 55                                           26 | 
+ | 56              XC9572XL-10-VQ64             25 | 
+ | 57                                           24 | 
+ | 58                                           23 | 
+ | 59                                           22 | 
+ | 60                                           21 | 
+ | 61                                           20 | 
+ | 62                                           19 | 
+ | 63                                           18 | 
+ | 64                                           17 | 
+ \ 1  2  3  4  5  6  7  8  9  10 11 12 13 14 15 16 /
+   -----------------------------------------------  
+
+
+Pin Signal                         Pin Signal                        
+No. Name                           No. Name                          
+  1 CIN                              33 DSP_BR0                       
+  2 CINTn                            34 DSP_BR1                       
+  3 VCC                              35 IOSTRn                        
+  4 MCLK1                            36 R_Wn                          
+  5 BR1                              37 VCC                           
+  6 BX1                              38 TST_FS                        
+  7 BCLK1                            39 LED0b                         
+  8 FSb1                             40 LED0a                         
+  9 FSa1                             41 GND                           
+ 10 FSc1                             42 DX0                           
+ 11 TST_M_Sn                         43 DR0                           
+ 12 DSP_A2                           44 DCLK0                         
+ 13 DSP_A1                           45 CCS0n                         
+ 14 GND                              46 MCLK0                         
+ 15 CLK                              47 BR0                           
+ 16 DSP_A0                           48 BX0                           
+ 17 DSP_D1                           49 BCLK0                         
+ 18 DSP_D0                           50 FSb0                          
+ 19 DSP_BX1                          51 FSa0                          
+ 20 DSP_BFS1                         52 FSc0                          
+ 21 GND                              53 TDO                           
+ 22 DSP_BCLK1                        54 GND                           
+ 23 DSP_INT3n                        55 VCC                           
+ 24 DSP_INT1n                        56 LED1b                         
+ 25 DSP_INT0n                        57 LED1a                         
+ 26 VCC                              58 DX1                           
+ 27 DSP_BX0                          59 DR1                           
+ 28 TDI                              60 DCLK1                         
+ 29 TMS                              61 CCLK                          
+ 30 TCK                              62 CCS1n                         
+ 31 DSP_BFS0                         63 COUT                          
+ 32 DSP_BCLK0                        64 RESETn                        
+
+
+Legend :  NC  = Not Connected, unbonded pin
+         PGND = Unused I/O configured as additional Ground pin
+         TIE  = Unused I/O floating -- must tie to VCC, GND or other signal
+         VCC  = Dedicated Power Pin
+         GND  = Dedicated Ground Pin
+         TDI  = Test Data In, JTAG pin
+         TDO  = Test Data Out, JTAG pin
+         TCK  = Test Clock, JTAG pin
+         TMS  = Test Mode Select, JTAG pin
+         PE   = Port Enable pin
+  PROHIBITED  = User reserved pin
+****************************  Compiler Options  ****************************
+
+Following is a list of all global compiler options used by the fitter run.
+
+Device(s) Specified                         : xc9572xl-10-VQ64
+Optimization Method                         : SPEED
+Multi-Level Logic Optimization              : ON
+Ignore Timing Specifications                : OFF
+Default Register Power Up Value             : LOW
+Keep User Location Constraints              : ON
+What-You-See-Is-What-You-Get                : OFF
+Exhaustive Fitting                          : OFF
+Keep Unused Inputs                          : OFF
+Slew Rate                                   : FAST
+Power Mode                                  : STD
+Set Unused I/O Pin Termination              : FLOAT
+Set I/O Pin Termination                     : KEEPER
+Global Clock Optimization                   : ON
+Global Set/Reset Optimization               : ON
+Global Ouput Enable Optimization            : ON
+Input Limit                                 : 54
+Pterm Limit                                 : 25

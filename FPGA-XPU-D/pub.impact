@@ -1,0 +1,31 @@
+
+setPreference -pref UserLevel:NOVICE
+setPreference -pref MessageLevel:DETAILED
+setPreference -pref ConcurrentMode:FALSE
+setPreference -pref UseHighz:FALSE
+setPreference -pref ConfigOnFailure:STOP
+setPreference -pref StartupCLock:AUTO_CORRECTION
+setPreference -pref AutoSignature:FALSE
+setPreference -pref KeepSVF:FALSE
+setPreference -pref svfUseTime:FALSE
+setPreference -pref UserLevel:NOVICE
+setPreference -pref MessageLevel:DETAILED
+setPreference -pref ConcurrentMode:FALSE
+setPreference -pref UseHighz:FALSE
+setPreference -pref ConfigOnFailure:STOP
+setPreference -pref StartupCLock:AUTO_CORRECTION
+setPreference -pref AutoSignature:FALSE
+setPreference -pref KeepSVF:FALSE
+setPreference -pref svfUseTime:FALSE
+
+setMode -bsfile
+setCable -port xsvf -file "pub.xsvf"
+
+addDevice -position 1 -part "xcf01s"
+setAttribute -position 1 -attr configFileName -value "p1.mcs"
+
+addDevice -position 2 -file "pub.bit"
+
+Program -p 2 
+
+exit

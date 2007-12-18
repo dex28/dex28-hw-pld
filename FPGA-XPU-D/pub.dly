@@ -1,0 +1,3680 @@
+Release 6.1.03i - reportgen G.26
+Copyright (c) 1995-2003 Xilinx, Inc.  All rights reserved.
+
+Sun Nov 26 01:20:17 2006
+
+File: pub.dly
+
+ The 20 worst nets by delay are:
+-------------------------------
+| Max Delay       | Netname   |
+-------------------------------
+   8.324            PCM_WP<5>
+   6.797            PCM_RP<1>
+   6.186            PCM_WP<8>
+   5.973            PCM_WP<1>
+   5.921            N11222
+   5.872            PCM_RP<2>
+   5.858            PCM_WP<7>
+   5.663            PCM_WP<3>
+   5.610            PCM_RP<0>
+   5.585            A_2_IBUF
+   5.552            CSn_IBUF
+   5.523            WRn_IBUF
+   5.409            TPCM0_TSR<5>
+   5.304            RDn_IBUF
+   5.272            N11220
+   5.205            RPCM1_I<5>
+   5.180            MCPU
+   5.019            RESET_IBUF
+   4.978            RPCM0_TSR<4>
+   4.865            A_3_IBUF
+---------------------------------
+
+-------------------------------------------------------------------------------
+                               Net Delays
+-------------------------------------------------------------------------------
+
+A_0_IBUF
+   A<0>.I
+         3.297  CHOICE487.F2
+         3.243  CHOICE487.G4
+         3.743  _n0156.F4
+         3.550  _n0346.F3
+         3.128  _n0346.G2
+         4.134  CHOICE236.F3
+         4.166  CHOICE236.G3
+         4.056  N8348.G1
+         3.050  N8297.F1
+         3.296  N8192.G3
+         3.807  N8236.F3
+         3.694  IEN_CTXE.F2
+         4.488  N7725.G2
+         3.851  N7738.G2
+         3.567  N7687.F4
+         3.554  N7791.F2
+         3.490  _n0159.F3
+         4.454  RPCM0_TSR<5>.F4
+         4.496  RPCM1_TSR<5>.F1
+         4.578  TPCM0_TSR<5>.F3
+         3.449  TPCM1_TSR<5>.F3
+         3.246  MFCE.F4
+         3.383  CHOICE254.F2
+
+A_1_IBUF
+   A<1>.I
+         2.433  _n0151.F2
+         1.851  N8032.G3
+         3.052  _n0145.F4
+         3.214  _n0153.F4
+         3.343  _n0146.F3
+         2.884  _n0148.F2
+         2.286  N8348.G2
+         1.394  N8297.F4
+         1.698  N8192.F3
+         3.026  N8270.G2
+         2.223  N8236.G1
+         2.425  IEN_CTXE.F1
+         1.994  N7725.F3
+         1.940  N7738.G3
+         2.834  N7687.G1
+         2.645  N7791.F3
+         1.923  _n0159.F4
+         2.939  RPCM0_TSR<5>.F3
+         1.902  RPCM1_TSR<5>.F4
+         3.097  TPCM0_TSR<5>.F2
+         2.527  TPCM1_TSR<5>.F1
+         2.856  MFCE.F1
+         1.879  N7952.G2
+
+A_2_IBUF
+   A<2>.I
+         4.477  CHOICE487.BX
+         3.433  _n0151.F4
+         3.995  N8032.F1
+         3.167  N8032.G4
+         5.199  _n0145.F3
+         3.633  _n0153.F3
+         4.490  _n0146.F1
+         4.075  _n0148.F1
+         5.585  _n0156.F3
+         3.778  _n0346.F4
+         3.215  _n0346.G3
+         3.401  MCPU_N1119.F1
+         4.502  CHOICE236.F4
+         4.549  CHOICE236.G4
+         2.912  N8297.G2
+         3.871  N8192.F2
+         3.229  N8236.G3
+         4.112  N7725.G3
+         4.036  N7738.F2
+         3.592  N7687.G3
+         3.741  N7791.G2
+         4.409  N8117.F4
+         4.456  N8117.G4
+         3.952  N7991.G2
+         4.415  CHOICE247.F4
+         4.129  CHOICE247.G1
+         3.788  _n0159.F1
+         3.819  MFCE.F2
+         4.448  CHOICE254.F3
+         3.993  N11349.G4
+         3.713  N7952.F3
+
+A_3_IBUF
+   A<3>.I
+         2.946  N8032.F4
+         3.345  N8297.F2
+         4.507  N8192.F1
+         4.100  N8270.F4
+         4.296  N8236.F4
+         4.236  N7725.F2
+         4.392  N7738.F3
+         4.668  N7687.F2
+         3.648  N7791.F1
+         4.865  N8117.F1
+         4.101  N8117.G3
+         4.462  N7991.F1
+         4.410  N7991.G4
+         4.226  N7952.F4
+
+A_4_IBUF
+   A<4>.I
+         3.340  _n0151.F3
+         3.736  N8032.F2
+         3.760  N8032.G2
+         3.583  _n0145.F2
+         3.313  _n0153.F2
+         3.422  _n0146.F4
+         3.061  _n0148.F3
+         3.578  MCPU_N1119.F3
+         3.603  N8297.G1
+         3.729  N8192.G1
+         3.615  N8270.F2
+         3.787  N8236.G2
+         2.805  N7725.F4
+         3.951  N7738.F1
+         3.218  N7687.G2
+         3.457  N7791.G1
+         3.275  N8117.F2
+         3.345  N8117.G2
+         2.621  N7991.F3
+         2.653  N7991.G3
+         3.628  CHOICE247.F3
+         3.404  CHOICE247.G4
+         3.865  N11349.G1
+         3.561  N7952.G1
+
+A_5_IBUF
+   A<5>.I
+         2.479  N8348.G3
+         1.889  N8297.G3
+         3.004  N8192.G2
+         3.485  N8270.F1
+         3.317  N8270.G4
+         3.301  N8236.F1
+         2.266  IEN_CTXE.F4
+         2.036  N7725.F1
+         3.366  N7738.G1
+         3.545  N7687.F1
+         2.355  N7791.F4
+         2.367  N7991.F4
+         3.232  RPCM0_TSR<5>.F1
+         3.049  RPCM1_TSR<5>.F3
+         3.394  TPCM0_TSR<5>.F1
+         2.466  TPCM1_TSR<5>.F4
+         2.855  N7952.G3
+
+CHOICE113
+   CHOICE113.Y
+         0.912  _n0082.F3
+
+CHOICE124
+   CHOICE124.Y
+         0.924  _n0082.F4
+
+CHOICE136
+   CHOICE136.Y
+         0.923  CHOICE147.G2
+
+CHOICE147
+   CHOICE147.X
+         0.222  CHOICE147.G4
+
+CHOICE159
+   CHOICE159.Y
+         0.362  _n0079.F2
+
+CHOICE170
+   CHOICE170.Y
+         0.724  _n0079.F4
+
+CHOICE182
+   CHOICE182.Y
+         0.919  N11337.F4
+         1.205  _n0080.F1
+
+CHOICE193
+   CHOICE193.Y
+         1.262  N11337.F2
+         0.980  _n0080.F4
+
+CHOICE200
+   CHOICE200.Y
+         3.419  N11345.F1
+
+CHOICE213
+   MCTXE.Y
+         1.424  N11337.G2
+
+CHOICE236
+   CHOICE236.X
+         1.237  CHOICE238.G4
+
+CHOICE238
+   CHOICE238.Y
+         0.385  N11341.G2
+
+CHOICE247
+   CHOICE247.X
+         1.656  CHOICE260.F3
+
+CHOICE254
+   CHOICE254.X
+         0.222  CHOICE254.G4
+
+CHOICE255
+   CHOICE254.Y
+         1.175  CHOICE260.F4
+
+CHOICE259
+   CHOICE259.Y
+         1.635  CHOICE260.F1
+
+CHOICE260
+   CHOICE260.X
+         0.222  CHOICE260.G4
+
+CHOICE322
+   CHOICE322.Y
+         1.356  CHOICE337.G2
+
+CHOICE325
+   CHOICE325.X
+         1.173  CHOICE337.G3
+
+CHOICE330
+   _n0153.Y
+         0.876  CHOICE337.F3
+
+CHOICE335
+   CHOICE335.X
+         0.222  CHOICE335.G4
+
+CHOICE336
+   CHOICE335.Y
+         0.875  CHOICE337.F4
+
+CHOICE337
+   CHOICE337.X
+         0.222  CHOICE337.G4
+
+CHOICE376
+   CHOICE376.Y
+         0.700  MCTXE.F4
+
+CHOICE387
+   CHOICE387.Y
+         0.362  MCTXE.F2
+
+CHOICE394
+   CHOICE394.X
+         0.222  CHOICE394.G4
+
+CHOICE395
+   CHOICE394.Y
+         0.897  CHOICE408.F2
+
+CHOICE398
+   CHOICE512.Y
+         1.847  CHOICE408.F4
+
+CHOICE401
+   CHOICE401.X
+         1.005  CHOICE408.F1
+
+CHOICE408
+   CHOICE408.X
+         0.222  CHOICE408.G4
+
+CHOICE417
+   CHOICE417.X
+         1.633  N11357.G2
+
+CHOICE421
+   CHOICE325.Y
+         0.362  N11357.F2
+
+CHOICE424
+   _n0156.Y
+         1.008  N11357.F1
+
+CHOICE426
+   N11357.Y
+         2.046  CHOICE430.G2
+
+CHOICE430
+   CHOICE430.X
+         0.222  CHOICE430.G4
+
+CHOICE440
+   N7791.Y
+         0.942  CHOICE443.G3
+
+CHOICE443
+   CHOICE443.X
+         0.222  CHOICE443.G4
+
+CHOICE444
+   CHOICE443.Y
+         1.088  CHOICE461.F2
+
+CHOICE447
+   _n0145.Y
+         0.741  CHOICE461.F3
+
+CHOICE450
+   CHOICE417.Y
+         1.310  CHOICE453.G3
+
+CHOICE453
+   CHOICE453.X
+         0.222  CHOICE453.G4
+
+CHOICE454
+   CHOICE453.Y
+         1.911  CHOICE461.F1
+
+CHOICE461
+   CHOICE461.X
+         0.222  CHOICE461.G4
+
+CHOICE468
+   CHOICE247.Y
+         0.986  CHOICE498.G1
+
+CHOICE471
+   CHOICE401.Y
+         1.901  CHOICE498.F4
+
+CHOICE473
+   _n0159.Y
+         1.462  CHOICE498.F1
+
+CHOICE487
+   CHOICE487.X
+         1.088  N11361.G2
+
+CHOICE490
+   _n0148.Y
+         1.669  N11361.F1
+
+CHOICE492
+   N11361.Y
+         1.196  CHOICE498.F3
+
+CHOICE498
+   CHOICE498.X
+         0.222  CHOICE498.G4
+
+CHOICE503
+   N11369.Y
+         1.550  CHOICE519.G2
+
+CHOICE508
+   CHOICE508.X
+         0.222  CHOICE508.G4
+
+CHOICE509
+   CHOICE508.Y
+         0.554  CHOICE519.F2
+
+CHOICE512
+   CHOICE512.X
+         2.082  CHOICE515.G1
+
+CHOICE515
+   CHOICE515.X
+         0.222  CHOICE515.G4
+
+CHOICE516
+   CHOICE515.Y
+         0.980  CHOICE519.F4
+
+CHOICE519
+   CHOICE519.X
+         0.222  CHOICE519.G4
+
+CHOICE527
+   CHOICE527.X
+         0.221  CHOICE527.G4
+         0.433  CHOICE534.G1
+
+CHOICE534
+   CHOICE534.X
+         0.433  CHOICE527.G1
+         0.221  CHOICE534.G4
+
+CLK16M_BUFGP
+   CLK16M_BUFGP/BUFG.OUT
+         0.560  CTX.CLK
+         0.693  CNT<0>.CLK
+         0.693  CNT<2>.CLK
+         0.693  CNT<4>.CLK
+         0.693  CNT<6>.CLK
+         0.693  CNT<8>.CLK
+         0.693  CNT<10>.CLK
+         0.708  MCTX_RP<0>.CLK
+         0.614  MCTX_RP<2>.CLK
+         0.709  MCTX_CNT<1>.CLK
+         0.709  MCTX_CNT<3>.CLK
+         0.614  MCTXO<2>.CLK
+         0.615  MCTXO<4>.CLK
+         0.615  MCTXO<6>.CLK
+         0.607  MCTXO<8>.CLK
+         0.608  MCTXO<7>.CLK
+         0.608  MCTX_CNT<2>.CLK
+
+CLK16M_BUFGP/IBUFG
+   CLK16M.GCLKOUT
+         0.007  CLK16M_BUFGP/BUFG.IN
+
+CNT<0>
+   CNT<0>.XQ
+         2.029  CLK8M.O
+         1.200  CNT<0>.F2
+         1.351  CHOICE527.F2
+         1.097  N7614.F3
+
+CNT<10>
+   CNT<10>.XQ
+         1.061  CNT<10>.F2
+         1.508  N8493.F2
+
+CNT<1>
+   CNT<0>.YQ
+         2.912  CLK4M.O
+         1.046  CNT<0>.G3
+         1.717  CHOICE527.F1
+         1.111  N7614.F4
+
+CNT<2>
+   CNT<2>.XQ
+         1.200  CNT<2>.F1
+         0.710  CHOICE527.F4
+         1.661  _n0091.G3
+         1.631  N7614.G2
+
+CNT<3>
+   CNT<2>.YQ
+         1.110  CNT<2>.G3
+         0.721  CHOICE527.F3
+         1.842  _n0091.G2
+         1.695  N7614.G1
+
+CNT<4>
+   CNT<4>.XQ
+         1.107  CNT<4>.F2
+         1.155  CHOICE534.F3
+         1.010  N8493.G3
+
+CNT<5>
+   CNT<4>.YQ
+         1.236  CNT<4>.G1
+         1.128  CHOICE534.F4
+         1.216  N8493.G1
+
+CNT<6>
+   CNT<6>.XQ
+         1.107  CNT<6>.F2
+         1.720  CHOICE534.F2
+         1.147  N8493.G2
+
+CNT<7>
+   CNT<6>.YQ
+         1.236  CNT<6>.G1
+         1.735  CHOICE534.F1
+         0.981  N8493.F3
+
+CNT<8>
+   CNT<8>.XQ
+         1.061  CNT<8>.F2
+         1.387  N8493.F1
+
+CNT<9>
+   CNT<8>.YQ
+         0.952  CNT<8>.G3
+         1.048  N8493.F4
+
+CNT_Madd__n0000_inst_cy_11
+   CNT<6>.COUT
+         0.000  CNT<8>.CIN
+
+CNT_Madd__n0000_inst_cy_13
+   CNT<8>.COUT
+         0.000  CNT<10>.CIN
+
+CNT_Madd__n0000_inst_cy_5
+   CNT<0>.COUT
+         0.000  CNT<2>.CIN
+
+CNT_Madd__n0000_inst_cy_7
+   CNT<2>.COUT
+         0.000  CNT<4>.CIN
+
+CNT_Madd__n0000_inst_cy_9
+   CNT<4>.COUT
+         0.000  CNT<6>.CIN
+
+CRXI<0>
+   CRXI<1>.YQ
+         1.102  CRXO<0>.BY
+
+CRXI<1>
+   CRXI<1>.XQ
+         1.122  CRXI<1>.G1
+         1.348  CRXO<1>.BY
+
+CRXI<2>
+   CRXI<3>.YQ
+         0.905  CRXI<1>.F3
+         1.066  CRXO<2>.BY
+
+CRXI<3>
+   CRXI<3>.XQ
+         0.957  CRXI<3>.G4
+         1.549  CRXO<3>.BY
+
+CRXI<4>
+   CRXI<5>.YQ
+         0.556  CRXI<3>.F4
+         1.533  CRXO<4>.BY
+
+CRXI<5>
+   CRXI<5>.XQ
+         0.935  CRXI<5>.G3
+         1.488  CRXO<5>.BY
+
+CRXI<6>
+   CRXI<7>.YQ
+         0.935  CRXI<5>.F3
+         2.009  CRXO<6>.BY
+
+CRXI<7>
+   CRXI<7>.XQ
+         1.086  CRXI<7>.G2
+         1.892  CRXO<7>.BY
+
+CRXO<0>
+   CRXO<0>.X
+         1.504  CHOICE487.F1
+
+CRXO<1>
+   CRXO<1>.X
+         1.329  CHOICE443.F3
+
+CRXO<2>
+   CRXO<2>.X
+         1.372  _n0156.G2
+
+CRXO<3>
+   CRXO<3>.X
+         1.115  CHOICE322.G1
+
+CRXO<4>
+   CRXO<4>.X
+         1.106  CHOICE401.F4
+
+CRXO<5>
+   CRXO<5>.X
+         1.073  CHOICE515.F2
+
+CRXO<6>
+   CRXO<6>.X
+         1.375  CHOICE236.F1
+
+CRXO<7>
+   CRXO<7>.X
+         1.254  CHOICE254.F4
+
+CRX_CNT<0>
+   CRX_CNT<1>.YQ
+         1.107  _n0072<1>.F2
+         1.622  N7774.F1
+         1.147  CRX_CNT<1>.G2
+
+CRX_CNT<10>
+   CRX_CNT<10>.YQ
+         1.596  _n0072<10>.F4
+         1.780  N7715.G1
+         1.713  Ker7425_SW0/O.G1
+         2.345  CRXI<1>.F2
+         2.596  CRXI<1>.G3
+         2.319  CRXI<3>.F2
+         2.703  CRXI<3>.G1
+         2.167  CRXI<5>.F2
+         2.249  CRXI<5>.G2
+         2.047  CRXI<7>.F2
+         1.403  CRXI<7>.G1
+         1.600  _n0341.F4
+         1.862  _n0341.G3
+         0.942  N9480.F1
+         1.641  N10165.F2
+
+CRX_CNT<1>
+   CRX_CNT<1>.XQ
+         0.952  _n0072<1>.G3
+         1.463  N7774.F2
+
+CRX_CNT<2>
+   CRX_CNT<3>.YQ
+         1.061  _n0072<2>.F2
+         1.133  N7774.F3
+
+CRX_CNT<3>
+   CRX_CNT<3>.XQ
+         0.952  _n0072<2>.G3
+         1.071  N7774.F4
+
+CRX_CNT<4>
+   CRX_CNT<5>.YQ
+         1.107  _n0072<4>.F2
+         0.862  N7774.G1
+         1.361  N9618.G2
+
+CRX_CNT<5>
+   CRX_CNT<5>.XQ
+         0.999  _n0072<4>.G3
+         0.813  N7774.G2
+         1.377  N9618.G1
+
+CRX_CNT<6>
+   CRX_CNT<7>.YQ
+         1.183  _n0072<6>.F2
+         1.160  N7774.G3
+         1.167  N7715.F1
+
+CRX_CNT<7>
+   CRX_CNT<7>.XQ
+         1.140  _n0072<6>.G3
+         1.696  N7715.G2
+         1.838  Ker7425_SW0/O.F1
+         1.734  CRXI<1>.F4
+         1.781  CRXI<1>.G4
+         1.934  CRXI<3>.F1
+         1.563  CRXI<3>.G3
+         1.483  CRXI<5>.F4
+         1.895  CRXI<5>.G1
+         1.407  CRXI<7>.F4
+         1.385  CRXI<7>.G4
+         1.787  _n0341.F3
+         1.648  _n0341.G1
+         2.002  N9480.F2
+         1.902  N10165.F1
+
+CRX_CNT<8>
+   CRX_CNT<9>.YQ
+         1.339  _n0072<8>.F2
+         1.159  N7715.F3
+         1.165  Ker7425_SW0/O.G2
+         1.520  N9480.G3
+         1.268  N10165.F4
+
+CRX_CNT<9>
+   CRX_CNT<9>.XQ
+         1.046  _n0072<8>.G3
+         0.767  Ker7425_SW0/O.G3
+         1.188  N9480.F3
+         1.198  N10165.F3
+         1.237  N9618.G4
+
+CRX_IBUF
+   CRX.I
+         2.104  CRXI<7>.F1
+         2.022  _n0341.F1
+         1.378  N10165.G3
+
+CRX_RP<0>
+   CRX_RP<0>.XQ
+         0.992  CRX_RP<0>.F4
+         1.300  CHOICE113.G1
+         2.337  CRXO<0>.F1
+         2.249  CRXO<1>.F1
+         2.374  CRXO<2>.F1
+         2.079  CRXO<3>.F1
+         2.650  CRXO<4>.F1
+         2.239  CRXO<5>.F1
+         2.773  CRXO<6>.F1
+         2.239  CRXO<7>.F1
+
+CRX_RP<1>
+   CRX_RP<0>.YQ
+         1.055  CRX_RP<0>.G4
+         1.144  CHOICE113.G3
+         2.650  CRXO<0>.F2
+         2.467  CRXO<1>.F2
+         2.872  CRXO<2>.F2
+         2.041  CRXO<3>.F2
+         2.519  CRXO<4>.F2
+         2.650  CRXO<5>.F2
+         2.528  CRXO<6>.F2
+         2.417  CRXO<7>.F2
+
+CRX_RP<2>
+   CRX_RP<2>.XQ
+         1.251  CRX_RP<2>.F1
+         1.708  CHOICE124.G1
+         2.187  CRXO<0>.F3
+         2.186  CRXO<1>.F3
+         2.491  CRXO<2>.F3
+         1.799  CRXO<3>.F3
+         1.981  CRXO<4>.F3
+         1.894  CRXO<5>.F3
+         2.062  CRXO<6>.F3
+         2.458  CRXO<7>.F3
+
+CRX_RP<3>
+   CRX_RP<2>.YQ
+         1.219  CRX_RP<2>.G3
+         1.593  CHOICE124.G4
+         2.728  CRXO<0>.F4
+         1.846  CRXO<1>.F4
+         2.839  CRXO<2>.F4
+         1.817  CRXO<3>.F4
+         1.945  CRXO<4>.F4
+         2.189  CRXO<5>.F4
+         1.767  CRXO<6>.F4
+         2.735  CRXO<7>.F4
+
+CRX_RP_Madd__n0000_inst_cy_1
+   CRX_RP<0>.COUT
+         0.000  CRX_RP<2>.CIN
+
+CRX_WP<0>
+   CRX_WP<0>.XQ
+         1.472  CRX_WP<0>.F3
+         1.817  CHOICE113.G4
+         2.486  CRXO<0>.G1
+         2.105  CRXO<1>.G1
+         2.501  CRXO<2>.G1
+         1.476  CRXO<3>.G1
+         2.039  CRXO<4>.G1
+         2.209  CRXO<5>.G1
+         1.937  CRXO<6>.G1
+         2.458  CRXO<7>.G1
+
+CRX_WP<1>
+   CRX_WP<0>.YQ
+         1.097  CRX_WP<0>.G3
+         1.829  CHOICE113.G2
+         2.246  CRXO<0>.G2
+         2.688  CRXO<1>.G2
+         2.423  CRXO<2>.G2
+         1.194  CRXO<3>.G2
+         2.066  CRXO<4>.G2
+         2.571  CRXO<5>.G2
+         2.109  CRXO<6>.G2
+         2.558  CRXO<7>.G2
+
+CRX_WP<2>
+   CRX_WP<2>.XQ
+         1.158  CRX_WP<2>.F2
+         2.001  CHOICE124.G2
+         2.183  CRXO<0>.G3
+         1.917  CRXO<1>.G3
+         1.991  CRXO<2>.G3
+         1.424  CRXO<3>.G3
+         1.921  CRXO<4>.G3
+         1.890  CRXO<5>.G3
+         2.182  CRXO<6>.G3
+         2.227  CRXO<7>.G3
+
+CRX_WP<3>
+   CRX_WP<2>.YQ
+         1.093  CRX_WP<2>.G3
+         1.776  CHOICE124.G3
+         2.335  CRXO<0>.G4
+         1.828  CRXO<1>.G4
+         2.026  CRXO<2>.G4
+         1.232  CRXO<3>.G4
+         1.876  CRXO<4>.G4
+         2.462  CRXO<5>.G4
+         1.937  CRXO<6>.G4
+         2.442  CRXO<7>.G4
+
+CRX_WP_Madd__n0000_inst_cy_1
+   CRX_WP<0>.COUT
+         0.000  CRX_WP<2>.CIN
+
+CSn_IBUF
+   CSn.I
+         4.568  MFCD.CE
+         4.405  RPCM0_TSR<1>.CE
+         4.848  RPCM0_TSR<3>.CE
+         5.552  RPCM1_TSR<4>.CE
+         4.835  TPCM0_TSR<1>.CE
+         4.891  TPCM0_TSR<3>.CE
+         4.977  TPCM1_TSR<4>.CE
+         5.174  RPCM1_TSR<1>.CE
+         3.586  RPCM1_TSR<3>.CE
+         3.597  LED_Y.CE
+         3.342  TPCM1_TSR<1>.CE
+         3.446  TPCM1_TSR<3>.CE
+         3.627  LED_R.CE
+         3.907  LED_R.F1
+         3.639  IEN_FC.CE
+         3.382  IEN_EIRQ.CE
+         3.371  IEN_PCM.CE
+         4.857  TPCM0_RCLK.F1
+         4.680  TPCM0_RCLK.G2
+         4.523  TPCM1_RCLK.F1
+         4.360  TPCM1_RCLK.G3
+         3.306  _n0146.G2
+         3.531  _n0346.F1
+         3.509  _n0346.G1
+         3.530  MCPU_N1119.F4
+         3.577  MCPU_N1119.G4
+         4.015  CHOICE236.G2
+         3.868  N8348.F1
+         3.639  IEN_CTXE.CE
+         5.280  RPCM0_TSR<5>.CE
+         5.285  RPCM1_TSR<5>.CE
+         5.287  TPCM0_TSR<5>.CE
+         3.544  TPCM1_TSR<5>.CE
+         3.206  MFCE.CE
+
+CTXI<0>
+   CTXI<1>.YQ
+         1.067  CTXO<0>.BY
+
+CTXI<1>
+   CTXI<1>.XQ
+         1.118  CTXI<1>.G2
+         0.922  CTXO<1>.BY
+
+CTXI<2>
+   CTXI<3>.YQ
+         0.556  CTXI<1>.F4
+         1.126  CTXO<2>.BY
+
+CTXI<3>
+   CTXI<3>.XQ
+         0.935  CTXI<3>.G3
+         1.452  CTXO<3>.BY
+
+CTXI<4>
+   CTXI<5>.YQ
+         0.876  CTXI<3>.F4
+         1.068  CTXO<4>.BY
+
+CTXI<5>
+   CTXI<5>.XQ
+         0.964  CTXI<5>.G3
+         0.917  CTXO<5>.BY
+
+CTXI<6>
+   CTXI<7>.YQ
+         1.265  CTXI<5>.F2
+         1.324  CTXO<6>.BY
+
+CTXI<7>
+   CTXI<7>.XQ
+         0.970  CTXI<7>.G3
+         1.736  CTXO<7>.BY
+
+CTXO<0>
+   CTXO<0>.X
+         1.352  CHOICE401.G2
+
+CTXO<1>
+   CTXO<1>.X
+         1.355  CHOICE453.F3
+
+CTXO<2>
+   CTXO<2>.X
+         1.974  _n0156.G3
+
+CTXO<3>
+   CTXO<3>.X
+         0.747  CHOICE322.G4
+
+CTXO<4>
+   CTXO<4>.X
+         1.551  CHOICE401.F3
+
+CTXO<5>
+   CTXO<5>.X
+         1.533  CHOICE515.F4
+
+CTXO<6>
+   CTXO<6>.X
+         1.446  N11341.F4
+
+CTXO<7>
+   CTXO<7>.X
+         1.852  CHOICE260.G2
+
+CTX_CNT<0>
+   CTX_CNT<1>.YQ
+         1.158  _n0071<1>.F4
+         0.974  N7779.F3
+         1.204  CTX_CNT<1>.G1
+
+CTX_CNT<10>
+   CTX_CNT<10>.YQ
+         1.902  _n0071<10>.F2
+         1.453  N7720.G3
+         1.260  Ker7439_SW0/O.G3
+         1.741  CTXI<1>.F3
+         1.773  CTXI<1>.G3
+         2.560  CTXI<3>.F2
+         2.583  CTXI<3>.G2
+         2.370  CTXI<5>.F4
+         2.417  CTXI<5>.G4
+         2.392  CTXI<7>.F2
+         2.565  CTXI<7>.G2
+         1.731  _n0338.F2
+         2.055  _n0338.G1
+         2.240  N10076.F2
+         1.916  N9526.F4
+
+CTX_CNT<1>
+   CTX_CNT<1>.XQ
+         1.143  _n0071<1>.G4
+         1.172  N7779.F1
+
+CTX_CNT<2>
+   CTX_CNT<3>.YQ
+         0.576  _n0071<2>.F4
+         1.274  N7779.F2
+
+CTX_CNT<3>
+   CTX_CNT<3>.XQ
+         0.617  _n0071<2>.G3
+         0.930  N7779.F4
+
+CTX_CNT<4>
+   CTX_CNT<5>.YQ
+         0.582  _n0071<4>.F4
+         0.952  N7779.G3
+         0.841  N9672.G1
+
+CTX_CNT<5>
+   CTX_CNT<5>.XQ
+         0.643  _n0071<4>.G3
+         1.084  N7779.G2
+         0.792  N9672.G2
+
+CTX_CNT<6>
+   CTX_CNT<7>.YQ
+         0.571  _n0071<6>.F4
+         1.177  N7779.G1
+         1.113  N7720.F2
+
+CTX_CNT<7>
+   CTX_CNT<7>.XQ
+         0.762  _n0071<6>.G3
+         1.549  N7720.G2
+         1.137  Ker7439_SW0/O.F1
+         2.275  CTXI<1>.F1
+         2.153  CTXI<1>.G1
+         2.116  CTXI<3>.F3
+         2.324  CTXI<3>.G1
+         2.381  CTXI<5>.F1
+         2.297  CTXI<5>.G2
+         1.823  CTXI<7>.F4
+         1.922  CTXI<7>.G4
+         1.370  _n0338.F4
+         1.681  _n0338.G4
+         1.687  N10076.F3
+         1.694  N9526.F2
+
+CTX_CNT<8>
+   CTX_CNT<9>.YQ
+         0.774  _n0071<8>.F3
+         1.452  N7720.F1
+         1.672  Ker7439_SW0/O.G1
+         1.482  N10076.F4
+         1.727  N9526.G2
+
+CTX_CNT<9>
+   CTX_CNT<9>.XQ
+         0.659  _n0071<8>.G4
+         1.296  Ker7439_SW0/O.G2
+         2.076  N10076.F1
+         1.880  N9526.F1
+         1.799  N9672.G4
+
+CTX_RP<0>
+   CTX_RP<0>.XQ
+         1.007  CTX_RP<0>.F4
+         1.942  CTXO<0>.F1
+         1.725  CTXO<1>.F1
+         1.569  CTXO<2>.F1
+         1.880  CTXO<3>.F1
+         1.726  CTXO<4>.F1
+         1.721  CTXO<5>.F1
+         1.666  CTXO<6>.F1
+         2.122  CTXO<7>.F1
+         2.165  CHOICE136.G2
+
+CTX_RP<1>
+   CTX_RP<0>.YQ
+         1.766  CTX_RP<0>.G2
+         1.728  CTXO<0>.F2
+         1.614  CTXO<1>.F2
+         2.122  CTXO<2>.F2
+         2.120  CTXO<3>.F2
+         2.028  CTXO<4>.F2
+         1.614  CTXO<5>.F2
+         1.632  CTXO<6>.F2
+         1.977  CTXO<7>.F2
+         2.286  CHOICE136.G1
+
+CTX_RP<2>
+   CTX_RP<2>.XQ
+         1.356  CTX_RP<2>.F2
+         1.226  CTXO<0>.F3
+         1.509  CTXO<1>.F3
+         1.363  CTXO<2>.F3
+         1.505  CTXO<3>.F3
+         1.481  CTXO<4>.F3
+         1.245  CTXO<5>.F3
+         1.188  CTXO<6>.F3
+         1.594  CTXO<7>.F3
+         0.910  CHOICE147.F2
+
+CTX_RP<3>
+   CTX_RP<2>.YQ
+         1.439  CTX_RP<2>.G3
+         1.209  CTXO<0>.F4
+         1.605  CTXO<1>.F4
+         1.378  CTXO<2>.F4
+         2.036  CTXO<3>.F4
+         1.476  CTXO<4>.F4
+         1.177  CTXO<5>.F4
+         1.109  CTXO<6>.F4
+         2.143  CTXO<7>.F4
+         1.138  CHOICE147.F1
+
+CTX_RP_Madd__n0000_inst_cy_1
+   CTX_RP<0>.COUT
+         0.000  CTX_RP<2>.CIN
+
+CTX_WP<0>
+   CTX_WP<0>.XQ
+         1.706  CTX_WP<0>.F2
+         1.996  CTXO<0>.G1
+         0.910  CTXO<1>.G1
+         2.230  CTXO<2>.G1
+         2.218  CTXO<3>.G1
+         1.437  CTXO<4>.G1
+         1.956  CTXO<5>.G1
+         2.140  CTXO<6>.G1
+         2.196  CTXO<7>.G1
+         2.006  CHOICE136.G4
+
+CTX_WP<1>
+   CTX_WP<0>.YQ
+         1.152  CTX_WP<0>.G3
+         1.513  CTXO<0>.G2
+         1.018  CTXO<1>.G2
+         1.878  CTXO<2>.G2
+         1.841  CTXO<3>.G2
+         1.676  CTXO<4>.G2
+         1.389  CTXO<5>.G2
+         1.843  CTXO<6>.G2
+         1.685  CTXO<7>.G2
+         1.692  CHOICE136.G3
+
+CTX_WP<2>
+   CTX_WP<2>.XQ
+         1.648  CTX_WP<2>.F3
+         2.142  CTXO<0>.G3
+         2.034  CTXO<1>.G3
+         3.070  CTXO<2>.G3
+         2.647  CTXO<3>.G3
+         2.924  CTXO<4>.G3
+         2.156  CTXO<5>.G3
+         2.410  CTXO<6>.G3
+         2.419  CTXO<7>.G3
+         2.479  CHOICE147.F3
+
+CTX_WP<3>
+   CTX_WP<2>.YQ
+         1.460  CTX_WP<2>.G1
+         1.819  CTXO<0>.G4
+         1.597  CTXO<1>.G4
+         2.091  CTXO<2>.G4
+         2.208  CTXO<3>.G4
+         1.719  CTXO<4>.G4
+         1.689  CTXO<5>.G4
+         1.806  CTXO<6>.G4
+         2.116  CTXO<7>.G4
+         2.143  CHOICE147.F4
+
+CTX_WP_Madd__n0000_inst_cy_1
+   CTX_WP<0>.COUT
+         0.000  CTX_WP<2>.CIN
+
+D_0_IOBUF
+   CHOICE498.Y
+         1.730  D<0>.O
+
+D_1_IOBUF
+   CHOICE461.Y
+         2.205  D<1>.O
+
+D_2_IOBUF
+   CHOICE430.Y
+         1.652  D<2>.O
+
+D_3_IOBUF
+   CHOICE337.Y
+         2.688  D<3>.O
+
+D_4_IOBUF
+   CHOICE408.Y
+         2.261  D<4>.O
+
+D_5_IOBUF
+   CHOICE519.Y
+         2.220  D<5>.O
+
+D_6_IOBUF
+   N11341.Y
+         1.672  D<6>.O
+
+D_7_IOBUF
+   CHOICE260.Y
+         1.759  D<7>.O
+
+EIRQI_Once
+   EIRQI_Once.YQ
+         1.882  _n0188.G3
+         1.936  EIRQO.BY
+         1.964  EIRQI_Twice.BY
+
+EIRQI_Twice
+   EIRQI_Twice.YQ
+         1.045  _n0188.G2
+
+EIRQO
+   EIRQO.X
+         1.146  _n0159.G3
+
+EIRQ_RP<0>
+   EIRQ_RP<0>.XQ
+         1.125  EIRQ_RP<0>.F2
+         1.180  CHOICE182.G4
+         1.221  EIRQO.F1
+
+EIRQ_RP<1>
+   EIRQ_RP<0>.YQ
+         1.032  EIRQ_RP<0>.G3
+         1.370  CHOICE182.G1
+         1.118  EIRQO.F2
+
+EIRQ_RP<2>
+   EIRQ_RP<2>.XQ
+         1.120  EIRQ_RP<2>.F2
+         1.256  CHOICE193.G1
+         1.180  EIRQO.F3
+
+EIRQ_RP<3>
+   EIRQ_RP<2>.YQ
+         0.977  EIRQ_RP<2>.G4
+         1.202  CHOICE193.G2
+         1.190  EIRQO.F4
+
+EIRQ_RP_Madd__n0000_inst_cy_1
+   EIRQ_RP<0>.COUT
+         0.000  EIRQ_RP<2>.CIN
+
+EIRQ_WP<0>
+   EIRQ_WP<0>.XQ
+         1.107  EIRQ_WP<0>.F2
+         1.139  CHOICE182.G2
+         1.205  EIRQO.G1
+
+EIRQ_WP<1>
+   EIRQ_WP<0>.YQ
+         0.999  EIRQ_WP<0>.G3
+         1.010  CHOICE182.G3
+         1.156  EIRQO.G2
+
+EIRQ_WP<2>
+   EIRQ_WP<2>.XQ
+         1.061  EIRQ_WP<2>.F2
+         0.638  CHOICE193.G4
+         0.992  EIRQO.G3
+
+EIRQ_WP<3>
+   EIRQ_WP<2>.YQ
+         0.952  EIRQ_WP<2>.G3
+         0.648  CHOICE193.G3
+         0.962  EIRQO.G4
+
+EIRQ_WP_Madd__n0000_inst_cy_1
+   EIRQ_WP<0>.COUT
+         0.000  EIRQ_WP<2>.CIN
+
+EIRQn_IBUF
+   EIRQn.I
+         3.656  N7791.G3
+         3.722  EIRQI_Once.BY
+
+FCDI<0>
+   FCD.IQ
+         1.831  FCDI<2>.BY
+         1.828  FCEO<0>.BY
+
+FCDI<1>
+   FCDI<2>.YQ
+         0.916  FCDI<2>.BX
+         1.828  FCEO<1>.BY
+
+FCDI<2>
+   FCDI<2>.XQ
+         1.380  FCDI<4>.BY
+         1.095  FCEO<2>.BY
+
+FCDI<3>
+   FCDI<4>.YQ
+         0.893  FCDI<4>.BX
+         1.307  FCEO<3>.BY
+
+FCDI<4>
+   FCDI<4>.XQ
+         0.930  FCDI<6>.BY
+         1.594  FCEO<4>.BY
+
+FCDI<5>
+   FCDI<6>.YQ
+         0.899  FCDI<6>.BX
+         1.310  FCEO<5>.BY
+
+FCDI<6>
+   FCDI<6>.XQ
+         1.016  FCDI<7>.BY
+         1.443  FCEO<6>.BY
+
+FCDI<7>
+   FCDI<7>.YQ
+         1.035  FCEO<7>.BY
+
+FCEO<0>
+   FCEO<0>.X
+         0.431  CHOICE487.G3
+
+FCEO<1>
+   FCEO<1>.X
+         1.380  _n0145.G1
+
+FCEO<2>
+   FCEO<2>.X
+         1.370  N11357.G1
+
+FCEO<3>
+   FCEO<3>.X
+         1.871  CHOICE335.G2
+
+FCEO<4>
+   FCEO<4>.X
+         1.780  CHOICE394.G2
+
+FCEO<5>
+   FCEO<5>.X
+         1.513  CHOICE508.G2
+
+FCEO<6>
+   FCEO<6>.X
+         1.529  CHOICE236.F2
+
+FCEO<7>
+   FCEO<7>.X
+         1.389  CHOICE254.F1
+
+FCE_RP<0>
+   FCE_RP<0>.XQ
+         1.281  FCE_RP<0>.F2
+         2.088  SENSEO.F1
+         2.053  FCEO<0>.F1
+         1.822  FCEO<1>.F1
+         2.482  FCEO<2>.F1
+         1.693  FCEO<3>.F1
+         2.707  FCEO<4>.F1
+         2.299  FCEO<5>.F1
+         2.357  FCEO<6>.F1
+         2.085  FCEO<7>.F1
+         0.837  CHOICE159.G3
+
+FCE_RP<1>
+   FCE_RP<0>.YQ
+         1.405  FCE_RP<0>.G2
+         2.466  SENSEO.F2
+         2.568  FCEO<0>.F2
+         1.779  FCEO<1>.F2
+         2.570  FCEO<2>.F2
+         1.606  FCEO<3>.F2
+         2.836  FCEO<4>.F2
+         2.665  FCEO<5>.F2
+         2.728  FCEO<6>.F2
+         1.701  FCEO<7>.F2
+         0.603  CHOICE159.G4
+
+FCE_RP<2>
+   FCE_RP<2>.XQ
+         1.317  FCE_RP<2>.F2
+         1.396  SENSEO.F3
+         1.618  FCEO<0>.F3
+         1.343  FCEO<1>.F3
+         2.077  FCEO<2>.F3
+         1.285  FCEO<3>.F3
+         1.574  FCEO<4>.F3
+         1.678  FCEO<5>.F3
+         1.994  FCEO<6>.F3
+         1.509  FCEO<7>.F3
+         1.360  CHOICE170.G2
+
+FCE_RP<3>
+   FCE_RP<2>.YQ
+         1.331  FCE_RP<2>.G3
+         1.766  SENSEO.F4
+         1.413  FCEO<0>.F4
+         1.537  FCEO<1>.F4
+         1.856  FCEO<2>.F4
+         1.377  FCEO<3>.F4
+         1.742  FCEO<4>.F4
+         1.946  FCEO<5>.F4
+         2.045  FCEO<6>.F4
+         1.413  FCEO<7>.F4
+         0.709  CHOICE170.G3
+
+FCE_RP_Madd__n0000_inst_cy_1
+   FCE_RP<0>.COUT
+         0.000  FCE_RP<2>.CIN
+
+FCE_WP<0>
+   FCE_WP<0>.XQ
+         1.521  FCE_WP<0>.F4
+         2.142  SENSEO.G1
+         1.645  FCEO<0>.G1
+         2.288  FCEO<1>.G1
+         1.940  FCEO<2>.G1
+         2.126  FCEO<3>.G1
+         1.662  FCEO<4>.G1
+         2.025  FCEO<5>.G1
+         0.972  FCEO<6>.G1
+         2.458  FCEO<7>.G1
+         1.879  CHOICE159.G1
+
+FCE_WP<1>
+   FCE_WP<0>.YQ
+         1.069  FCE_WP<0>.G4
+         1.493  SENSEO.G2
+         1.591  FCEO<0>.G2
+         1.784  FCEO<1>.G2
+         1.591  FCEO<2>.G2
+         1.547  FCEO<3>.G2
+         1.591  FCEO<4>.G2
+         1.368  FCEO<5>.G2
+         1.040  FCEO<6>.G2
+         1.810  FCEO<7>.G2
+         1.878  CHOICE159.G2
+
+FCE_WP<2>
+   FCE_WP<2>.XQ
+         1.343  FCE_WP<2>.F4
+         1.659  SENSEO.G3
+         1.533  FCEO<0>.G3
+         1.774  FCEO<1>.G3
+         0.775  FCEO<2>.G3
+         1.634  FCEO<3>.G3
+         1.050  FCEO<4>.G3
+         1.581  FCEO<5>.G3
+         1.916  FCEO<6>.G3
+         1.777  FCEO<7>.G3
+         1.832  CHOICE170.G1
+
+FCE_WP<3>
+   FCE_WP<2>.YQ
+         1.122  FCE_WP<2>.G4
+         1.202  SENSEO.G4
+         1.613  FCEO<0>.G4
+         1.520  FCEO<1>.G4
+         0.776  FCEO<2>.G4
+         1.569  FCEO<3>.G4
+         1.321  FCEO<4>.G4
+         1.549  FCEO<5>.G4
+         1.324  FCEO<6>.G4
+         1.525  FCEO<7>.G4
+         1.569  CHOICE170.G4
+
+FCE_WP_Madd__n0000_inst_cy_1
+   FCE_WP<0>.COUT
+         0.000  FCE_WP<2>.CIN
+
+GLOBAL_LOGIC0
+   PWR_GND_0.Y
+         1.452  FCE_WP<0>.G1
+
+GLOBAL_LOGIC0_0
+   PWR_GND_1.Y
+         1.456  MCTX_RP<0>.G1
+
+GLOBAL_LOGIC0_1
+   PWR_GND_2.Y
+         0.968  _n0072<1>.G1
+
+GLOBAL_LOGIC0_10
+   PWR_GND_11.Y
+         1.025  PCM_WP<0>.G1
+
+GLOBAL_LOGIC0_11
+   PWR_GND_12.Y
+         0.968  CTX_WP<0>.G1
+
+GLOBAL_LOGIC0_12
+   PWR_GND_13.Y
+         0.986  _n0071<1>.G1
+
+GLOBAL_LOGIC0_2
+   PWR_GND_3.Y
+         0.956  _n0132<1>.G1
+
+GLOBAL_LOGIC0_3
+   PWR_GND_4.Y
+         0.940  CNT<0>.G1
+
+GLOBAL_LOGIC0_4
+   PWR_GND_5.Y
+         0.956  FCE_RP<0>.G1
+
+GLOBAL_LOGIC0_5
+   PWR_GND_6.Y
+         0.968  CRX_WP<0>.G1
+
+GLOBAL_LOGIC0_6
+   PWR_GND_7.Y
+         1.436  CRX_RP<0>.G1
+
+GLOBAL_LOGIC0_7
+   PWR_GND_8.Y
+         1.436  MCTX_WP<0>.G1
+
+GLOBAL_LOGIC0_8
+   PWR_GND_9.Y
+         0.959  CTX_RP<0>.G1
+
+GLOBAL_LOGIC0_9
+   PWR_GND_10.Y
+         1.044  EIRQ_WP<0>.G1
+         1.046  EIRQ_RP<0>.G1
+
+GLOBAL_LOGIC1
+   PWR_VCC_0.X
+         1.978  RPCM0_FIFO.DIB0
+         1.975  RPCM0_FIFO.DIB1
+         1.978  RPCM0_FIFO.DIB2
+         1.975  RPCM0_FIFO.DIB3
+         1.978  RPCM0_FIFO.DIB4
+         1.978  RPCM0_FIFO.DIB5
+         1.975  RPCM0_FIFO.DIB6
+         1.975  RPCM0_FIFO.DIB7
+
+GLOBAL_LOGIC1_0
+   PWR_VCC_1.X
+         1.978  TPCM0_FIFO.DIB0
+         1.975  TPCM0_FIFO.DIB1
+         1.978  TPCM0_FIFO.DIB2
+         1.975  TPCM0_FIFO.DIB3
+         1.978  TPCM0_FIFO.DIB4
+         1.978  TPCM0_FIFO.DIB5
+         1.975  TPCM0_FIFO.DIB6
+         1.975  TPCM0_FIFO.DIB7
+
+GLOBAL_LOGIC1_1
+   PWR_VCC_2.X
+         1.983  RPCM1_FIFO.DIB0
+         1.981  RPCM1_FIFO.DIB1
+         1.983  RPCM1_FIFO.DIB2
+         1.981  RPCM1_FIFO.DIB3
+         1.983  RPCM1_FIFO.DIB4
+         1.983  RPCM1_FIFO.DIB5
+         1.981  RPCM1_FIFO.DIB6
+         1.981  RPCM1_FIFO.DIB7
+
+GLOBAL_LOGIC1_10
+   PWR_GND_10.X
+         1.511  MCTX_WP<0>.F1
+         1.040  EIRQ_WP<0>.F1
+         1.041  EIRQ_RP<0>.F1
+
+GLOBAL_LOGIC1_11
+   PWR_GND_11.X
+         1.054  PCM_WP<0>.F1
+
+GLOBAL_LOGIC1_12
+   PWR_GND_12.X
+         0.990  CTX_WP<0>.F1
+
+GLOBAL_LOGIC1_13
+   PWR_GND_13.X
+         0.974  _n0071<1>.F1
+
+GLOBAL_LOGIC1_2
+   PWR_VCC_3.X
+         1.978  TPCM1_FIFO.DIB0
+         1.975  TPCM1_FIFO.DIB1
+         1.978  TPCM1_FIFO.DIB2
+         1.975  TPCM1_FIFO.DIB3
+         1.978  TPCM1_FIFO.DIB4
+         1.978  TPCM1_FIFO.DIB5
+         1.975  TPCM1_FIFO.DIB6
+         1.975  TPCM1_FIFO.DIB7
+         1.443  FCE_WP<0>.F1
+
+GLOBAL_LOGIC1_3
+   PWR_GND_2.X
+         0.990  _n0072<1>.F1
+
+GLOBAL_LOGIC1_4
+   PWR_GND_4.X
+         1.002  CNT<0>.F1
+         1.120  MCTX_RP<0>.F1
+
+GLOBAL_LOGIC1_5
+   PWR_VCC_4.X
+         0.964  _n0132<1>.F1
+
+GLOBAL_LOGIC1_6
+   PWR_GND_5.X
+         0.994  FCE_RP<0>.F1
+
+GLOBAL_LOGIC1_7
+   PWR_GND_6.X
+         0.954  CRX_WP<0>.F1
+
+GLOBAL_LOGIC1_8
+   PWR_VCC_5.X
+         1.494  CRX_RP<0>.F1
+
+GLOBAL_LOGIC1_9
+   PWR_GND_9.X
+         0.974  CTX_RP<0>.F1
+
+HSSC_IBUF
+   HSSC.I
+         3.529  CHOICE200.G4
+
+IEN_CRX
+   IEN_FC.YQ
+         0.988  IEN_FC.G3
+         1.925  CHOICE430.F3
+         1.373  _n0082.G1
+
+IEN_CTX
+   IEN_EIRQ.YQ
+         1.029  IEN_EIRQ.G4
+         1.232  N11337.G1
+         1.134  N11369.F3
+
+IEN_CTXE
+   IEN_CTXE.YQ
+         1.165  IEN_CTXE.G2
+         1.004  N11369.G4
+         1.156  MCTXE.G2
+
+IEN_EIRQ
+   IEN_EIRQ.XQ
+         0.955  IEN_EIRQ.F4
+         0.978  N11337.F3
+         1.222  _n0080.G1
+
+IEN_FC
+   IEN_FC.XQ
+         1.120  IEN_FC.F2
+         1.192  MCTXE.G1
+         1.569  _n0079.G2
+
+IEN_PCM
+   IEN_PCM.YQ
+         1.013  IEN_PCM.G3
+         1.373  _n0151.G1
+         1.713  _n0082.G2
+
+INTn_OBUF
+   N11337.Y
+         3.179  INTn.O
+
+KA_I_0_IBUF
+   KA_I<0>.I
+         2.510  CHOICE401.G1
+
+KA_I_1_IBUF
+   KA_I<1>.I
+         1.543  CHOICE453.F4
+
+KA_I_2_IBUF
+   KA_I<2>.I
+         2.621  CHOICE325.G1
+
+KA_I_3_IBUF
+   KA_I<3>.I
+         4.067  _n0153.G2
+
+Ker7425_SW0/O
+   Ker7425_SW0/O.X
+         0.222  Ker7425_SW0/O.G4
+
+Ker7439_SW0/O
+   Ker7439_SW0/O.X
+         0.222  Ker7439_SW0/O.G4
+
+LED_1_OBUF
+   RESET_IBUF_1.Y
+         3.113  LED<1>.O
+
+LED_2_OBUF
+   LED_3_OBUF.Y
+         3.219  LED<2>.O
+
+LED_3_OBUF
+   LED_3_OBUF.X
+         3.137  LED<3>.O
+
+LED_G
+   LED_Y.YQ
+         1.081  LED_Y.G2
+         1.866  RESET_IBUF_1.G1
+
+LED_R
+   LED_R.YQ
+         1.185  LED_R.G1
+         2.028  LED_3_OBUF.F3
+
+LED_Y
+   LED_Y.XQ
+         0.863  LED_Y.F4
+         2.215  LED_3_OBUF.G2
+
+MCPU
+   D<0>.IQ
+         3.391  FCEn.T
+         3.283  CLK4M.T
+         2.694  CLK8M.T
+         3.914  FCC.T
+         2.826  FCD.T
+         3.354  SYNC2.OCE
+         2.826  SYNC2.T
+         1.192  SYNC4.OCE
+         1.331  SYNC4.T
+         4.578  CTX.T
+         5.180  KA_IO<4>.T
+         4.634  KA_IO<5>.T
+         3.800  TPCM<0>.T
+         1.655  TPCM<1>.T
+         1.977  TPCM<2>.T
+         2.282  TPCM<3>.T
+         2.932  CHOICE247.G3
+
+MCPU_N1119
+   MCPU_N1119.X
+         1.986  D<0>.ICE
+
+MCTXE
+   MCTXE.X
+         1.951  CHOICE527.G3
+         2.100  CHOICE534.G2
+         1.093  N11369.G2
+         0.222  MCTXE.G4
+
+MCTXO<1>
+   MCTXO<2>.YQ
+         0.886  MCTXO<8>.F4
+
+MCTXO<2>
+   MCTXO<2>.XQ
+         0.914  MCTXO<2>.G3
+
+MCTXO<3>
+   MCTXO<4>.YQ
+         0.538  MCTXO<2>.F3
+
+MCTXO<4>
+   MCTXO<4>.XQ
+         0.906  MCTXO<4>.G3
+
+MCTXO<5>
+   MCTXO<6>.YQ
+         1.048  MCTXO<4>.F2
+
+MCTXO<6>
+   MCTXO<6>.XQ
+         0.898  MCTXO<6>.G4
+
+MCTXO<7>
+   MCTXO<7>.YQ
+         1.125  MCTXO<6>.F1
+
+MCTXO<8>
+   MCTXO<8>.YQ
+         0.719  MCTXO<7>.G2
+
+MCTX_CNT<0>
+   MCTX_CNT<1>.YQ
+         0.962  _n0132<1>.F3
+         1.204  MCTX_CNT<1>.G1
+         1.026  MCTXO<7>.F3
+         1.011  MCTX_CNT<2>.F4
+
+MCTX_CNT<1>
+   MCTX_CNT<1>.XQ
+         1.023  _n0132<1>.G4
+         1.054  MCTX_CNT<1>.G3
+         1.007  MCTXO<7>.F4
+         1.266  MCTX_CNT<2>.F1
+
+MCTX_CNT<2>
+   MCTX_CNT<2>.YQ
+         1.361  _n0132<2>.F1
+         1.068  MCTX_CNT<1>.G4
+         1.139  MCTXO<7>.F2
+         1.050  MCTX_CNT<2>.F3
+
+MCTX_CNT<3>
+   MCTX_CNT<3>.YQ
+         1.057  _n0132<2>.G3
+         1.059  MCTX_CNT<1>.F4
+         1.206  MCTX_CNT<1>.G2
+         1.106  MCTX_CNT<3>.G4
+         1.512  MCTXO<7>.F1
+         1.319  MCTX_CNT<2>.G3
+
+MCTX_RP<0>
+   MCTX_RP<0>.XQ
+         1.253  MCTX_RP<0>.F4
+         1.754  _n0355<10>.F1
+         1.582  _n0355<11>.F1
+         0.925  _n0355<12>.F1
+         1.903  _n0355<13>.F1
+         1.284  _n0355<14>.F1
+         1.835  _n0355<15>.F1
+         1.909  _n0355<16>.F1
+         1.877  _n0355<17>.F1
+         1.857  CHOICE376.G4
+
+MCTX_RP<1>
+   MCTX_RP<0>.YQ
+         1.173  MCTX_RP<0>.G4
+         1.313  _n0355<10>.F2
+         1.428  _n0355<11>.F2
+         0.882  _n0355<12>.F2
+         1.701  _n0355<13>.F2
+         1.308  _n0355<14>.F2
+         1.387  _n0355<15>.F2
+         1.681  _n0355<16>.F2
+         2.026  _n0355<17>.F2
+         1.875  CHOICE376.G3
+
+MCTX_RP<2>
+   MCTX_RP<2>.XQ
+         1.183  MCTX_RP<2>.F3
+         1.919  _n0355<10>.F3
+         1.177  _n0355<11>.F3
+         1.340  _n0355<12>.F3
+         2.044  _n0355<13>.F3
+         1.148  _n0355<14>.F3
+         1.940  _n0355<15>.F3
+         2.028  _n0355<16>.F3
+         2.473  _n0355<17>.F3
+         2.538  CHOICE387.G4
+
+MCTX_RP<3>
+   MCTX_RP<2>.YQ
+         1.586  MCTX_RP<2>.G1
+         1.454  _n0355<10>.F4
+         1.327  _n0355<11>.F4
+         1.481  _n0355<12>.F4
+         1.836  _n0355<13>.F4
+         1.578  _n0355<14>.F4
+         1.523  _n0355<15>.F4
+         1.445  _n0355<16>.F4
+         2.058  _n0355<17>.F4
+         2.354  CHOICE387.G1
+
+MCTX_RP_0_N1419
+   CHOICE534.Y
+         1.218  MCTX_RP<0>.CE
+         1.083  MCTX_RP<2>.CE
+
+MCTX_RP_Madd__n0000_inst_cy_1
+   MCTX_RP<0>.COUT
+         0.000  MCTX_RP<2>.CIN
+
+MCTX_WP<0>
+   MCTX_WP<0>.XQ
+         1.167  MCTX_WP<0>.F2
+         2.272  _n0355<10>.G1
+         2.369  _n0355<11>.G1
+         2.720  _n0355<12>.G1
+         1.936  _n0355<13>.G1
+         2.881  _n0355<14>.G1
+         2.096  _n0355<15>.G1
+         2.917  _n0355<16>.G1
+         1.813  _n0355<17>.G1
+         1.763  CHOICE376.G1
+
+MCTX_WP<1>
+   MCTX_WP<0>.YQ
+         0.999  MCTX_WP<0>.G3
+         2.406  _n0355<10>.G2
+         2.558  _n0355<11>.G2
+         2.654  _n0355<12>.G2
+         1.779  _n0355<13>.G2
+         2.565  _n0355<14>.G2
+         2.558  _n0355<15>.G2
+         2.251  _n0355<16>.G2
+         1.954  _n0355<17>.G2
+         1.960  CHOICE376.G2
+
+MCTX_WP<2>
+   MCTX_WP<2>.XQ
+         1.210  MCTX_WP<2>.F1
+         1.897  _n0355<10>.G3
+         2.093  _n0355<11>.G3
+         2.142  _n0355<12>.G3
+         1.934  _n0355<13>.G3
+         1.990  _n0355<14>.G3
+         1.828  _n0355<15>.G3
+         1.923  _n0355<16>.G3
+         1.847  _n0355<17>.G3
+         1.471  CHOICE387.G3
+
+MCTX_WP<3>
+   MCTX_WP<2>.YQ
+         1.014  MCTX_WP<2>.G3
+         1.838  _n0355<10>.G4
+         2.334  _n0355<11>.G4
+         2.426  _n0355<12>.G4
+         2.540  _n0355<13>.G4
+         2.467  _n0355<14>.G4
+         2.539  _n0355<15>.G4
+         2.101  _n0355<16>.G4
+         2.164  _n0355<17>.G4
+         2.143  CHOICE387.G2
+
+MCTX_WP_Madd__n0000_inst_cy_1
+   MCTX_WP<0>.COUT
+         0.000  MCTX_WP<2>.CIN
+
+MFCC
+   MFCD.YQ
+         2.176  FCC.O
+         0.974  MFCD.G4
+
+MFCD
+   MFCD.XQ
+         2.130  FCD.O
+         1.153  MFCD.F1
+
+MFCE
+   MFCE.YQ
+         2.852  FCEn.O
+         0.952  MFCE.G3
+
+Madd__n0071_inst_cy_11
+   _n0071<6>.COUT
+         0.000  _n0071<8>.CIN
+
+Madd__n0071_inst_cy_13
+   _n0071<8>.COUT
+         0.000  _n0071<10>.CIN
+
+Madd__n0071_inst_cy_5
+   _n0071<1>.COUT
+         0.000  _n0071<2>.CIN
+
+Madd__n0071_inst_cy_7
+   _n0071<2>.COUT
+         0.000  _n0071<4>.CIN
+
+Madd__n0071_inst_cy_9
+   _n0071<4>.COUT
+         0.000  _n0071<6>.CIN
+
+Madd__n0072_inst_cy_11
+   _n0072<6>.COUT
+         0.000  _n0072<8>.CIN
+
+Madd__n0072_inst_cy_13
+   _n0072<8>.COUT
+         0.000  _n0072<10>.CIN
+
+Madd__n0072_inst_cy_5
+   _n0072<1>.COUT
+         0.000  _n0072<2>.CIN
+
+Madd__n0072_inst_cy_7
+   _n0072<2>.COUT
+         0.000  _n0072<4>.CIN
+
+Madd__n0072_inst_cy_9
+   _n0072<4>.COUT
+         0.000  _n0072<6>.CIN
+
+Madd__n0132_inst_cy_1
+   _n0132<1>.COUT
+         0.000  _n0132<2>.CIN
+
+N10076
+   N10076.X
+         0.222  N10076.G4
+
+N10165
+   N10165.X
+         0.222  N10165.G4
+
+N11184
+   KA_IO<5>.I
+         3.370  CHOICE519.F1
+
+N11190
+   TPCM<2>.I
+         0.845  N11345.G3
+
+N11192
+   TPCM<3>.I
+         1.531  N11345.G1
+
+N11194
+   FCC.I
+         1.686  FCD.CLK
+         3.567  FCDI<2>.CLK
+         3.522  FCDI<4>.CLK
+         3.522  FCDI<6>.CLK
+         3.477  FCDI<7>.CLK
+         2.758  CHOICE498.G3
+
+N11196
+   FCD.I
+         1.586  CHOICE461.G3
+
+N11198
+   FCEn.I
+         3.641  FCE_WP<0>.CLK
+         3.625  FCE_WP<2>.CLK
+         3.641  SENSEO.CLK
+         3.351  FCEO<0>.CLK
+         3.565  FCEO<1>.CLK
+         3.364  FCEO<2>.CLK
+         3.565  FCEO<3>.CLK
+         3.625  FCEO<4>.CLK
+         3.364  FCEO<5>.CLK
+         3.364  FCEO<6>.CLK
+         3.409  FCEO<7>.CLK
+         2.673  CHOICE430.G3
+
+N11200
+   CTX.I
+         1.927  CTXI<7>.F3
+         2.595  _n0338.F1
+         2.580  N10076.G1
+
+N11202
+   D<0>.I
+         1.937  MFCD.G3
+         2.542  RPCM0_TSR<1>.G4
+         3.018  TPCM0_TSR<1>.G1
+         3.153  RPCM1_TSR<1>.G4
+         3.953  LED_Y.G1
+         2.261  TPCM1_TSR<1>.G2
+         2.067  IEN_FC.F3
+         3.161  _n0355<10>.BY
+
+N11204
+   D<1>.I
+         1.929  MFCD.F2
+         2.156  RPCM0_TSR<1>.F2
+         2.173  TPCM0_TSR<1>.F3
+         2.274  RPCM1_TSR<1>.F2
+         2.682  LED_Y.F1
+         1.581  TPCM1_TSR<1>.F4
+         1.930  IEN_EIRQ.F2
+         2.685  _n0355<11>.BY
+
+N11206
+   D<2>.I
+         2.801  RPCM0_TSR<3>.G1
+         2.191  TPCM0_TSR<3>.G3
+         2.697  RPCM1_TSR<3>.G4
+         1.467  TPCM1_TSR<3>.G1
+         3.093  LED_R.G2
+         2.655  IEN_EIRQ.G1
+         1.904  MFCE.G1
+         2.786  _n0355<12>.BY
+
+N11208
+   D<3>.I
+         1.915  RPCM0_TSR<3>.F4
+         1.892  TPCM0_TSR<3>.F3
+         2.702  RPCM1_TSR<3>.F3
+         1.386  TPCM1_TSR<3>.F3
+         2.866  IEN_FC.G2
+         2.658  _n0355<13>.BY
+
+N11210
+   D<4>.I
+         2.786  RPCM1_TSR<4>.F4
+         2.933  RPCM1_TSR<4>.G2
+         2.780  TPCM1_TSR<4>.F4
+         2.930  TPCM1_TSR<4>.G2
+         2.119  IEN_PCM.G4
+         2.817  _n0355<14>.BY
+
+N11212
+   D<5>.I
+         1.776  IEN_CTXE.G1
+         2.711  RPCM0_TSR<5>.G1
+         2.515  RPCM1_TSR<5>.G3
+         2.571  TPCM0_TSR<5>.G1
+         1.868  TPCM1_TSR<5>.G1
+         2.288  _n0355<15>.BY
+
+N11214
+   D<6>.I
+         1.578  _n0355<16>.BY
+
+N11218
+   D<7>.I
+         1.776  _n0355<17>.BY
+
+N11220
+   CLK4M.I
+         3.315  SYNC2.CLK
+         3.308  SYNC4.CLK
+         3.134  RPCM<0>.CLK
+         3.134  RPCM<1>.CLK
+         3.076  TPCM<0>.CLK
+         3.315  TPCM<1>.CLK
+         3.400  RPCM0_FIFO.CLKA
+         3.524  TPCM0_FIFO.CLKA
+         3.617  RPCM1_FIFO.CLKA
+         3.678  TPCM1_FIFO.CLKA
+         5.108  PCM_WP<0>.CLK
+         5.180  PCM_WP<2>.CLK
+         5.225  PCM_WP<4>.CLK
+         5.260  PCM_WP<6>.CLK
+         5.272  PCM_WP<8>.CLK
+         4.947  TPCM0_I<2>.CLK
+         4.947  TPCM0_I<4>.CLK
+         4.976  TPCM0_I<6>.CLK
+         4.976  TPCM0_I<7>.CLK
+         5.168  TPCM1_I<2>.CLK
+         5.168  TPCM1_I<4>.CLK
+         5.127  TPCM1_I<6>.CLK
+         5.127  TPCM1_I<7>.CLK
+         4.807  RPCM0_I<2>.CLK
+         4.807  RPCM0_I<4>.CLK
+         4.807  RPCM0_I<6>.CLK
+         4.807  RPCM0_I<7>.CLK
+         4.944  RPCM1_I<2>.CLK
+         5.123  RPCM1_I<4>.CLK
+         5.115  RPCM1_I<6>.CLK
+         4.944  RPCM1_I<7>.CLK
+
+N11222
+   CLK8M.I
+         5.636  CTX_WP<0>.CLK
+         5.873  CTX_WP<2>.CLK
+         5.482  CRX_WP<0>.CLK
+         5.443  CRX_WP<2>.CLK
+         5.309  EIRQ_WP<0>.CLK
+         5.251  EIRQ_WP<2>.CLK
+         5.749  CTX_CNT<10>.CLK
+         5.582  CRX_CNT<1>.CLK
+         5.626  CRX_CNT<3>.CLK
+         5.661  CRX_CNT<5>.CLK
+         5.672  CRX_CNT<7>.CLK
+         5.861  CRX_CNT<9>.CLK
+         5.544  CTX_CNT<1>.CLK
+         5.544  CTX_CNT<3>.CLK
+         5.764  CTX_CNT<5>.CLK
+         5.764  CTX_CNT<7>.CLK
+         5.749  CTX_CNT<9>.CLK
+         5.520  CRX_CNT<10>.CLK
+         5.283  CRXI<1>.CLK
+         5.283  CRXI<3>.CLK
+         5.343  CRXI<5>.CLK
+         5.378  CRXI<7>.CLK
+         5.921  CTXI<1>.CLK
+         5.694  CTXI<3>.CLK
+         5.694  CTXI<5>.CLK
+         5.907  CTXI<7>.CLK
+         5.411  EIRQI_Once.CLK
+         5.637  CTXO<0>.CLK
+         5.921  CTXO<1>.CLK
+         5.716  CTXO<2>.CLK
+         5.602  CTXO<3>.CLK
+         5.716  CTXO<4>.CLK
+         5.716  CTXO<5>.CLK
+         5.716  CTXO<6>.CLK
+         5.591  CTXO<7>.CLK
+         5.251  EIRQO.CLK
+         5.203  EIRQI_Twice.CLK
+         5.392  CRXO<0>.CLK
+         5.744  CRXO<1>.CLK
+         5.381  CRXO<2>.CLK
+         5.513  CRXO<3>.CLK
+         5.700  CRXO<4>.CLK
+         5.744  CRXO<5>.CLK
+         5.778  CRXO<6>.CLK
+         5.392  CRXO<7>.CLK
+
+N11224
+   KA_IO<4>.I
+         2.385  CHOICE408.G3
+
+N11333
+   _n0151.Y
+         1.502  CHOICE408.F3
+
+N11337
+   N11337.X
+         0.222  N11337.G4
+
+N11341
+   N11341.X
+         0.222  N11341.G4
+
+N11345
+   N11345.X
+         0.222  N11345.G4
+
+N11349
+   N11349.Y
+         2.224  CHOICE238.G3
+
+N11353
+   _n0079.Y
+         1.561  CHOICE498.F2
+
+N11357
+   N11357.X
+         0.222  N11357.G4
+
+N11361
+   N11361.X
+         0.222  N11361.G4
+
+N11365
+   _n0080.Y
+         1.465  CHOICE337.G1
+
+N11369
+   N11369.X
+         1.352  CHOICE461.F4
+
+N11425
+   _n0082.Y
+         1.137  N11337.F1
+
+N7427
+   Ker7425_SW0/O.Y
+         1.466  CRX_CNT<1>.F4
+         1.513  CRX_CNT<1>.G4
+         1.138  CRX_CNT<3>.F4
+         1.347  CRX_CNT<3>.G3
+         1.385  CRX_CNT<5>.F3
+         1.374  CRX_CNT<5>.G4
+         0.948  CRX_CNT<7>.F3
+         1.163  CRX_CNT<7>.G2
+         0.600  CRX_CNT<9>.F3
+         0.475  CRX_CNT<9>.G4
+         0.385  CRX_CNT<10>.G2
+
+N7441
+   Ker7439_SW0/O.Y
+         1.102  CTX_CNT<10>.G2
+         1.080  CTX_CNT<1>.F4
+         1.321  CTX_CNT<1>.G4
+         1.475  CTX_CNT<3>.F2
+         1.478  CTX_CNT<3>.G1
+         0.938  CTX_CNT<5>.F4
+         1.084  CTX_CNT<5>.G3
+         0.724  CTX_CNT<7>.F1
+         0.702  CTX_CNT<7>.G1
+         1.163  CTX_CNT<9>.F1
+         1.232  CTX_CNT<9>.G2
+
+N7479
+   MCTX_CNT<2>.X
+         0.855  MCTX_CNT<1>.F3
+         0.942  MCTX_CNT<3>.G3
+         0.222  MCTX_CNT<2>.G4
+
+N7599
+   N7952.Y
+         1.094  LED_Y.F2
+         1.040  LED_Y.G4
+         0.414  LED_R.G4
+
+N7605
+   N8270.Y
+         1.586  IEN_FC.F4
+         1.633  IEN_FC.G4
+         1.934  IEN_EIRQ.F1
+         1.595  IEN_EIRQ.G2
+         1.820  IEN_PCM.G1
+         1.622  IEN_CTXE.G3
+
+N7614
+   N7614.X
+         0.771  _n0091.G4
+         0.222  N7614.G4
+
+N7687
+   N7687.X
+         1.996  _n0151.F1
+         1.509  N8032.G1
+         1.591  _n0145.F1
+         1.075  _n0153.F1
+         1.558  _n0146.F2
+         1.200  _n0148.F4
+         0.222  N7687.G4
+
+N7706
+   IEN_CTXE.X
+         0.455  IEN_FC.F1
+         0.433  IEN_FC.G1
+         0.447  IEN_EIRQ.F3
+         0.479  IEN_EIRQ.G3
+         0.628  IEN_PCM.G2
+         0.221  IEN_CTXE.G4
+
+N7715
+   N7715.X
+         0.222  N7715.G4
+         1.641  CRXI<1>.F1
+         1.614  CRXI<1>.G2
+         1.288  CRXI<3>.F3
+         1.514  CRXI<3>.G2
+         1.514  CRXI<5>.F1
+         1.326  CRXI<5>.G4
+         0.549  CRXI<7>.F3
+         0.581  CRXI<7>.G3
+         0.707  _n0341.F2
+         0.730  _n0341.G2
+
+N7720
+   N7720.X
+         0.222  N7720.G4
+         2.315  CTXI<1>.F2
+         1.760  CTXI<1>.G4
+         2.161  CTXI<3>.F1
+         1.923  CTXI<3>.G4
+         1.949  CTXI<5>.F3
+         2.135  CTXI<5>.G1
+         2.128  CTXI<7>.F1
+         1.904  CTXI<7>.G1
+         1.662  _n0338.F3
+         1.694  _n0338.G3
+
+N7725
+   N7725.X
+         3.314  CHOICE487.F4
+         3.570  CHOICE487.G2
+         2.795  _n0156.F1
+         3.063  _n0346.F2
+         2.207  _n0346.G4
+         3.339  CHOICE236.G1
+         0.222  N7725.G4
+         2.210  CHOICE238.G2
+         3.332  CHOICE254.G2
+
+N7731
+   N8493.Y
+         1.795  _n0091.G1
+         1.576  N7614.G3
+
+N7738
+   N7738.X
+         0.947  N8348.F3
+         0.592  N8270.G3
+         1.562  IEN_CTXE.F3
+         0.222  N7738.G4
+
+N7774
+   N7774.X
+         0.222  N7774.G4
+         0.697  N7715.F4
+
+N7779
+   N7779.X
+         0.222  N7779.G4
+         0.741  N7720.F4
+
+N7791
+   N7791.X
+         1.943  MCPU_N1119.F2
+         0.222  N7791.G4
+         2.214  CHOICE247.G2
+         0.901  CHOICE238.G1
+         1.652  CHOICE260.F2
+
+N7952
+   N7952.X
+         0.222  N7952.G4
+
+N7991
+   N7991.X
+         1.339  MFCE.F3
+
+N8032
+   N8032.X
+         1.065  TPCM1_TSR<5>.F2
+
+N8076
+   N7991.Y
+         1.447  RPCM1_TSR<5>.F2
+
+N8117
+   N8117.X
+         0.367  TPCM0_TSR<5>.F4
+
+N8158
+   N8117.Y
+         0.554  RPCM0_TSR<5>.F2
+
+N8192
+   N8192.X
+         0.222  N8192.G4
+
+N8236
+   N8236.X
+         0.222  N8236.G4
+
+N8270
+   N8270.X
+         1.145  _n0159.F2
+
+N8297
+   N8297.X
+         0.222  N8297.G4
+
+N8348
+   N8348.X
+         0.222  N8348.G4
+
+N8396
+   N8396.X
+         0.222  N8396.G4
+
+N8493
+   N8493.X
+         0.222  N8493.G4
+
+N9480
+   N9480.X
+         0.222  N9480.G4
+
+N9526
+   N9526.X
+         0.222  N9526.G4
+
+N9618
+   N9618.Y
+         0.362  N7715.F2
+
+N9672
+   N9672.Y
+         0.900  N7720.F3
+
+PA_5_IBUF
+   PA<5>.I
+         2.917  CHOICE200.G3
+
+PA_6_IBUF
+   PA<6>.I
+         3.131  CHOICE200.G1
+
+PA_7_IBUF
+   PA<7>.I
+         3.566  N11345.F2
+
+PCM_RP<0>
+   PCM_RP<0>.XQ
+         5.095  RPCM0_FIFO.ADDRB9
+         5.515  TPCM0_FIFO.ADDRB9
+         5.464  RPCM1_FIFO.ADDRB9
+         5.610  TPCM1_FIFO.ADDRB9
+         1.172  PCM_RP<2>.G4
+         1.326  N8396.G3
+         1.111  PCM_RP<0>.BX
+         1.189  PCM_RP<0>.G1
+
+PCM_RP<1>
+   PCM_RP<0>.YQ
+         6.715  RPCM0_FIFO.ADDRB10
+         6.666  TPCM0_FIFO.ADDRB10
+         6.651  RPCM1_FIFO.ADDRB10
+         6.797  TPCM1_FIFO.ADDRB10
+         1.171  PCM_RP<2>.G1
+         1.519  N8396.F1
+         1.106  PCM_RP<0>.G4
+
+PCM_RP<2>
+   PCM_RP<2>.YQ
+         5.872  RPCM0_FIFO.ADDRB11
+         5.290  TPCM0_FIFO.ADDRB11
+         5.380  RPCM1_FIFO.ADDRB11
+         4.876  TPCM1_FIFO.ADDRB11
+         1.166  PCM_RP<2>.G2
+         0.632  N8396.F3
+
+PCM_WP<0>
+   PCM_WP<0>.XQ
+         3.776  RPCM0_FIFO.ADDRA3
+         3.772  TPCM0_FIFO.ADDRA3
+         3.460  RPCM1_FIFO.ADDRA3
+         3.444  TPCM1_FIFO.ADDRA3
+         0.883  PCM_WP<0>.F4
+
+PCM_WP<1>
+   PCM_WP<0>.YQ
+         5.485  RPCM0_FIFO.ADDRA4
+         5.822  TPCM0_FIFO.ADDRA4
+         5.973  RPCM1_FIFO.ADDRA4
+         3.938  TPCM1_FIFO.ADDRA4
+         1.010  PCM_WP<0>.G3
+
+PCM_WP<2>
+   PCM_WP<2>.XQ
+         3.899  RPCM0_FIFO.ADDRA5
+         3.471  TPCM0_FIFO.ADDRA5
+         3.480  RPCM1_FIFO.ADDRA5
+         3.394  TPCM1_FIFO.ADDRA5
+         0.947  PCM_WP<2>.F4
+
+PCM_WP<3>
+   PCM_WP<2>.YQ
+         5.290  RPCM0_FIFO.ADDRA6
+         4.968  TPCM0_FIFO.ADDRA6
+         5.663  RPCM1_FIFO.ADDRA6
+         4.922  TPCM1_FIFO.ADDRA6
+         1.008  PCM_WP<2>.G4
+
+PCM_WP<4>
+   PCM_WP<4>.XQ
+         3.898  RPCM0_FIFO.ADDRA7
+         3.477  TPCM0_FIFO.ADDRA7
+         3.469  RPCM1_FIFO.ADDRA7
+         3.388  TPCM1_FIFO.ADDRA7
+         1.120  PCM_WP<4>.F2
+
+PCM_WP<5>
+   PCM_WP<4>.YQ
+         8.324  RPCM0_FIFO.ADDRA8
+         7.679  TPCM0_FIFO.ADDRA8
+         6.498  RPCM1_FIFO.ADDRA8
+         4.431  TPCM1_FIFO.ADDRA8
+         0.985  PCM_WP<4>.G3
+
+PCM_WP<6>
+   PCM_WP<6>.XQ
+         3.806  RPCM0_FIFO.ADDRA9
+         3.319  TPCM0_FIFO.ADDRA9
+         3.416  RPCM1_FIFO.ADDRA9
+         3.389  TPCM1_FIFO.ADDRA9
+         1.204  PCM_WP<6>.F2
+         1.387  N8396.G2
+
+PCM_WP<7>
+   PCM_WP<6>.YQ
+         5.858  RPCM0_FIFO.ADDRA10
+         5.596  TPCM0_FIFO.ADDRA10
+         5.150  RPCM1_FIFO.ADDRA10
+         5.296  TPCM1_FIFO.ADDRA10
+         1.070  PCM_WP<6>.G3
+         1.138  N8396.F4
+
+PCM_WP<8>
+   PCM_WP<8>.XQ
+         5.722  RPCM0_FIFO.ADDRA11
+         5.699  TPCM0_FIFO.ADDRA11
+         6.041  RPCM1_FIFO.ADDRA11
+         6.186  TPCM1_FIFO.ADDRA11
+         0.945  PCM_WP<8>.F4
+         1.676  N8396.F2
+
+PCM_WP_Madd__n0000_inst_cy_16
+   PCM_WP<0>.COUT
+         0.000  PCM_WP<2>.CIN
+
+PCM_WP_Madd__n0000_inst_cy_18
+   PCM_WP<2>.COUT
+         0.000  PCM_WP<4>.CIN
+
+PCM_WP_Madd__n0000_inst_cy_20
+   PCM_WP<4>.COUT
+         0.000  PCM_WP<6>.CIN
+
+PCM_WP_Madd__n0000_inst_cy_22
+   PCM_WP<6>.COUT
+         0.000  PCM_WP<8>.CIN
+
+RDn_IBUF
+   RDn.I
+         5.078  CTX_RP<0>.CLK
+         5.068  CTX_RP<2>.CLK
+         4.931  FCE_RP<0>.CLK
+         4.931  FCE_RP<2>.CLK
+         4.978  CRX_RP<0>.CLK
+         5.304  CRX_RP<2>.CLK
+         4.786  EIRQ_RP<0>.CLK
+         4.849  EIRQ_RP<2>.CLK
+         4.929  PCM_RP<2>.CLK
+         2.700  TPCM0_RCLK.F3
+         2.732  TPCM0_RCLK.G3
+         2.798  TPCM1_RCLK.F3
+         2.930  TPCM1_RCLK.G1
+         2.264  _n0146.G3
+         5.150  PCM_RP<0>.CLK
+
+RESET_IBUF
+   RESET.I
+         3.315  FCD.SR
+         4.782  CTX_WP<0>.SR
+         4.891  CTX_WP<2>.SR
+         4.870  CTX_RP<0>.SR
+         4.797  CTX_RP<2>.SR
+         4.809  CRX_WP<0>.SR
+         4.981  CRX_WP<2>.SR
+         3.644  CRX_RP<0>.SR
+         3.774  CRX_RP<2>.SR
+         3.356  EIRQ_WP<0>.SR
+         3.294  EIRQ_WP<2>.SR
+         3.668  EIRQ_RP<0>.SR
+         3.383  EIRQ_RP<2>.SR
+         4.974  CTX_CNT<10>.SR
+         4.213  CRX_CNT<1>.SR
+         4.082  CRX_CNT<3>.SR
+         4.946  CRX_CNT<5>.SR
+         4.819  CRX_CNT<7>.SR
+         4.946  CRX_CNT<9>.SR
+         4.286  CTX_CNT<1>.SR
+         4.286  CTX_CNT<3>.SR
+         4.288  CTX_CNT<5>.SR
+         4.824  CTX_CNT<7>.SR
+         4.974  CTX_CNT<9>.SR
+         5.019  CRX_CNT<10>.SR
+         4.991  CRXI<1>.BY
+         4.676  CRXI<3>.BY
+         4.770  CRXI<5>.BY
+         4.603  CRXI<7>.BY
+         5.007  CTXI<1>.BY
+         5.002  CTXI<3>.BY
+         4.769  CTXI<5>.BY
+         4.947  CTXI<7>.BY
+         4.242  RESET_IBUF_1.F2
+         4.265  RESET_IBUF_1.G2
+         4.476  LED_3_OBUF.F4
+         4.732  LED_3_OBUF.G1
+         3.515  N8348.F4
+         3.346  EIRQI_Once.SR
+         3.422  FCDI<2>.SR
+         3.309  FCDI<4>.SR
+         3.385  FCDI<6>.SR
+         3.231  FCDI<7>.SR
+         3.314  EIRQI_Twice.SR
+
+RESET_IBUF_1
+   RESET_IBUF_1.X
+         3.438  SYNC4.SR
+         4.357  CTX.SR
+         4.550  RPCM<0>.ICE
+         4.550  RPCM<1>.ICE
+         4.200  TPCM<0>.ICE
+         3.430  D<0>.SR
+         4.220  TPCM<1>.ICE
+         2.652  FCE_WP<0>.SR
+         3.036  FCE_WP<2>.SR
+         2.534  FCE_RP<0>.SR
+         2.502  FCE_RP<2>.SR
+         1.918  PCM_WP<0>.SR
+         1.571  PCM_WP<2>.SR
+         1.507  PCM_WP<4>.SR
+         1.009  PCM_WP<6>.SR
+         1.178  PCM_WP<8>.SR
+         1.872  MCTX_WP<0>.SR
+         1.448  MCTX_WP<2>.SR
+         2.491  MCTX_RP<0>.SR
+         2.710  MCTX_RP<2>.SR
+         2.652  MFCD.SR
+         4.155  RPCM0_TSR<1>.SR
+         4.165  RPCM0_TSR<3>.SR
+         2.402  RPCM1_TSR<4>.SR
+         4.049  TPCM0_TSR<1>.SR
+         4.049  TPCM0_TSR<3>.SR
+         3.784  TPCM1_TSR<4>.SR
+         1.626  RPCM1_TSR<1>.SR
+         0.867  RPCM1_TSR<3>.SR
+         1.675  LED_Y.SR
+         2.995  TPCM1_TSR<1>.SR
+         2.858  TPCM1_TSR<3>.SR
+         2.219  LED_R.SR
+         2.444  IEN_FC.SR
+         2.488  IEN_EIRQ.SR
+         2.488  IEN_PCM.SR
+         3.492  MCTX_CNT<1>.SR
+         4.258  MCTX_CNT<3>.SR
+         2.710  MCTXO<2>.SR
+         2.924  MCTXO<4>.SR
+         2.924  MCTXO<6>.SR
+         2.708  MCTXO<8>.SR
+         2.997  MCTXO<7>.SR
+         2.444  IEN_CTXE.SR
+         1.373  TPCM0_I<2>.CE
+         1.297  TPCM0_I<4>.CE
+         2.997  MCTX_CNT<2>.SR
+         1.462  TPCM0_I<6>.CE
+         1.462  TPCM0_I<7>.CE
+         4.158  TPCM1_I<2>.CE
+         4.158  TPCM1_I<4>.CE
+         4.193  TPCM1_I<6>.CE
+         4.132  TPCM1_I<7>.CE
+         1.617  RPCM0_TSR<5>.SR
+         1.374  RPCM1_TSR<5>.SR
+         1.617  TPCM0_TSR<5>.SR
+         2.204  TPCM1_TSR<5>.SR
+         2.424  MFCE.SR
+         4.335  RPCM0_I<2>.CE
+         4.335  RPCM0_I<4>.CE
+         4.173  RPCM0_I<6>.CE
+         4.213  RPCM0_I<7>.CE
+         1.427  RPCM1_I<2>.CE
+         2.049  RPCM1_I<4>.CE
+         1.736  RPCM1_I<6>.CE
+         1.427  RPCM1_I<7>.CE
+
+RPCM0_I<0>
+   RPCM<0>.IQ
+         1.891  RPCM0_FIFO.DIA0
+         1.175  RPCM0_I<2>.BY
+
+RPCM0_I<1>
+   RPCM0_I<2>.YQ
+         1.911  RPCM0_FIFO.DIA1
+         0.899  RPCM0_I<2>.BX
+
+RPCM0_I<2>
+   RPCM0_I<2>.XQ
+         1.922  RPCM0_FIFO.DIA2
+         0.891  RPCM0_I<4>.BY
+
+RPCM0_I<3>
+   RPCM0_I<4>.YQ
+         1.914  RPCM0_FIFO.DIA3
+         0.876  RPCM0_I<4>.BX
+
+RPCM0_I<4>
+   RPCM0_I<4>.XQ
+         1.941  RPCM0_FIFO.DIA4
+         1.114  RPCM0_I<6>.BY
+
+RPCM0_I<5>
+   RPCM0_I<6>.YQ
+         2.445  RPCM0_FIFO.DIA5
+         0.891  RPCM0_I<6>.BX
+
+RPCM0_I<6>
+   RPCM0_I<6>.XQ
+         2.266  RPCM0_FIFO.DIA6
+         0.887  RPCM0_I<7>.BY
+
+RPCM0_I<7>
+   RPCM0_I<7>.YQ
+         2.380  RPCM0_FIFO.DIA7
+
+RPCM0_O<0>
+   RPCM0_FIFO.DOB0
+         4.275  N11361.G3
+
+RPCM0_O<1>
+   RPCM0_FIFO.DOB1
+         4.283  _n0145.G3
+
+RPCM0_O<2>
+   RPCM0_FIFO.DOB2
+         4.362  N11357.F3
+
+RPCM0_O<3>
+   RPCM0_FIFO.DOB3
+         4.176  CHOICE335.F1
+
+RPCM0_O<4>
+   RPCM0_FIFO.DOB4
+         4.149  CHOICE394.F3
+
+RPCM0_O<5>
+   RPCM0_FIFO.DOB5
+         4.204  CHOICE508.F2
+
+RPCM0_O<6>
+   RPCM0_FIFO.DOB6
+         3.456  N11349.G3
+
+RPCM0_O<7>
+   RPCM0_FIFO.DOB7
+         3.898  CHOICE247.F2
+
+RPCM0_RCLK
+   TPCM1_RCLK.Y
+         3.888  RPCM0_FIFO.CLKB
+
+RPCM0_TSR<0>
+   RPCM0_TSR<1>.YQ
+         4.366  RPCM0_FIFO.ADDRB3
+         1.097  RPCM0_TSR<1>.G2
+
+RPCM0_TSR<1>
+   RPCM0_TSR<1>.XQ
+         2.972  RPCM0_FIFO.ADDRB4
+         0.903  RPCM0_TSR<1>.F3
+
+RPCM0_TSR<2>
+   RPCM0_TSR<3>.YQ
+         4.159  RPCM0_FIFO.ADDRB5
+         1.127  RPCM0_TSR<3>.G2
+
+RPCM0_TSR<3>
+   RPCM0_TSR<3>.XQ
+         3.439  RPCM0_FIFO.ADDRB6
+         1.165  RPCM0_TSR<3>.F1
+
+RPCM0_TSR<4>
+   RPCM1_TSR<4>.YQ
+         4.978  RPCM0_FIFO.ADDRB7
+         0.961  RPCM1_TSR<4>.G4
+
+RPCM0_TSR<5>
+   RPCM0_TSR<5>.YQ
+         4.612  RPCM0_FIFO.ADDRB8
+         0.952  RPCM0_TSR<5>.G3
+
+RPCM1_I<0>
+   RPCM<1>.IQ
+         1.904  RPCM1_FIFO.DIA0
+         2.769  RPCM1_I<2>.BY
+
+RPCM1_I<1>
+   RPCM1_I<2>.YQ
+         4.701  RPCM1_FIFO.DIA1
+         0.891  RPCM1_I<2>.BX
+
+RPCM1_I<2>
+   RPCM1_I<2>.XQ
+         3.675  RPCM1_FIFO.DIA2
+         1.562  RPCM1_I<4>.BY
+
+RPCM1_I<3>
+   RPCM1_I<4>.YQ
+         4.319  RPCM1_FIFO.DIA3
+         0.900  RPCM1_I<4>.BX
+
+RPCM1_I<4>
+   RPCM1_I<4>.XQ
+         4.382  RPCM1_FIFO.DIA4
+         0.876  RPCM1_I<6>.BY
+
+RPCM1_I<5>
+   RPCM1_I<6>.YQ
+         5.205  RPCM1_FIFO.DIA5
+         0.900  RPCM1_I<6>.BX
+
+RPCM1_I<6>
+   RPCM1_I<6>.XQ
+         4.428  RPCM1_FIFO.DIA6
+         1.598  RPCM1_I<7>.BY
+
+RPCM1_I<7>
+   RPCM1_I<7>.YQ
+         4.137  RPCM1_FIFO.DIA7
+
+RPCM1_O<0>
+   RPCM1_FIFO.DOB0
+         2.722  N11361.F3
+
+RPCM1_O<1>
+   RPCM1_FIFO.DOB1
+         3.142  CHOICE417.G3
+
+RPCM1_O<2>
+   RPCM1_FIFO.DOB2
+         3.113  CHOICE417.F1
+
+RPCM1_O<3>
+   RPCM1_FIFO.DOB3
+         3.310  CHOICE335.F2
+
+RPCM1_O<4>
+   RPCM1_FIFO.DOB4
+         2.859  CHOICE394.F4
+
+RPCM1_O<5>
+   RPCM1_FIFO.DOB5
+         2.900  CHOICE508.F1
+
+RPCM1_O<6>
+   RPCM1_FIFO.DOB6
+         3.590  N11341.G1
+
+RPCM1_O<7>
+   RPCM1_FIFO.DOB7
+         2.695  CHOICE259.G4
+
+RPCM1_RCLK
+   _n0146.Y
+         1.822  RPCM1_FIFO.CLKB
+
+RPCM1_TSR<0>
+   RPCM1_TSR<1>.YQ
+         3.018  RPCM1_FIFO.ADDRB3
+         0.956  RPCM1_TSR<1>.G3
+
+RPCM1_TSR<1>
+   RPCM1_TSR<1>.XQ
+         3.955  RPCM1_FIFO.ADDRB4
+         0.884  RPCM1_TSR<1>.F4
+
+RPCM1_TSR<2>
+   RPCM1_TSR<3>.YQ
+         4.413  RPCM1_FIFO.ADDRB5
+         0.952  RPCM1_TSR<3>.G3
+
+RPCM1_TSR<3>
+   RPCM1_TSR<3>.XQ
+         4.746  RPCM1_FIFO.ADDRB6
+         1.095  RPCM1_TSR<3>.F2
+
+RPCM1_TSR<4>
+   RPCM1_TSR<4>.XQ
+         4.612  RPCM1_FIFO.ADDRB7
+         1.153  RPCM1_TSR<4>.F1
+
+RPCM1_TSR<5>
+   RPCM1_TSR<5>.YQ
+         4.269  RPCM1_FIFO.ADDRB8
+         1.081  RPCM1_TSR<5>.G2
+
+RPCM_2_IBUF
+   RPCM<2>.I
+         1.349  N11345.F4
+
+RPCM_3_IBUF
+   RPCM<3>.I
+         1.341  N11345.F3
+
+SENSEO
+   SENSEO.X
+         0.434  CHOICE487.G1
+
+SENSEn_IBUF
+   SENSEn.I
+         2.675  _n0153.G1
+         2.069  SENSEO.BY
+
+SYNC4I
+   SYNC4.IQ
+         2.280  RPCM0_FIFO.WEA
+         2.290  TPCM0_FIFO.WEA
+         2.228  RPCM1_FIFO.WEA
+         1.770  TPCM1_FIFO.WEA
+         3.482  PCM_WP<0>.CE
+         3.556  PCM_WP<2>.CE
+         3.090  PCM_WP<4>.CE
+         3.320  PCM_WP<6>.CE
+         3.267  PCM_WP<8>.CE
+
+TPCM0_I<0>
+   TPCM<0>.IQ
+         1.875  TPCM0_FIFO.DIA0
+         2.473  TPCM0_I<2>.BY
+
+TPCM0_I<1>
+   TPCM0_I<2>.YQ
+         3.836  TPCM0_FIFO.DIA1
+         0.930  TPCM0_I<2>.BX
+
+TPCM0_I<2>
+   TPCM0_I<2>.XQ
+         3.496  TPCM0_FIFO.DIA2
+         1.187  TPCM0_I<4>.BY
+
+TPCM0_I<3>
+   TPCM0_I<4>.YQ
+         3.405  TPCM0_FIFO.DIA3
+         0.903  TPCM0_I<4>.BX
+
+TPCM0_I<4>
+   TPCM0_I<4>.XQ
+         3.669  TPCM0_FIFO.DIA4
+         2.173  TPCM0_I<6>.BY
+
+TPCM0_I<5>
+   TPCM0_I<6>.YQ
+         4.075  TPCM0_FIFO.DIA5
+         0.891  TPCM0_I<6>.BX
+
+TPCM0_I<6>
+   TPCM0_I<6>.XQ
+         3.044  TPCM0_FIFO.DIA6
+         0.887  TPCM0_I<7>.BY
+
+TPCM0_I<7>
+   TPCM0_I<7>.YQ
+         3.612  TPCM0_FIFO.DIA7
+
+TPCM0_O<0>
+   TPCM0_FIFO.DOB0
+         3.758  _n0148.G3
+
+TPCM0_O<1>
+   TPCM0_FIFO.DOB1
+         3.322  CHOICE417.G1
+
+TPCM0_O<2>
+   TPCM0_FIFO.DOB2
+         3.628  CHOICE417.F3
+
+TPCM0_O<3>
+   TPCM0_FIFO.DOB3
+         3.310  CHOICE325.F4
+
+TPCM0_O<4>
+   TPCM0_FIFO.DOB4
+         2.440  CHOICE512.G2
+
+TPCM0_O<5>
+   TPCM0_FIFO.DOB5
+         1.994  CHOICE512.F4
+
+TPCM0_O<6>
+   TPCM0_FIFO.DOB6
+         2.482  N11349.G2
+
+TPCM0_O<7>
+   TPCM0_FIFO.DOB7
+         3.733  CHOICE247.F1
+
+TPCM0_RCLK
+   TPCM0_RCLK.X
+         2.742  TPCM0_FIFO.CLKB
+
+TPCM0_TSR<0>
+   TPCM0_TSR<1>.YQ
+         3.880  TPCM0_FIFO.ADDRB3
+         0.961  TPCM0_TSR<1>.G4
+
+TPCM0_TSR<1>
+   TPCM0_TSR<1>.XQ
+         2.984  TPCM0_FIFO.ADDRB4
+         1.165  TPCM0_TSR<1>.F1
+
+TPCM0_TSR<2>
+   TPCM0_TSR<3>.YQ
+         3.795  TPCM0_FIFO.ADDRB5
+         0.946  TPCM0_TSR<3>.G4
+
+TPCM0_TSR<3>
+   TPCM0_TSR<3>.XQ
+         2.909  TPCM0_FIFO.ADDRB6
+         0.902  TPCM0_TSR<3>.F4
+
+TPCM0_TSR<4>
+   TPCM1_TSR<4>.YQ
+         4.333  TPCM0_FIFO.ADDRB7
+         0.952  TPCM1_TSR<4>.G3
+
+TPCM0_TSR<5>
+   TPCM0_TSR<5>.YQ
+         5.409  TPCM0_FIFO.ADDRB8
+         0.963  TPCM0_TSR<5>.G3
+
+TPCM1_I<0>
+   TPCM<1>.IQ
+         2.368  TPCM1_FIFO.DIA0
+         1.273  TPCM1_I<2>.BY
+
+TPCM1_I<1>
+   TPCM1_I<2>.YQ
+         1.914  TPCM1_FIFO.DIA1
+         0.901  TPCM1_I<2>.BX
+
+TPCM1_I<2>
+   TPCM1_I<2>.XQ
+         1.938  TPCM1_FIFO.DIA2
+         0.980  TPCM1_I<4>.BY
+
+TPCM1_I<3>
+   TPCM1_I<4>.YQ
+         1.911  TPCM1_FIFO.DIA3
+         0.899  TPCM1_I<4>.BX
+
+TPCM1_I<4>
+   TPCM1_I<4>.XQ
+         1.913  TPCM1_FIFO.DIA4
+         0.916  TPCM1_I<6>.BY
+
+TPCM1_I<5>
+   TPCM1_I<6>.YQ
+         1.913  TPCM1_FIFO.DIA5
+         0.899  TPCM1_I<6>.BX
+
+TPCM1_I<6>
+   TPCM1_I<6>.XQ
+         1.911  TPCM1_FIFO.DIA6
+         0.876  TPCM1_I<7>.BY
+
+TPCM1_I<7>
+   TPCM1_I<7>.YQ
+         1.861  TPCM1_FIFO.DIA7
+
+TPCM1_O<0>
+   TPCM1_FIFO.DOB0
+         3.003  _n0148.G1
+
+TPCM1_O<1>
+   TPCM1_FIFO.DOB1
+         2.805  CHOICE443.G1
+
+TPCM1_O<2>
+   TPCM1_FIFO.DOB2
+         3.456  CHOICE325.G2
+
+TPCM1_O<3>
+   TPCM1_FIFO.DOB3
+         3.244  CHOICE325.F3
+
+TPCM1_O<4>
+   TPCM1_FIFO.DOB4
+         4.303  CHOICE512.G4
+
+TPCM1_O<5>
+   TPCM1_FIFO.DOB5
+         4.322  CHOICE512.F2
+
+TPCM1_O<6>
+   TPCM1_FIFO.DOB6
+         3.031  N11341.F1
+
+TPCM1_O<7>
+   TPCM1_FIFO.DOB7
+         3.173  CHOICE259.G1
+
+TPCM1_RCLK
+   TPCM1_RCLK.X
+         2.914  TPCM1_FIFO.CLKB
+
+TPCM1_TSR<0>
+   TPCM1_TSR<1>.YQ
+         3.857  TPCM1_FIFO.ADDRB3
+         0.946  TPCM1_TSR<1>.G4
+
+TPCM1_TSR<1>
+   TPCM1_TSR<1>.XQ
+         2.938  TPCM1_FIFO.ADDRB4
+         1.078  TPCM1_TSR<1>.F2
+
+TPCM1_TSR<2>
+   TPCM1_TSR<3>.YQ
+         2.615  TPCM1_FIFO.ADDRB5
+         0.952  TPCM1_TSR<3>.G3
+
+TPCM1_TSR<3>
+   TPCM1_TSR<3>.XQ
+         2.450  TPCM1_FIFO.ADDRB6
+         1.095  TPCM1_TSR<3>.F2
+
+TPCM1_TSR<4>
+   TPCM1_TSR<4>.XQ
+         4.117  TPCM1_FIFO.ADDRB7
+         1.104  TPCM1_TSR<4>.F2
+
+TPCM1_TSR<5>
+   TPCM1_TSR<5>.YQ
+         4.515  TPCM1_FIFO.ADDRB8
+         0.952  TPCM1_TSR<5>.G3
+
+TSYNC_IBUF
+   TSYNC.I
+         1.597  N11345.G2
+
+Test_OBUF
+   N11345.Y
+         4.190  Test.O
+
+WRn_IBUF
+   WRn.I
+         4.671  D<0>.CLK
+         5.246  MCTX_WP<0>.CLK
+         5.258  MCTX_WP<2>.CLK
+         5.510  MFCD.CLK
+         5.372  RPCM0_TSR<1>.CLK
+         5.491  RPCM0_TSR<3>.CLK
+         5.106  RPCM1_TSR<4>.CLK
+         5.387  TPCM0_TSR<1>.CLK
+         5.387  TPCM0_TSR<3>.CLK
+         5.523  TPCM1_TSR<4>.CLK
+         5.330  RPCM1_TSR<1>.CLK
+         5.082  RPCM1_TSR<3>.CLK
+         5.097  LED_Y.CLK
+         5.131  TPCM1_TSR<1>.CLK
+         5.160  TPCM1_TSR<3>.CLK
+         5.131  LED_R.CLK
+         4.912  IEN_FC.CLK
+         5.257  IEN_EIRQ.CLK
+         5.257  IEN_PCM.CLK
+         4.912  IEN_CTXE.CLK
+         5.369  RPCM0_TSR<5>.CLK
+         5.258  RPCM1_TSR<5>.CLK
+         5.369  TPCM0_TSR<5>.CLK
+         4.970  TPCM1_TSR<5>.CLK
+         5.086  MFCE.CLK
+         5.340  _n0355<10>.CLK
+         5.366  _n0355<11>.CLK
+         5.356  _n0355<12>.CLK
+         5.051  _n0355<13>.CLK
+         5.366  _n0355<14>.CLK
+         5.061  _n0355<15>.CLK
+         5.366  _n0355<16>.CLK
+         5.055  _n0355<17>.CLK
+
+_n0028
+   _n0338.Y
+         1.450  CTXO<0>.SR
+         1.379  CTXO<1>.SR
+         1.551  CTXO<2>.SR
+         1.382  CTXO<3>.SR
+         1.434  CTXO<4>.SR
+         1.405  CTXO<5>.SR
+         1.551  CTXO<6>.SR
+         1.314  CTXO<7>.SR
+
+_n0029
+   _n0341.Y
+         2.062  CRXO<0>.SR
+         2.398  CRXO<1>.SR
+         2.012  CRXO<2>.SR
+         2.067  CRXO<3>.SR
+         2.223  CRXO<4>.SR
+         2.402  CRXO<5>.SR
+         2.555  CRXO<6>.SR
+         2.144  CRXO<7>.SR
+
+_n0039<0>
+   MCTXO<8>.X
+         2.016  CTX.O
+
+_n0070
+   N8348.Y
+         0.719  PCM_RP<2>.CE
+         0.850  PCM_RP<0>.CE
+
+_n0071<10>
+   _n0071<10>.X
+         0.950  CTX_CNT<10>.G3
+
+_n0071<1>
+   _n0071<1>.Y
+         1.065  CTX_CNT<1>.F2
+
+_n0071<2>
+   _n0071<2>.X
+         0.414  CTX_CNT<3>.G4
+
+_n0071<3>
+   _n0071<2>.Y
+         0.396  CTX_CNT<3>.F3
+
+_n0071<4>
+   _n0071<4>.X
+         0.414  CTX_CNT<5>.G4
+
+_n0071<5>
+   _n0071<4>.Y
+         0.396  CTX_CNT<5>.F3
+
+_n0071<6>
+   _n0071<6>.X
+         0.414  CTX_CNT<7>.G4
+
+_n0071<7>
+   _n0071<6>.Y
+         0.396  CTX_CNT<7>.F3
+
+_n0071<8>
+   _n0071<8>.X
+         0.626  CTX_CNT<9>.G1
+
+_n0071<9>
+   _n0071<8>.Y
+         0.554  CTX_CNT<9>.F2
+
+_n0072<10>
+   _n0072<10>.X
+         0.937  CRX_CNT<10>.G3
+
+_n0072<1>
+   _n0072<1>.Y
+         0.362  CRX_CNT<1>.F2
+
+_n0072<2>
+   _n0072<2>.X
+         0.434  CRX_CNT<3>.G1
+
+_n0072<3>
+   _n0072<2>.Y
+         0.362  CRX_CNT<3>.F2
+
+_n0072<4>
+   _n0072<4>.X
+         0.434  CRX_CNT<5>.G1
+
+_n0072<5>
+   _n0072<4>.Y
+         0.362  CRX_CNT<5>.F2
+
+_n0072<6>
+   _n0072<6>.X
+         0.434  CRX_CNT<7>.G1
+
+_n0072<7>
+   _n0072<6>.Y
+         0.362  CRX_CNT<7>.F2
+
+_n0072<8>
+   _n0072<8>.X
+         0.434  CRX_CNT<9>.G1
+
+_n0072<9>
+   _n0072<8>.Y
+         0.362  CRX_CNT<9>.F2
+
+_n0079
+   _n0079.X
+         1.335  MCTXE.G3
+         0.222  _n0079.G4
+
+_n0080
+   _n0080.X
+         0.222  _n0080.G4
+
+_n0081
+   CHOICE147.Y
+         1.318  N11337.G3
+         1.492  N11369.F2
+
+_n0082
+   _n0082.X
+         1.395  CHOICE430.F1
+         0.222  _n0082.G4
+
+_n0083
+   N8396.Y
+         1.621  _n0151.G3
+         1.616  _n0082.G3
+
+_n0087
+   MCTXO<7>.X
+         1.118  CHOICE527.G2
+         1.010  CHOICE534.G3
+         1.214  MCTXO<2>.F2
+         1.344  MCTXO<2>.G1
+         0.914  MCTXO<4>.F4
+         0.768  MCTXO<4>.G4
+         0.969  MCTXO<6>.F2
+         1.083  MCTXO<6>.G1
+         0.422  MCTXO<8>.F3
+         0.454  MCTXO<8>.G3
+         0.222  MCTXO<7>.G4
+
+_n0091
+   _n0091.Y
+         2.294  SYNC2.O
+
+_n0092
+   N7614.Y
+         3.186  SYNC4.O
+
+_n0093
+   N7720.Y
+         1.026  CTX_CNT<10>.G4
+         1.305  CTX_CNT<1>.F1
+         1.136  CTX_CNT<1>.G3
+         1.375  CTX_CNT<3>.F1
+         1.285  CTX_CNT<3>.G2
+         1.299  CTX_CNT<5>.F1
+         1.131  CTX_CNT<5>.G2
+         0.361  CTX_CNT<7>.F2
+         0.384  CTX_CNT<7>.G2
+         1.077  CTX_CNT<9>.F4
+         1.124  CTX_CNT<9>.G4
+         1.457  N10076.G2
+         1.308  N9526.G3
+
+_n0094
+   N7715.Y
+         1.425  CRX_CNT<1>.F3
+         1.457  CRX_CNT<1>.G3
+         1.348  CRX_CNT<3>.F3
+         1.389  CRX_CNT<3>.G4
+         1.271  CRX_CNT<5>.F4
+         1.310  CRX_CNT<5>.G3
+         0.393  CRX_CNT<7>.F4
+         0.440  CRX_CNT<7>.G4
+         1.183  CRX_CNT<9>.F4
+         1.081  CRX_CNT<9>.G2
+         0.835  CRX_CNT<10>.G4
+         1.436  N9480.G1
+         1.347  N10165.G1
+
+_n0118
+   N7725.Y
+         1.818  _n0145.G2
+         1.604  CHOICE335.G3
+         1.448  CHOICE508.G3
+         1.463  CHOICE394.G3
+         1.522  N11357.G3
+
+_n0132<1>
+   _n0132<1>.Y
+         0.362  MCTX_CNT<1>.F2
+
+_n0132<2>
+   _n0132<2>.X
+         1.195  MCTX_CNT<2>.G1
+
+_n0132<3>
+   _n0132<2>.Y
+         0.385  MCTX_CNT<3>.G2
+
+_n0134
+   N7779.Y
+         1.095  Ker7439_SW0/O.F2
+         0.428  N10076.G3
+         0.685  N9526.G1
+
+_n0136
+   N7774.Y
+         1.079  Ker7425_SW0/O.F4
+         1.357  N9480.G2
+         1.381  N10165.G2
+
+_n0145
+   _n0145.X
+         0.221  _n0145.G4
+         1.669  TPCM1_RCLK.G2
+         1.238  CHOICE335.F4
+         1.184  CHOICE508.F4
+         1.390  CHOICE394.F2
+         0.433  N11361.G1
+         1.025  N11357.F4
+
+_n0146
+   _n0146.X
+         0.222  _n0146.G4
+         1.486  CHOICE417.F4
+         1.325  CHOICE417.G4
+         2.119  CHOICE335.F3
+         2.211  CHOICE508.F3
+         1.581  CHOICE259.G3
+         2.025  N11341.G3
+         2.188  CHOICE394.F1
+         1.655  N11361.F2
+
+_n0147
+   N7687.Y
+         1.972  TPCM0_RCLK.F2
+         1.443  _n0148.G2
+         1.996  CHOICE417.F2
+         2.019  CHOICE417.G2
+         1.186  CHOICE325.F1
+         2.252  CHOICE512.F3
+         2.466  CHOICE512.G1
+
+_n0148
+   _n0148.X
+         1.514  TPCM1_RCLK.F2
+         0.222  _n0148.G4
+         1.704  CHOICE443.G2
+         2.006  CHOICE325.F2
+         2.087  CHOICE325.G4
+         2.054  CHOICE512.F1
+         1.905  CHOICE512.G3
+         1.426  CHOICE259.G2
+         1.711  N11341.F2
+
+_n0150
+   N7738.Y
+         1.311  _n0153.G3
+         1.603  CHOICE401.G3
+         1.941  CHOICE453.F2
+         1.412  CHOICE325.G3
+         1.872  CHOICE408.G2
+         1.254  CHOICE519.F3
+
+_n0151
+   _n0151.X
+         0.221  _n0151.G4
+         1.391  CHOICE430.F4
+         0.428  _n0080.G3
+         0.455  N11369.F1
+         0.433  N11369.G1
+         1.343  _n0079.G3
+
+_n0152
+   N8032.Y
+         0.920  _n0151.G2
+         1.485  CHOICE430.F2
+         1.124  _n0080.G2
+         0.743  N11369.F4
+         0.770  N11369.G3
+         1.474  _n0079.G1
+
+_n0153
+   _n0153.X
+         0.222  _n0153.G4
+         1.226  CHOICE461.G1
+         1.831  CHOICE430.G1
+         1.554  CHOICE498.G2
+
+_n0155
+   N8297.Y
+         2.131  _n0156.G1
+         1.106  MCPU_N1119.G2
+         2.185  CHOICE401.F2
+         2.207  CHOICE401.G4
+         2.436  CHOICE453.F1
+         1.739  CHOICE322.G3
+         2.006  CHOICE515.F3
+         2.237  CHOICE260.G1
+         1.348  N11341.F3
+
+_n0156
+   _n0156.X
+         0.222  _n0156.G4
+         1.623  CHOICE401.F1
+         1.344  CHOICE443.F1
+         1.551  CHOICE322.G2
+         0.648  CHOICE515.F1
+
+_n0157
+   N8192.Y
+         1.067  LED_Y.F3
+         1.013  LED_Y.G3
+         0.475  LED_R.F3
+         0.507  LED_R.G3
+         1.227  _n0159.G2
+
+_n0158
+   N8236.Y
+         1.419  CHOICE443.F2
+         1.146  CHOICE335.G1
+         1.331  CHOICE508.G1
+         1.245  CHOICE260.G3
+
+_n0159
+   _n0159.X
+         0.222  _n0159.G4
+         1.400  CHOICE394.G1
+
+_n0188
+   _n0188.Y
+         0.865  EIRQ_WP<0>.CE
+         0.893  EIRQ_WP<2>.CE
+         0.934  EIRQO.SR
+
+_n0230
+   TPCM0_RCLK.Y
+         2.514  D<0>.T
+         1.639  D<1>.T
+         2.322  D<2>.T
+         2.692  D<3>.T
+         2.692  D<4>.T
+         3.540  D<5>.T
+         3.683  D<6>.T
+         3.494  D<7>.T
+
+_n0336
+   CHOICE527.Y
+         1.396  CTX.OCE
+         1.370  MCTX_CNT<1>.CE
+         1.229  MCTX_CNT<3>.CE
+         1.180  MCTXO<2>.CE
+         1.053  MCTXO<4>.CE
+         1.082  MCTXO<6>.CE
+         1.174  MCTXO<8>.CE
+         1.114  MCTXO<7>.CE
+         1.275  MCTX_CNT<2>.CE
+
+_n0338
+   _n0338.X
+         1.493  CTX_CNT<10>.CE
+         1.772  CTX_CNT<1>.CE
+         1.841  CTX_CNT<3>.CE
+         1.661  CTX_CNT<5>.CE
+         1.772  CTX_CNT<7>.CE
+         1.493  CTX_CNT<9>.CE
+
+_n0339
+   N9526.Y
+         0.840  CTX_WP<0>.CE
+         0.794  CTX_WP<2>.CE
+
+_n0340
+   N10076.Y
+         1.145  CTXI<1>.CE
+         1.245  CTXI<3>.CE
+         1.235  CTXI<5>.CE
+         0.968  CTXI<7>.CE
+
+_n0341
+   _n0341.X
+         1.495  CRX_CNT<1>.CE
+         1.498  CRX_CNT<3>.CE
+         1.441  CRX_CNT<5>.CE
+         1.381  CRX_CNT<7>.CE
+         1.216  CRX_CNT<9>.CE
+         1.208  CRX_CNT<10>.CE
+
+_n0342
+   N9480.Y
+         1.829  CRX_WP<0>.CE
+         1.758  CRX_WP<2>.CE
+
+_n0343
+   N10165.Y
+         1.112  CRXI<1>.CE
+         1.112  CRXI<3>.CE
+         0.840  CRXI<5>.CE
+         0.794  CRXI<7>.CE
+
+_n0345
+   _n0346.Y
+         2.407  MCTX_WP<0>.CE
+         1.933  MCTX_WP<2>.CE
+         2.528  _n0355<10>.SR
+         2.201  _n0355<11>.SR
+         2.536  _n0355<12>.SR
+         2.722  _n0355<13>.SR
+         1.283  _n0355<14>.SR
+         2.602  _n0355<15>.SR
+         1.677  _n0355<16>.SR
+         1.036  _n0355<17>.SR
+
+_n0346
+   _n0346.X
+         0.743  FCE_RP<0>.CE
+         0.744  FCE_RP<2>.CE
+
+_n0347
+   MCPU_N1119.Y
+         1.957  CTX_RP<0>.CE
+         2.523  CTX_RP<2>.CE
+
+_n0348
+   CHOICE236.Y
+         1.218  CRX_RP<0>.CE
+         1.280  CRX_RP<2>.CE
+
+_n0349
+   LED_R.X
+         0.724  EIRQ_RP<0>.CE
+         0.687  EIRQ_RP<2>.CE
+
+_n0355<10>
+   _n0355<10>.X
+         1.088  MCTXO<2>.G2
+
+_n0355<11>
+   _n0355<11>.X
+         0.983  MCTXO<2>.F1
+
+_n0355<12>
+   _n0355<12>.X
+         0.956  MCTXO<4>.G1
+
+_n0355<13>
+   _n0355<13>.X
+         1.633  MCTXO<4>.F1
+
+_n0355<14>
+   _n0355<14>.X
+         1.146  MCTXO<6>.G3
+
+_n0355<15>
+   _n0355<15>.X
+         1.219  MCTXO<6>.F3
+
+_n0355<16>
+   _n0355<16>.X
+         1.380  MCTXO<7>.G3
+
+_n0355<17>
+   _n0355<17>.X
+         1.439  MCTXO<8>.G1
+
+_n0365
+   RPCM0_TSR<5>.X
+         2.610  RPCM0_TSR<1>.F1
+         2.598  RPCM0_TSR<1>.G1
+         2.579  RPCM0_TSR<3>.F2
+         2.053  RPCM0_TSR<3>.G3
+         0.970  RPCM1_TSR<4>.G3
+         0.222  RPCM0_TSR<5>.G4
+
+_n0366
+   RPCM1_TSR<5>.X
+         1.369  RPCM1_TSR<4>.F2
+         0.674  RPCM1_TSR<1>.F1
+         0.652  RPCM1_TSR<1>.G1
+         1.448  RPCM1_TSR<3>.F1
+         1.375  RPCM1_TSR<3>.G1
+         0.222  RPCM1_TSR<5>.G4
+
+_n0367
+   TPCM0_TSR<5>.X
+         2.073  TPCM0_TSR<1>.F2
+         2.044  TPCM0_TSR<1>.G3
+         2.316  TPCM0_TSR<3>.F1
+         2.303  TPCM0_TSR<3>.G1
+         1.471  TPCM1_TSR<4>.G4
+         0.222  TPCM0_TSR<5>.G4
+
+_n0368
+   TPCM1_TSR<5>.X
+         1.943  TPCM1_TSR<4>.F3
+         1.330  TPCM1_TSR<1>.F3
+         1.509  TPCM1_TSR<1>.G1
+         1.471  TPCM1_TSR<3>.F4
+         1.601  TPCM1_TSR<3>.G2
+         0.222  TPCM1_TSR<5>.G4
+
+_n0369
+   MFCE.X
+         0.953  MFCD.F3
+         1.166  MFCD.G1
+         0.222  MFCE.G4
+

@@ -1,0 +1,226 @@
+                           Performance Summary Report
+                           --------------------------
+
+Design:     ebi2hpi
+Device:     XC9572XL-10-VQ64
+Speed File: Version 3.0
+Program:    Timing Report Generator:  version G.26
+Date:       Mon Nov 27 16:13:20 2006
+
+Performance Summary:
+
+Pad to Pad (tPD)                          :         18.7ns (2 macrocell levels)
+Pad 'WRn' to Pad 'HD<0>'                                          
+
+Clock net 'CSn' path delays:
+
+Clock Pad to Output Pad (tCO)             :         26.6ns (3 macrocell levels)
+Clock Pad 'CSn' to Output Pad 'HD<0>'                             (Pterm Clock)
+
+Setup to Clock at the Pad (tSU)           :          2.1ns (0 macrocell levels)
+Data signal 'D<0>' to DFF D input Pin at 'HRSTn<0>.D'
+Clock pad 'CSn'                                                   (Pterm Clock)
+
+                          Minimum Clock Period: 14.0ns
+                     Maximum Internal Clock Speed: 71.4Mhz
+                         (Limited by Clock Pulse Width)
+
+--------------------------------------------------------------------------------
+                            Pad to Pad (tPD) (nsec)
+
+\ From       A     A     A     A     A     A     C     D     D     D     D     D
+ \           <     <     <     <     <     <     S     <     <     <     <     <
+  \          0     1     2     3     4     5     n     0     1     2     3     4
+   \         >     >     >     >     >     >           >     >     >     >     >
+    \                                                                           
+     \                                                                          
+      \                                                                         
+       \                                                                        
+  To    \------------------------------------------------------------------------
+
+D<0>                        11.0              11.0                              
+D<1>                        11.0              11.0                              
+D<2>                        11.0              11.0                              
+D<3>                        11.0              11.0                              
+D<4>                        11.0              11.0                              
+D<5>                        11.0              11.0                              
+D<6>                        11.0              11.0                              
+D<7>                        11.0              11.0                              
+HBIL      10.0                                                                  
+HCNTL0          10.0                                                            
+HCNTL1                10.0                                                      
+HCSn<0>                     10.0  10.0  10.0                                    
+HCSn<1>                     10.0  10.0  10.0                                    
+HCSn<2>                     10.0  10.0  10.0                                    
+HCSn<3>                     10.0  10.0  10.0                                    
+HD<0>                                                6.5                        
+HD<1>                                                     10.0                  
+HD<2>                                                           10.0            
+HD<3>                                                                 10.0      
+HD<4>                                                                       10.0
+HD<5>                                                                           
+HD<6>                                                                           
+HD<7>                                                                           
+HDSn                                          10.0                              
+HR_Wn                                                                           
+INTn                                                                            
+
+--------------------------------------------------------------------------------
+                            Pad to Pad (tPD) (nsec)
+
+\ From       D     D     D     H     H     H     H     H     H     H     H     H
+ \           <     <     <     D     D     D     D     D     D     D     D     I
+  \          5     6     7     <     <     <     <     <     <     <     <     N
+   \         >     >     >     0     1     2     3     4     5     6     7     T
+    \                          >     >     >     >     >     >     >     >     n
+     \                                                                         <
+      \                                                                        0
+       \                                                                       >
+  To    \------------------------------------------------------------------------
+
+D<0>                        10.0                                                
+D<1>                              10.0                                          
+D<2>                                    10.0                                    
+D<3>                                          10.0                              
+D<4>                                                10.0                        
+D<5>                                                      10.0                  
+D<6>                                                            10.0            
+D<7>                                                                  10.0      
+HBIL                                                                            
+HCNTL0                                                                          
+HCNTL1                                                                          
+HCSn<0>                                                                         
+HCSn<1>                                                                         
+HCSn<2>                                                                         
+HCSn<3>                                                                         
+HD<0>                                                                           
+HD<1>                                                                           
+HD<2>                                                                           
+HD<3>                                                                           
+HD<4>                                                                           
+HD<5>     10.0                                                                  
+HD<6>           10.0                                                            
+HD<7>                 10.0                                                      
+HDSn                                                                            
+HR_Wn                                                                           
+INTn                                                                        10.0
+
+--------------------------------------------------------------------------------
+                            Pad to Pad (tPD) (nsec)
+
+\ From       H     H     H     R     W
+ \           I     I     I     D     R
+  \          N     N     N     n     n
+   \         T     T     T            
+    \        n     n     n            
+     \       <     <     <            
+      \      1     2     3            
+       \     >     >     >            
+  To    \------------------------------
+
+D<0>                        11.0  11.0
+D<1>                        11.0  11.0
+D<2>                        11.0  11.0
+D<3>                        11.0  11.0
+D<4>                        11.0  11.0
+D<5>                        11.0  11.0
+D<6>                        11.0  11.0
+D<7>                        11.0  11.0
+HBIL                                  
+HCNTL0                                
+HCNTL1                                
+HCSn<0>                               
+HCSn<1>                               
+HCSn<2>                               
+HCSn<3>                               
+HD<0>                       18.7  18.7
+HD<1>                       18.7  18.7
+HD<2>                       18.7  18.7
+HD<3>                       18.7  18.7
+HD<4>                       18.7  18.7
+HD<5>                       18.7  18.7
+HD<6>                       18.7  18.7
+HD<7>                       18.7  18.7
+HDSn                                  
+HR_Wn                             10.0
+INTn      10.0  10.0  10.0            
+
+--------------------------------------------------------------------------------
+                      Clock Pad to Output Pad (tCO) (nsec)
+
+\ From       C
+ \           S
+  \          n
+   \          
+    \         
+     \        
+      \       
+       \      
+  To    \------
+
+HD<0>     26.6
+HD<1>     26.6
+HD<2>     26.6
+HD<3>     26.6
+HD<4>     26.6
+HD<5>     26.6
+HD<6>     26.6
+HD<7>     26.6
+HRSTn<0>  10.2
+HRSTn<1>  10.2
+HRSTn<2>  10.2
+HRSTn<3>  10.2
+
+--------------------------------------------------------------------------------
+                   Setup to Clock at Pad (tSU or tSUF) (nsec)
+
+\ From      C
+ \          S
+  \         n
+   \         
+    \        
+     \       
+      \      
+  To   \------
+
+A<3>      2.1
+A<4>      2.1
+A<5>      2.1
+D<0>      2.1
+RDn       2.1
+WRn       2.1
+
+Path Type Definition: 
+
+Pad to Pad (tPD) -                        Reports pad to pad paths that start 
+                                          at input pads and end at output pads. 
+                                          Paths are not traced through 
+                                          registers. 
+
+Clock Pad to Output Pad (tCO) -           Reports paths that start at input 
+                                          pads trace through clock inputs of 
+                                          registers and end at output pads. 
+                                          Paths are not traced through PRE/CLR 
+                                          inputs of registers. 
+
+Setup to Clock at Pad (tSU or tSUF) -     Reports external setup time of data 
+                                          to clock at pad. Data path starts at 
+                                          an input pad and ends at register 
+                                          (Fast Input Register for tSUF) D/T 
+                                          input. Clock path starts at input pad 
+                                          and ends at the register clock input. 
+                                          Paths are not traced through 
+                                          registers. Pin-to-pin setup 
+                                          requirement is not reported or 
+                                          guaranteed for product-term clocks 
+                                          derived from macrocell feedback 
+                                          signals. 
+
+Clock to Setup (tCYC) -                   Register to register cycle time. 
+                                          Include source register tCO and 
+                                          destination register tSU. Note that 
+                                          when the computed Maximum Clock Speed 
+                                          is limited by tCYC it is computed 
+                                          assuming that all registers are 
+                                          rising-edge sensitive. 
+
